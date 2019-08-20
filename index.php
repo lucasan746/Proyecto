@@ -1,3 +1,4 @@
-<?php echo "Hola ;)"; 
+<?php echo "Hola ;)";
 echo "adios";
+echo "cusbai";
 ?>
