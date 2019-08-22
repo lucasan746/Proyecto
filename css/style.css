@@ -5,7 +5,7 @@
 }
 /*Menu de registro */
 .cajalogin{
-  background-color: rgb(110, 193, 201);
+  /* background-color: rgb(110, 193, 201); */
   height: 100vh;
 }
 .artilogin{
@@ -47,5 +47,20 @@
     }
     .titulog{
       font-size: 50px;
+    }
+    #a{
+      background-image: url(../images/1.jpg);
+    }
+    #b{
+      background-image: url(../images/2.jpg);
+    }
+    #c{
+      background-image: url(../images/3.jpg);
+    }
+    #d{
+      background-image: url(../images/4.jpg);
+    }
+    #e{
+      background-image: url(../images/5.jpg);
     }
     /*Fin*/
