@@ -16,7 +16,6 @@
         <a class="botonlog2" href="">Iniciar Sesión</a>
       </article>
     </section>
-    <h1></h1>
     <!-- fin :c -->
   </body>
 </html>
