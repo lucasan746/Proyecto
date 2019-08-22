@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+/*Menu de registro */
+.cajalogin{
+  background-color: rgb(110, 193, 201);
+  height: 100vh;
+}
+.artilogin{
+  text-align: center;
+  box-sizing: border-box;
+  width: 20vw;
+  background-color: rgb(207, 252, 252);
+  position: relative;
+  top: 20vh;
+}
+.botonlog{
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+  .botonlog:hover{
+    color: #1883ba;
+    background-color: rgb(122, 212, 241);
+  }
+  .botonlog2{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #1883ba;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+    .botonlog2:hover{
+      color: #ffffff;
+      background-color: rgb(122, 212, 241);
+    }
+    .titulog{
+      font-size: 50px;
+    }
+    /*Fin*/
