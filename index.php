@@ -27,12 +27,13 @@
 
 </section>
 <section class="preg2">
-  <article class="contenido1">
+  <article class="contenido2">
   <h1 class="titulo2">Pregunta </h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </article>
 </section>
+
 <!-- fin parte fati -->
 
 <!-- Preguntas y respuestas -->
@@ -53,5 +54,7 @@
   </article>
   <!-- Fin  -->
 </section>
+<h1>prueba</h1>
+<p>lala</p>
   </body>
 </html>
