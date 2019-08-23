@@ -12,7 +12,7 @@
   text-align: center;
   box-sizing: border-box;
   width: 20vw;
-  background-color: rgb(207, 252, 252);
+  background-color: rgba(174, 231, 252, 0.39);
   position: relative;
   top: 20vh;
 }
@@ -28,7 +28,7 @@
   padding: 10px;
 }
   .botonlog:hover{
-    color: #1883ba;
+    color: #ffffff;
     background-color: rgb(122, 212, 241);
   }
   .botonlog2{
@@ -47,6 +47,12 @@
     }
     .titulog{
       font-size: 50px;
+    }
+    .iconoprin{
+      width: 5vw;
+      position: relative;
+      left: 10px;
+      top: 10px;
     }
     #a{
       background-image: url(../images/1.jpg);
@@ -78,4 +84,3 @@
   text-align: center;
 }
 /* fin parte fati */
-
