@@ -84,3 +84,26 @@
   text-align: center;
 }
 /* fin parte fati */
+
+.caja3{
+  height: 100vh;
+  background-color: #26cc3a;
+}
+.caja4{
+  background-color: #87a58a;
+  height: 100vh;
+}
+.preg3{
+  background-color: white;
+  text-align: center;
+  width: 35vw;
+  height: 15vh;
+}
+.rpt3{
+  background-color: white;
+  margin-top: 45px;
+  position: relative;
+  height: 20vh;
+  width: 60vw;
+  text-align: center;
+}
