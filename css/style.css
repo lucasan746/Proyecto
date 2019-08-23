@@ -64,3 +64,18 @@
       background-image: url(../images/5.jpg);
     }
     /*Fin*/
+/* Preguntas y respuestas */
+.preg1{
+  background-color: pink;
+  height: 100vh;
+  text-align: center;
+
+}
+
+.preg2{
+  background-color: lightblue;
+  height: 100vh;
+  text-align: center;
+}
+/* fin parte fati */
+
