@@ -45,6 +45,39 @@
       color: #ffffff;
       background-color: rgb(122, 212, 241);
     }
+    .barramenu{
+      display: flex;
+      position: sticky;
+      justify-content: flex-end;
+      top: 0;
+      background: lightblue;
+      /* padding-left: 40%; */
+      flex-wrap: nowrap;
+    }
+    .botonlog3{
+      margin: 0;
+      border: solid 2px red;
+      display: block;
+      text-decoration: none;
+      font-size: 20px;
+      color: #1883ba;
+      background-color: #ffffff;
+      width: 20%;
+      text-align: center;
+      padding: 10px;
+    }
+    .botonlog4{
+      margin: 0;
+      border: solid 2px red;
+      display: block;
+      text-decoration: none;
+      font-size: 20px;
+      color: #1883ba;
+      background-color: #ffffff;
+      width: 20%;
+      text-align: center;
+      padding: 10px;
+    }
     .titulog{
       font-size: 50px;
     }
