@@ -46,16 +46,22 @@
       background-color: rgb(122, 212, 241);
     }
     .barramenu{
+      z-index: 1;
+      position: absolute;
+      top: 0;
       display: flex;
       position: sticky;
       justify-content: flex-end;
       top: 0;
-      background: lightblue;
       /* padding-left: 40%; */
       flex-wrap: nowrap;
     }
+    .container{
+      background: pink;
+    }
     .botonlog3{
       margin: 0;
+      margin-top: 10px;
       border: solid 2px red;
       display: block;
       text-decoration: none;
@@ -68,6 +74,7 @@
     }
     .botonlog4{
       margin: 0;
+      margin-top: 10px;
       border: solid 2px red;
       display: block;
       text-decoration: none;
@@ -82,8 +89,8 @@
       font-size: 50px;
     }
     .iconoprin{
+      position: fixed;
       width: 5vw;
-      position: relative;
       left: 10px;
       top: 10px;
     }
