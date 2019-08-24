@@ -66,7 +66,10 @@
   <!-- Fin  -->
 </section>
 </div>
-<p>ola </p>
-<p>molan1</p>
+<<<<<<< HEAD
+=======
+<h1>hola</h1>
+<h2>hola</h2>
+>>>>>>> new
   </body>
 </html>
