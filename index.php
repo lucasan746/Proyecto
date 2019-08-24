@@ -67,5 +67,6 @@
 </section>
 </div>
 <h1>hola</h1>
+<h2>hola</h2>
   </body>
 </html>
