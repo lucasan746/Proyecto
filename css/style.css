@@ -46,6 +46,7 @@
       background-color: rgb(122, 212, 241);
     }
     .barramenu{
+      margin: 1%;
       z-index: 1;
       position: absolute;
       top: 0;
@@ -59,31 +60,39 @@
     .container{
       background: pink;
     }
+
+
+
     .botonlog3{
       margin: 0;
       margin-top: 10px;
-      border: solid 2px red;
+      margin-right: 1%;
+      border: solid 1px rgba(234, 164, 198, 0.5);
       display: block;
       text-decoration: none;
       font-size: 20px;
-      color: #1883ba;
-      background-color: #ffffff;
-      width: 20%;
+      color: white;
+      background-color: rgba(234, 164, 198, 0.3);
+      width: 9%;
+      height: 6vh;
       text-align: center;
-      padding: 10px;
+      padding: 6px;
+      border-radius: 5%;
     }
     .botonlog4{
       margin: 0;
       margin-top: 10px;
-      border: solid 2px red;
+      border: solid 1px rgba(234, 164, 198, 0.5);
       display: block;
       text-decoration: none;
       font-size: 20px;
-      color: #1883ba;
-      background-color: #ffffff;
-      width: 20%;
+      color: pink;
+      background-color: white;
+      width: 9%;
+      height: 6vh;
       text-align: center;
-      padding: 10px;
+      padding: 6px;
+      border-radius: 5%;
     }
     .titulog{
       font-size: 50px;
@@ -112,18 +121,60 @@
     }
     /*Fin*/
 /* Preguntas y respuestas */
+.container h1{
+  font-size: 2.7rem;
+  color: white;
+  margin-bottom: 5%;
+}
+.container p{
+  font-size: 1.5rem;
+  color: white;
+}
 .preg1{
   background-color: pink;
   height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
+}
+.contenido1{
+  width: 60%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+
+}
+.contenido1 img{
+  height: 40vh;
+  margin-bottom: 1.5%;
 }
 
 .preg2{
   background-color: lightblue;
   height: 100vh;
   text-align: center;
+  display: flex;
+
 }
+.contenido2{
+
+display: flex;
+flex-wrap: wrap;
+margin: 2%;
+justify-content: space-between;
+align-items: center;
+}
+.contenido2 img{
+  height: 50vh;
+
+}
+.data1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
 /* fin parte fati */
 
 .caja3{
