@@ -102,7 +102,8 @@
       position: fixed;
       width: 5vw;
       left: 10px;
-      top: 10px;
+      top: 7px;
+      border-radius: 30%;
     }
     .flecha{
       width: 100px;
