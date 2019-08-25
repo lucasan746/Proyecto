@@ -152,14 +152,14 @@
 }
 
 .preg2{
-  background-color: lightblue;
+
+ background-color: lightblue;
   height: 100vh;
   text-align: center;
   display: flex;
 
 }
 .contenido2{
-
 display: flex;
 flex-wrap: wrap;
 margin: 2%;
