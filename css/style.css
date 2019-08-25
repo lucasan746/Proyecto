@@ -59,7 +59,7 @@
       flex-wrap: nowrap;
     }
     .container{
-      background: pink;
+      background-color: #7c5cff;
     }
 
 
@@ -68,12 +68,12 @@
       margin: 0;
       margin-top: 10px;
       margin-right: 1%;
-      border: solid 1px rgba(234, 164, 198, 0.5);
+      border: solid 1px rgba(0, 0, 0, 0.1);
       display: block;
       text-decoration: none;
       font-size: 20px;
       color: white;
-      background-color: rgba(234, 164, 198, 0.3);
+      background-color: rgba(0, 0, 0, 0.1);
       width: 9%;
       height: 6vh;
       text-align: center;
@@ -83,11 +83,11 @@
     .botonlog4{
       margin: 0;
       margin-top: 10px;
-      border: solid 1px rgba(234, 164, 198, 0.5);
+      /* border: solid 1px rgba(234, 164, 198, 0.5); */
       display: block;
       text-decoration: none;
       font-size: 20px;
-      color: pink;
+      color: #7c5cff;
       background-color: white;
       width: 9%;
       height: 6vh;
@@ -97,6 +97,7 @@
     }
     .titulog{
       font-size: 50px;
+
     }
     .iconoprin{
       position: fixed;
@@ -193,7 +194,7 @@
   color: white;
 }
 .preg1{
-  background-color: pink;
+  background-color: #7c5cff;
   height: 100vh;
   text-align: center;
   display: flex;
@@ -214,7 +215,7 @@
 
 .preg2{
 
- background-color: lightblue;
+ background-color: #ff8a00;
   height: 100vh;
   text-align: center;
   display: flex;

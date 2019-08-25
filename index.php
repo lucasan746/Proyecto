@@ -11,8 +11,8 @@
     <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
       <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
       <article class="artilogin">
-        <h1 class="titulog">Lorem ipsum</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+        <h1 class="titulog">Sloth</h1>
+        <p>Un espacio para tu mascota</p>
         <a class="botonlog" href="">Registrarse</a>
         <a class="botonlog2" href="">Iniciar Sesión</a>
       </article>
@@ -27,20 +27,22 @@
     <!-- fin :c -->
       <!-- Preguntas y respuestas -->
 <section class="preg1">
+
+
   <article class="contenido1">
     <img src="images/molang1.jpeg" alt="molang1">
-  <h1 class="titulo1">Pregunta</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h1 class="titulo1">Crea tu slot</h1>
+  <p>Dale voz a tu mascota. Crea tu perfil o el de tu mascota y cuenta cómo es su vida, cuáles son sus gustos o qué lugares han visitado.
+Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en común con ellos.
+</p>
 </article>
 </section>
 <section class="preg2">
   <article class="contenido2">
     <div class="data1">
-  <h1 class="titulo2">Pregunta </h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h1 class="titulo2">Conoce gente como tu </h1>
+  <p>¿Quieres encontrar a gente que comparta tu misma pasión por los animales? En Sloth puedes participar en grupos con tus mismos intereses, crear tus propias comunidades, organizar quedadas y eventos.
+</p>
   </div>
   <img src="images/molang.png" alt="molang">
 </article>
@@ -54,8 +56,9 @@
     <article class="titulo3">
       <img class="a" src="images/a.gif" alt=":(">
       <div class="texto1">
-      <h1 class="h1">¿Preguntas?</h1>
-      <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1 class="h1">Ayuda a otro animales</h1>
+      <p class="p1">Consulta las necesidades de las protectoras, apúntante a programas de voluntariado, haz donaciones... ¡haz que este mundo sea un poco más feliz para los animales que sufren!
+.</p>
       </div>
     </article>
 </section>
@@ -63,13 +66,24 @@
     <article class="titulo4">
       <img class="b" src="images/b.gif" alt="uwu">
     <div class="texto2">
-      <h1 class="h2">¿Preguntas?</h1>
-      <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1 class="h2">Unete a Sloth!</h1>
+      <p class="p2">Sumate a todos aquellos amantes de los animales que quieran compartir y disfrutar al máximo de la experiencia de tener una mascota.
+Te esperamos dentro!.</p>
     </div>
       <img class="b" src="images/b.gif" alt="uwu">
     </article>
   <!-- Fin  -->
 </section>
+<footer>
+  <ul class="foot">
+    <li class="pie"><a href="#">home</a></li>
+    <li class="pie"><a href="#">quienes</a></li>
+    <li class="pie"><a href="#">servicios</a></li>
+    <li class="pie"><a href="#">portfolio</a></li>
+    <li class="pie"><a href="#">sucursales</a></li>
+    <li class="pie"><a href="#">contacto</a></li>
+  </ul>
+</footer>
 </div>
   </body>
 </html>
