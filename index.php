@@ -69,10 +69,5 @@
   <!-- Fin  -->
 </section>
 </div>
-<<<<<<< HEAD
-=======
-<h1>hola i</h1>
-<h2>hola</h2>
->>>>>>> new
   </body>
 </html>
