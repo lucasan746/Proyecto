@@ -152,14 +152,14 @@
 }
 
 .preg2{
-  background-color: lightblue;
+
+ background-color: lightblue;
   height: 100vh;
   text-align: center;
   display: flex;
 
 }
 .contenido2{
-
 display: flex;
 flex-wrap: wrap;
 margin: 2%;
@@ -179,24 +179,40 @@ align-items: center;
 /* fin parte fati */
 
 .caja3{
+  background-color: cadetblue;
   height: 100vh;
-  background-color: #26cc3a;
+  display: flex;
+}
+.titulo3{
+display: flex;
+align-items: center;
+margin: 2%;
+}
+.a{
+  width: 75vh;
+  border-radius: 10%;
+}
+.texto1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 .caja4{
-  background-color: #87a58a;
+  background-color: #a8e681;
   height: 100vh;
+  display: flex;
 }
-.preg3{
-  background-color: white;
-  text-align: center;
-  width: 35vw;
-  height: 15vh;
+.titulo4{
+  display: flex;
+  align-items: center;
+  margin: 2%;
 }
-.rpt3{
-  background-color: white;
-  margin-top: 45px;
-  position: relative;
-  height: 20vh;
-  width: 60vw;
-  text-align: center;
+.b{
+  width: 30%;
+  border-radius: 48%;
+}
+.texto2{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
