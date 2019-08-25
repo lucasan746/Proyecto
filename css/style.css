@@ -151,12 +151,13 @@
     }
     #j{
       background-image: url(../images/inicio/10.jpg);
-      background-size: 100% 100%;
+      background-size: contain;
     }
     #k{
       background-image: url(../images/inicio/11.jpg);
-      background-size: 100% 100%;
+      background-size: contain;
     }
+
     #l{
       background-image: url(../images/inicio/12.jpg);
       background-size: 100% 100%;
@@ -166,23 +167,16 @@
       background-size: 100% 100%;
     }
     #n{
-      background-image: url(../images/inicio/14.jpg);
+      background-image: url(../images/inicio/14.png);
       background-size: 100% 100%;
     }
     #o{
       background-image: url(../images/inicio/15.png);
       background-size: 100% 100%;
     }
+
     #p{
       background-image: url(../images/inicio/16.png);
-      background-size: 100% 100%;
-    }
-    #q{
-      background-image: url(../images/inicio/17.png);
-      background-size: 100% 100%;
-    }
-    #r{
-      background-image: url(../images/inicio/17.png);
       background-size: 100% 100%;
     }
 /* FIN */
