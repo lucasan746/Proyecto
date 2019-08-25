@@ -1,4 +1,4 @@
-<?php include_once 'images.php'; ?>
+<?php include_once 'images.php';?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -16,10 +16,12 @@
         <a class="botonlog" href="">Registrarse</a>
         <a class="botonlog2" href="">Iniciar Sesión</a>
       </article>
+      <a href="#ancla"><img src="images/flecha.png" alt="flecha" class="flecha"></a>
+
     </section>
     <div class="container">
     <div class="barramenu">
-      <a href="#" class="botonlog3">Inicia Sesión</a>
+      <a href="#" name="ancla" class="botonlog3">Inicia Sesión</a>
       <a href="#" class="botonlog4">Registrate</a>
     </div>
     <!-- fin :c -->
