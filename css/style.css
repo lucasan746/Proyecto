@@ -178,7 +178,7 @@
     }
 
     #p{
-      background-image: url(../images/inicio/16.png);
+      background-image: url(../images/inicio/16.jpg);
       background-size: 100% 100%;
     }
 /* FIN */
@@ -296,3 +296,19 @@ font-size: 1.3rem;
   text-decoration: none;
   color: white;
 }
+/* Login */
+.login{
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgba(174, 231, 252, 0.39);
+  position: relative;
+  top: 30vh;
+  width: 20vw;
+}
+.login input{
+  width: 20vw;
+  height: 5vh;
+  margin-top: 10px;
+}
+
+/* fin */
