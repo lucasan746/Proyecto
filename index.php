@@ -56,7 +56,7 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
     <article class="titulo3">
       <img class="a" src="images/a.gif" alt=":(">
       <div class="texto1">
-      <h1 class="h1">Ayuda a otro animales</h1>
+      <h1 class="h1">Ayuda a otros animales</h1>
       <p class="p1">Consulta las necesidades de las protectoras, apúntante a programas de voluntariado, haz donaciones... ¡haz que este mundo sea un poco más feliz para los animales que sufren!
 .</p>
       </div>
@@ -76,12 +76,10 @@ Te esperamos dentro!.</p>
 </section>
 <footer>
   <ul class="foot">
-    <li class="pie"><a href="#">home</a></li>
-    <li class="pie"><a href="#">quienes</a></li>
-    <li class="pie"><a href="#">servicios</a></li>
-    <li class="pie"><a href="#">portfolio</a></li>
-    <li class="pie"><a href="#">sucursales</a></li>
-    <li class="pie"><a href="#">contacto</a></li>
+    <li><a href="#">Contacto</a></li>
+    <li><a href="#">Legales</a></li>
+    <li><a href="#">Ayuda</a></li>
+    <li><a href="#">Privacidad</a></li>
   </ul>
 </footer>
 </div>
