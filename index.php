@@ -56,8 +56,8 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
     <article class="titulo3">
       <img class="a" src="images/a.gif" alt=":(">
       <div class="texto1">
-      <h1 class="h1">Ayuda a otros animales</h1>
-      <p class="p1">Consulta las necesidades de las protectoras, apúntante a programas de voluntariado, haz donaciones... ¡haz que este mundo sea un poco más feliz para los animales que sufren!
+      <h1>Ayuda a otros animales</h1>
+      <p>Consulta las necesidades de las protectoras, apúntante a programas de voluntariado, haz donaciones... ¡haz que este mundo sea un poco más feliz para los animales que sufren!
 .</p>
       </div>
     </article>
@@ -66,8 +66,8 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
     <article class="titulo4">
       <img class="b" src="images/b.gif" alt="uwu">
     <div class="texto2">
-      <h1 class="h2">Unete a Sloth!</h1>
-      <p class="p2">Sumate a todos aquellos amantes de los animales que quieran compartir y disfrutar al máximo de la experiencia de tener una mascota.
+      <h1>Unete a Sloth!</h1>
+      <p>Sumate a todos aquellos amantes de los animales que quieran compartir y disfrutar al máximo de la experiencia de tener una mascota.
 Te esperamos dentro!.</p>
     </div>
       <img class="b" src="images/b.gif" alt="uwu">
