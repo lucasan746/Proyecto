@@ -10,7 +10,7 @@
   <body>
 <section>
   <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
-    <a href="Index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+    <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
 <article class="login-mascota">
   <h2>Registra a tu mascota</h2>
   <form class="" action="home.php" method="post">
