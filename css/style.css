@@ -312,3 +312,47 @@ font-size: 1.3rem;
 }
 
 /* fin */
+
+/* Registro  */
+.cajareg{
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  top: 17vh;
+  background-color: rgba(174, 231, 252, 0.39);
+}
+h1{
+  font-size: 50px;
+}
+.reg1{
+width: 20vw;
+height: 5vh;
+margin-top: 18px;
+}
+.botonreg{
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.registro label{
+  font-size: 20px;
+}
+.sexo{
+  width: 2vw;
+  margin-top: 18px;
+}
+.date{
+  margin-right: 48px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+/* Fin */

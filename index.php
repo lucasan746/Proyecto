@@ -13,7 +13,7 @@
       <article class="artilogin">
         <h1 class="titulog">Sloth</h1>
         <p>Un espacio para tu mascota</p>
-        <a class="botonlog" href="">Registrarse</a>
+        <a class="botonlog" href="registro.php">Registrarse</a>
         <a class="botonlog2" href="login.php">Iniciar Sesión</a>
       </article>
       <a href="#ancla"><img src="images/flecha.png" alt="flecha" class="flecha"></a>
