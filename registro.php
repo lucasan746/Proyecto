@@ -11,7 +11,7 @@
       <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
     <article class="cajareg">
       <h1>Registrate</h1>
-      <form class="registro" action="registro.html" method="post">
+      <form class="registro" action="login-mascota.php" method="post">
           <label for="nombre"></label>
           <input class="reg1" type="text" name="nombre" placeholder="Nombres">
           <label for="apellido"></label>
