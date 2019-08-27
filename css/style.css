@@ -312,3 +312,17 @@ font-size: 1.3rem;
 }
 
 /* fin */
+/* registro mascotas */
+.login-mascota{
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgba(174, 231, 252, 0.39);
+  position: relative;
+  top: 30vh;
+  width: 20vw;
+
+}
+.genero{
+margin: 0 10px;
+
+}
