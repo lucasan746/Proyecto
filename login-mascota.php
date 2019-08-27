@@ -10,10 +10,10 @@
   <body>
 <section>
   <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
-    <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+    <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
 <article class="login-mascota">
   <h2>Registra a tu mascota</h2>
-  <form class="" action="index.html" method="post">
+  <form class="" action="home.php" method="post">
 
       <input type="text" name="name" placeholder="El nombre de tu mascota">
       <br>
@@ -57,7 +57,7 @@
   <button type="submit" name="enviar" class="botonlog">Registrate</button>
 
   </form>
-<a class="" href="#">Omitir</a>
+<a class="" href="home.php">Omitir</a>
 </article>
 
 

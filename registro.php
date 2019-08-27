@@ -30,9 +30,9 @@
           <input class="reg1" type="password" name="confcontra">
           <br><br>
           <label for="sexo">Género:</label>
-          <input class="sexo" type="radio" name="sexo" value="M">Mujer
-          <input class="sexo" type="radio" name="sexo" value="H">Hombre
-          <input class="sexo" type="radio" name="sexo" value="O">Otro
+          <input class="genero" type="radio" name="sexo" value="M">Mujer
+          <input class="genero" type="radio" name="sexo" value="H">Hombre
+          <input class="genero" type="radio" name="sexo" value="O">Otro
           <label for="date">Fecha:</label>
           <input class="date" type="date" name="fecha">
           <button type="submit" name="siguiente" class="botonreg">Siguiente</button>
