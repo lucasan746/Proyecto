@@ -9,7 +9,7 @@
   <body>
     <!-- Menu de registro -->
     <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
-      <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+      <a href="Index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
       <article class="artilogin">
         <h1 class="titulog">Sloth</h1>
         <p>Un espacio para tu mascota</p>
