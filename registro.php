@@ -9,20 +9,27 @@
   <body>
     <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
       <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+        <h1 class="tiulog">Sloth</h1>
     <article class="cajareg">
-      <h1>Registrate</h1>
+      <h3 class="regh3">Resgistrate</h3>
+      <br>
       <form class="registro" action="registro.html" method="post">
-          <label for="nombre"></label>
-          <input class="reg1" type="text" name="nombre" placeholder="Nombres">
-          <label for="apellido"></label>
-          <input class="reg1" type="text" name="apellido" placeholder="Apellidos">
-          <label for="email"></label>
-          <input class="reg1" type="text" name="email" placeholder="Email del usuario">
-          <label for="contraseña"></label>
-          <input class="reg1" type="password" name="conraseña" placeholder="Contraseña">
-          <label for="confcontra"></label>
-          <input class="reg1" type="password" name="confcontra" placeholder="Confirmar contraseña">
-          <label for="sexo">Sexo:</label>
+          <label for="nombre">Nombre:</label>
+          <input class="reg1" type="text" name="nombre">
+          <br><br>
+          <label for="apellido">Apellido:</label>
+          <input class="reg1" type="text" name="apellido">
+          <br><br>
+          <label for="email">E-mail:</label>
+          <input class="reg1" type="text" name="email">
+          <br><br>
+          <label for="contraseña">Contraseña</label>
+          <input class="reg1" type="password" name="conraseña">
+          <br><br>
+          <label for="confcontra">Confirmar contraseña:</label>
+          <input class="reg1" type="password" name="confcontra">
+          <br><br>
+          <label for="sexo">Género:</label>
           <input class="sexo" type="radio" name="sexo" value="M">Mujer
           <input class="sexo" type="radio" name="sexo" value="H">Hombre
           <input class="sexo" type="radio" name="sexo" value="O">Otro
