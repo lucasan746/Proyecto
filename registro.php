@@ -8,7 +8,7 @@
   </head>
   <body>
     <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
-      <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+      <a href="Index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
     <article class="cajareg">
       <h1>Registrate</h1>
       <form class="registro" action="login-mascota.php" method="post">
