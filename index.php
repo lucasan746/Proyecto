@@ -8,13 +8,19 @@
   </head>
   <body>
     <!-- Menu de registro -->
-    <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
+    <!-- <section class="cajalogin" id="<?= $imagenes[$alea] ?>"> -->
+      <section class="cajalogin">
       <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
       <article class="artilogin">
+        <video autoplay muted loop id="myVideo">
+          <source src="video/sloth.mp4" type="video/mp4">
+        </video>
+        <div class="vid">
         <h1 class="titulog">Sloth</h1>
         <p>Un espacio para tu mascota</p>
         <a class="botonlog" href="registro.php">Registrarse</a>
         <a class="botonlog2" href="login.php">Iniciar Sesión</a>
+      </div>
       </article>
       <a href="#ancla"><img src="images/flecha.png" alt="flecha" class="flecha"></a>
     </section>

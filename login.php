@@ -17,6 +17,7 @@
           <label for="Contraseña"></label>
           <input type="text" name="contraseña" placeholder="Contraseña">
           <button type="submit" name="enviar" class="botonlog">Iniciar Sesión</button>
+          <a class="botonlog2" href="registro.php">Crea una cuenta</a>
         </form>
       </article>
     </section>

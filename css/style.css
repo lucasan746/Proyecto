@@ -4,15 +4,40 @@
   padding: 0;
 }
 /*Menu de registro */
+#myVideo {
+
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  filter: blur(5px);
+}
+/*Menu de registro */
 .cajalogin{
   /* background-color: rgb(110, 193, 201); */
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.30);
+
+}
+.vid{
+  color: white;
+  position: relaive;
+  text-align: center;
+  box-sizing: border-box;
+  width: 20vw;
+  /* background-color: rgba(174, 231, 252, 0.39); */
+  padding: 20px;
+  top: 20vh;
 }
 .artilogin{
   text-align: center;
   box-sizing: border-box;
   width: 20vw;
-  background-color: rgba(174, 231, 252, 0.39);
   position: relative;
   top: 20vh;
 }
@@ -40,6 +65,7 @@
     width: 100%;
     text-align: center;
     padding: 10px;
+    margin-top: 5px;
   }
     .botonlog2:hover{
       color: #ffffff;
@@ -98,6 +124,7 @@
     .titulog{
       font-size: 50px;
       color: white;
+      text-shadow: -2px -2px 1px #000;
 
     }
     .iconoprin{
@@ -301,7 +328,7 @@ font-size: 1.3rem;
 .login{
   text-align: center;
   box-sizing: border-box;
-  background-color: rgba(174, 231, 252, 0.39);
+  /* background-color: rgba(174, 231, 252, 0.39); */
   position: relative;
   top: 30vh;
   width: 20vw;
