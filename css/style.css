@@ -386,6 +386,10 @@ font-size: 1.3rem;
   text-align: center;
   color: white;
 }
+.cajatitulo h3{
+  position: relative;
+  bottom: 2vh;
+}
 .reg1{
 width: 20vw;
 height: 5vh;
@@ -417,9 +421,13 @@ background-color: rgba(174, 231, 252, -0.9);
 background-color: rgba(174, 231, 252, 0.39);
 }
 .registro label{
-  font-size: 19px;
-  margin-left: 11px;
+  font-size: 1.1rem;
+  margin-left: 16px;
   margin-top: 10px;
+}
+.registro h4{
+  margin-left: 16px;
+  font-size: 1.1rem;
 }
 
 .date{
@@ -436,10 +444,11 @@ width: 5%;
 .selectorcolor{
   width: 100%;
 }
+
 .registromascota{
   box-sizing: border-box;
   position: relative;
-  top: 15vh;
+  top: 13vh;
   width: 26%;
 }
 /* Fin */

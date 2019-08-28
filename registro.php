@@ -10,8 +10,10 @@
     <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
       <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
     <article class="cajareg">
+      <div class="cajatitulo">
         <h1 class="titulog">Sloth</h1>
         <h3>Un espacio para tu mascota</h3>
+      </div>
       <br>
       <form class="registro" action="registro-mascota.php" method="post">
           <h4 class="regh3">Resgistrate</h4>
