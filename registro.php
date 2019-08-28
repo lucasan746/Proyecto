@@ -12,7 +12,7 @@
     <article class="cajareg">
         <h1 class="titulog">Sloth</h1>
       <br>
-      <form class="registro" action="registro.html" method="post">
+      <form class="registro" action="registro-mascota.php" method="post">
           <h3 class="regh3">Resgistrate</h3>
           <label for="nombre">Nombre:</label>
           <input class="reg1" type="text" name="nombre">
