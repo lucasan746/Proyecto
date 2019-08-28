@@ -337,7 +337,6 @@ margin: 0 10px;
   /* text-align: center; */
   position: relative;
   top: 3vh;
-  background-color: rgba(174, 231, 252, 0.39);
 }
 .reg1{
 width: 20vw;
@@ -364,6 +363,9 @@ background-color: rgba(174, 231, 252, -0.9);
 .botonreg:hover{
   color: #ffffff;
   background-color: rgb(122, 212, 241);
+}
+.registro{
+    background-color: rgba(174, 231, 252, 0.39);
 }
 .registro label{
   font-size: 19px;

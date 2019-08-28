@@ -9,11 +9,11 @@
   <body>
     <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
       <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
-        <h1 class="tiulog">Sloth</h1>
     <article class="cajareg">
-      <h3 class="regh3">Resgistrate</h3>
+        <h1 class="titulog">Sloth</h1>
       <br>
       <form class="registro" action="registro.html" method="post">
+          <h3 class="regh3">Resgistrate</h3>
           <label for="nombre">Nombre:</label>
           <input class="reg1" type="text" name="nombre">
           <br><br>
