@@ -211,6 +211,35 @@
     }
 /* FIN */
     /*Fin*/
+/* navbar home */
+.fotoperfil{
+  border-radius: 50%;
+  width: 50px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+.busqueda{
+  height: 30px;
+  width: 20vw;
+  margin-top: 30px;
+  margin-left: 0vh;
+  margin-right: 350px;
+}
+.navbar{
+  background-color: #1883ba;
+  height: 11vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.iconos{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 0;
+}
+/* Fin */
 /* Preguntas y respuestas */
 .container h1{
   font-size: 2.7rem;
