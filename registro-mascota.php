@@ -11,14 +11,19 @@
 <section>
   <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
     <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
-<article class="login-mascota">
-  <h2>Registra a tu mascota</h2>
-  <form class="" action="home.php" method="post">
-
-      <input type="text" name="name" placeholder="El nombre de tu mascota">
+<article class="registromascota">
+  <div class="cajatitulo">
+  <h1 class="titulog">Sloth</h1>
+  <h3>Un espacio para tu mascota</h3>
+  </div>
+  <form class="registro" action="home.php" method="post"  >
+  <h4>Registra a tu mascota</h4>
+  <br>
+     <label for="">Nombre de tu mascota:</label>
+     <input class="reg1" type="text" name="nombre">
+      <br>
       <br>
       <label for="">Elige su tipo</label>
-      <br>
       <select name="type">
    <option selected value="0"> ¿Que animal es? </option>
 
@@ -33,20 +38,22 @@
 
  </select>
       <br>
-      <label for="">Genero</label>
+      <br>
+      <label for="">Genero:</label>
       <input class="genero" type="radio" name="gender" value="male"> Macho
      <input class="genero" type="radio" name="gender" value="female"> Hembra
       <input class="genero" type="radio" name="gender" value="female"> No lo sé
      <br>
+    <br>
       <label for="start">Su cumpleaños</label>
-      <br>
       <input type="date" id="start" name="trip-start"
        value=""
        min="1993-01-01" max="2019-12-31">
       <br>
+      <br>
       <label for="">Que color predomina en su pelaje</label>
       <br>
-      <select name="color">
+      <select class="selectorcolor" name="color">
    <option selected value="0"> Elige un color </option>
 
        <option value="">Negro</option>
@@ -54,6 +61,8 @@
        <option value="">Marron</option>
        <option value="">No tiene pelaje</option>
  </select>
+ <br>
+
   <button type="submit" name="enviar" class="botonlog">Registrate</button>
 
   </form>
@@ -62,8 +71,3 @@
 
 
 </section>
-
-
-
-  </body>
-</html>

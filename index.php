@@ -17,7 +17,7 @@
         </video>
         <div class="vid">
         <h1 class="titulog">Sloth</h1>
-        <p>Un espacio para tu mascota</p>
+        <h3>Un espacio para tu mascota</h3>
         <a class="botonlog" href="registro.php">Registrarse</a>
         <a class="botonlog2" href="login.php">Iniciar Sesión</a>
       </div>

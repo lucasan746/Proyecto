@@ -11,9 +11,11 @@
       <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
     <article class="cajareg">
         <h1 class="titulog">Sloth</h1>
+        <h3>Un espacio para tu mascota</h3>
       <br>
       <form class="registro" action="registro-mascota.php" method="post">
-          <h3 class="regh3">Resgistrate</h3>
+          <h4 class="regh3">Resgistrate</h4>
+          <br>
           <label for="nombre">Nombre:</label>
           <input class="reg1" type="text" name="nombre">
           <br><br>
@@ -35,7 +37,7 @@
           <input class="genero" type="radio" name="sexo" value="O">Otro
           <label for="date">Fecha:</label>
           <input class="date" type="date" name="fecha">
-          <button type="submit" name="siguiente" class="botonreg">Siguiente</button>
+          <button type="submit" name="siguiente" class="botonlog">Siguiente</button>
       </form>
     </article>
   </body>

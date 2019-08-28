@@ -122,7 +122,7 @@
       border-radius: 5%;
     }
     .titulog{
-      font-size: 50px;
+      font-size: 6rem;
       color: white;
       text-shadow: -2px -2px 1px #000;
 
@@ -330,7 +330,7 @@ font-size: 1.3rem;
   box-sizing: border-box;
   /* background-color: rgba(174, 231, 252, 0.39); */
   position: relative;
-  top: 30vh;
+  top: 20vh;
   width: 20vw;
 }
 .login input{
@@ -341,29 +341,21 @@ font-size: 1.3rem;
 
 /* fin */
 
-/* registro mascotas */
-.login-mascota{
-  text-align: center;
-  box-sizing: border-box;
-  background-color: rgba(174, 231, 252, 0.39);
-  position: relative;
-  top: 30vh;
-  width: 20vw;
-
-}
-.genero{
-margin: 0 10px;
-
-}
-
-/* Registro  */
+/* Formularios de registros  */
 .cajareg{
-  width: 23%;
+
+  width: 26%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
-  position: relative;
-  top: 3vh;
+  /* margin-top: 3vh;
+  margin-bottom: 3vh; */
+  /* background-color: rgba(174, 231, 252, 0.39); */
+}
+
+.cajatitulo{
+  text-align: center;
+  color: white;
 }
 .reg1{
 width: 20vw;
@@ -376,7 +368,7 @@ border-left: none;
 border-bottom: solid 2px;
 background-color: rgba(174, 231, 252, -0.9);
 }
-.botonreg{
+/* .botonreg{
   display: inline-block;
   margin-top: 20px;
   text-decoration: none;
@@ -390,23 +382,35 @@ background-color: rgba(174, 231, 252, -0.9);
 .botonreg:hover{
   color: #ffffff;
   background-color: rgb(122, 212, 241);
-}
+  }*/
+
 .registro{
-    background-color: rgba(174, 231, 252, 0.39);
+background-color: rgba(174, 231, 252, 0.39);
 }
 .registro label{
   font-size: 19px;
   margin-left: 11px;
   margin-top: 10px;
 }
-.sexo{
-  width: 2vw;
-  margin-top: 18px;
-}
+
 .date{
   margin-right: 48px;
   margin-top: 18px;
   margin-left: 10px;
 }
+.genero{
+margin: 2%;
+width: 5%;
+}
 
+/* registro mascota */
+.selectorcolor{
+  width: 100%;
+}
+.registromascota{
+  box-sizing: border-box;
+  position: relative;
+  top: 15vh;
+  width: 26%;
+}
 /* Fin */
