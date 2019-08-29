@@ -16,6 +16,7 @@
   <h1 class="titulog">Sloth</h1>
   <h3>Un espacio para tu mascota</h3>
   </div>
+
   <form class="registro" action="home.php" method="post"  >
   <h4>Registra a tu mascota</h4>
   <br>
@@ -61,13 +62,13 @@
        <option value="">Marron</option>
        <option value="">No tiene pelaje</option>
  </select>
- <br>
+
 
   <button type="submit" name="enviar" class="botonlog">Registrate</button>
 
   </form>
-<a class="" href="home.php">Omitir</a>
-</article>
 
+</article>
+<a class="botomitir" href="home.php">Omitir</a>
 
 </section>
