@@ -12,6 +12,8 @@
     <article class="cajareg">
         <h1 class="titulog">Sloth</h1>
       <br>
+      <div class="formulario">
+        <div class="formulario1">
       <form class="registro" action="registro.html" method="post">
           <h3 class="regh3">Resgistrate</h3>
           <label for="nombre">Nombre:</label>
@@ -26,6 +28,8 @@
           <label for="contraseña">Contraseña</label>
           <input class="reg1" type="password" name="conraseña">
           <br><br>
+        </div>
+        <div class="formulario2">
           <label for="confcontra">Confirmar contraseña:</label>
           <input class="reg1" type="password" name="confcontra">
           <br><br>
@@ -36,7 +40,9 @@
           <label for="date">Fecha:</label>
           <input class="date" type="date" name="fecha">
           <button type="submit" name="siguiente" class="botonreg">Siguiente</button>
+        </div>
       </form>
+      </div>
     </article>
   </body>
 </html>
