@@ -17,7 +17,7 @@
   <h3>Un espacio para tu mascota</h3>
   </div>
 
-  <form class="registro" action="home.php" method="post"  >
+  <form class="registro" action="login.php" method="post"  >
   <h4>Registra a tu mascota</h4>
   <br>
      <label for="">Nombre de tu mascota:</label>
@@ -69,6 +69,6 @@
   </form>
 
 </article>
-<a class="botomitir" href="home.php">Omitir</a>
+<a class="botomitir" href="login.php">Omitir</a>
 
 </section>

@@ -395,9 +395,7 @@ font-size: 1.3rem;
   height: 90vh;
   display: flex;
   flex-direction: column;
-  /* margin-top: 3vh;
-  margin-bottom: 3vh; */
-  /* background-color: rgba(174, 231, 252, 0.39); */
+
 }
 
 .cajatitulo{
@@ -412,30 +410,16 @@ font-size: 1.3rem;
 width: 20vw;
 height: 5vh;
 margin-left: 11px;
-/* border: solid 1px rgba(174, 231, 252, -0.9); */
 border-top: none;
 border-right: none;
 border-left: none;
 border-bottom: solid 2px #4c31a0;
+background-color: #82808e00;
 }
-/* .botonreg{
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #ffffff;
-  background-color: #1883ba;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-}
-.botonreg:hover{
-  color: #ffffff;
-  background-color: rgb(122, 212, 241);
-  }*/
+
 
 .registro{
-background-color:  rgba(167, 174, 206, 0.6);
+background-color:  rgba(167, 174, 206, 0.83);
 color: #212121;
 }
 .registro label{
