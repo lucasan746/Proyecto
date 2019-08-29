@@ -395,9 +395,7 @@ font-size: 1.3rem;
   height: 48vh;
   display: flex;
   flex-direction: column;
-  /* margin-top: 3vh;
-  margin-bottom: 3vh; */
-  /* background-color: rgba(174, 231, 252, 0.39); */
+
 }
 
 .cajatitulo{
@@ -428,12 +426,13 @@ font-size: 1.3rem;
 width: 20vw;
 height: 5vh;
 margin-left: 11px;
-/* border: solid 1px rgba(174, 231, 252, -0.9); */
 border-top: none;
 border-right: none;
 border-left: none;
 border-bottom: solid 2px #4c31a0;
+background-color: #82808e00;
 }
+<<<<<<< HEAD
 .regh3{
   margin-left: 11px;
 }
@@ -455,9 +454,12 @@ padding-left: 4%
   border: solid 1px #a7aece;
   font-size: 1.0rem;
 }
+=======
+
+>>>>>>> 35e9690000e28364a3cc40a1250153c5377657d4
 
 .registro{
-background-color:  rgba(167, 174, 206, 0.6);
+background-color:  rgba(167, 174, 206, 0.83);
 color: #212121;
 }
 .registro label{
