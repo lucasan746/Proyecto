@@ -212,32 +212,50 @@
 /* FIN */
     /*Fin*/
 /* navbar home */
-.fotoperfil{
-  border-radius: 50%;
-  width: 50px;
-  height: 40px;
-  margin-top: 15px;
-  margin-left: 50px;
-}
-.busqueda{
-  height: 30px;
-  width: 20vw;
-  margin-top: 30px;
-  margin-left: 0vh;
-  margin-right: 350px;
-}
 .navbar{
-  background-color: #1883ba;
-  height: 11vh;
+  display: flex;
+  height: 17vh;
+  background-color: #8c67ad;
+}
+.iconosderecha{
+  width: 65vw;
+}
+.perfil{
+  width: 35vw;
+}
+.ic{
+  height: 60%;
   display: flex;
   justify-content: flex-end;
 }
-.iconos{
+.barrabus{
+  height: 40%;
+}
+.iconosbarra{
   width: 30px;
   height: 30px;
   margin-top: 20px;
-  margin-left: 30px;
   margin-right: 0;
+  margin-left: 89px;
+}
+.iconoprin2{
+  position:  fixed;
+  width: 5vw;
+  left: 10px;
+  top: 7px;
+  border-radius: 30%;
+}
+.input{
+  height: 30px;
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 80px;
+}
+.iconosbarra2{
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 90px;
 }
 /* Fin */
 /* Preguntas y respuestas */
@@ -399,7 +417,6 @@ border-top: none;
 border-right: none;
 border-left: none;
 border-bottom: solid 2px #4c31a0;
-background-color: rgba(174, 231, 252, -0.9);
 }
 /* .botonreg{
   display: inline-block;
