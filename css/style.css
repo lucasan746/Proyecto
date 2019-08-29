@@ -432,7 +432,6 @@ border-left: none;
 border-bottom: solid 2px #4c31a0;
 background-color: #82808e00;
 }
-<<<<<<< HEAD
 .regh3{
   margin-left: 11px;
 }
@@ -454,12 +453,9 @@ padding-left: 4%
   border: solid 1px #a7aece;
   font-size: 1.0rem;
 }
-=======
-
->>>>>>> 35e9690000e28364a3cc40a1250153c5377657d4
 
 .registro{
-background-color:  rgba(167, 174, 206, 0.83);
+background-color:  rgba(167, 174, 206, 0.6);
 color: #212121;
 }
 .registro label{
