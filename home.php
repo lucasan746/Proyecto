@@ -9,6 +9,7 @@
     <?php require_once 'navbar.php'; ?>
     <section class="cuerpohome">
     <?php require_once 'seccion1.php'; ?>
+    <?php require_once 'seccion2.php'; ?>
   </section>
   </body>
 </html>

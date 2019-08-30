@@ -545,9 +545,68 @@ width: 5%;
 }
 
 
-
-
 .seccionder{
   width: 36%;
-  background-color: blue;
+  border: solid black 2px;
+}
+
+/* Seccion 2 */
+.sugeridos h1{
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: darkgrey;
+  font-size: 1.5rem;
+}
+/* .adopciones h2{
+  text-align: center;
+  position: relative;
+  top: -9vw;
+} */
+.img{
+  width: 19%;
+  border-radius: 5vh;
+  margin-left: 5px;
+  border: solid black 1px;
+}
+.sugeridos{
+  border: solid black 2px;
+  width: 62%;
+  height: 31vh;
+  margin-left: 20%;
+  margin-top: 7%;
+  overflow: scroll;
+}
+.sugeridos a{
+  width: 73%;
+  display: inline-block;
+  position: relative;
+  bottom: 16px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+.adopciones{
+  width: 62%;
+  height: 33vh;
+  margin-left: 20%;
+  margin-top: 9%;
+  border: solid black 2px;
+  }
+.adopciones button{
+  position: relative;
+  left: 74%;
+  top: -6vh;
+  height: 28px;
+  width: 64px;
+  background-color: #603dce;
+  color: white;
+  border: solid 1px #a7aece;
+  padding: 6px;
+  text-decoration: none;
+}
+.adopciones img{
+  height: 224px;
+  width: 267px;
 }
