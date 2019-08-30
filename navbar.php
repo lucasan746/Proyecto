@@ -14,7 +14,8 @@
         </div>
       </div>
       <div class="perfil">
-
+        <img src="images/iconos/perfil.png" alt="fotoperfil" class="fotoperfil">
+        <h3>Lorem ipsum</h3>
       </div>
   </nav>
 </header>
