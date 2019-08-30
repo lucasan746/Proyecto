@@ -213,16 +213,17 @@
     /*Fin*/
 /* navbar home */
 .navbar{
+  position: fixed;
+  top: 0;
   display: flex;
   height: 12vh;
   background-color: #8c67ad;
-  position: sticky;
 }
 .iconosderecha{
-  width: 65vw;
+  width: 90vw;
 }
 .perfil{
-  width: 35vw;
+  width: 10vw;;
 }
 .ic{
   height: 60%;
@@ -233,8 +234,8 @@
   width: 30px;
   height: 30px;
   margin-top: 25px;
-  margin-right: 0;
-  margin-left: 89px;
+  margin-right: 20px;
+  margin-left: 15px;;
 }
 .iconoprin2{
   position:  fixed;
@@ -245,10 +246,10 @@
 }
 .input{
   position: relative;
-  left: 40px;
-  top: 25px;
-  width: 15vw;
-  height: 30px;
+    left: 60px;
+    top: 25px;
+    width: 30vw;
+    height: 30px;
 }
 .iconosbarra2{
   width: 30px;
@@ -256,6 +257,13 @@
   margin-top: 30px;
   margin-left: 90px;
 }
+.fotoperfil{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+}
+
 /* Fin */
 /* Preguntas y respuestas */
 .container h1{
@@ -510,7 +518,7 @@ width: 5%;
   width: 90vw;
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 5vh;
+  margin-top: 14vh;
 }
 /* Secciones del Home */
 .seccionizq{
