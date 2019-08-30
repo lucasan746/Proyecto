@@ -467,3 +467,51 @@ width: 5%;
   border: solid 1px #a7aece
 }
 /* Fin */
+.Home{
+  background-color: lightgrey;
+}
+.cuerpohome{
+  width: 90vw;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 5vh;
+}
+/* Secciones del Home */
+.seccionizq{
+  width: 60%;
+  height: 100vh;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+
+}
+.seccionizq header{
+  border: solid 1px blue;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+.perfilamigo{
+  border: solid 2px darkgreen;
+  display: flex;
+  flex-direction: column;
+}
+.descrip{
+  width: 100%;
+  background-color: white;
+}
+.icon-like{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.icon-comm{
+  margin-right: 75%;
+}
+
+
+
+
+.seccionder{
+  width: 36%;
+  background-color: blue;
+}

@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
+  <body class="Home">
     <?php require_once 'navbar.php'; ?>
-    <?php require_once 'seccion1.php' ?>
+    <section class="cuerpohome">
+    <?php require_once 'seccion1.php'; ?>
+  </section>
   </body>
 </html>
