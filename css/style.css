@@ -389,13 +389,11 @@ font-size: 1.3rem;
 /* Formularios de registros  */
 .cajareg{
 
-  width: 26%;
-  height: 90vh;
+  width: 45%;
+  height: 48vh;
   display: flex;
   flex-direction: column;
-  /* margin-top: 3vh;
-  margin-bottom: 3vh; */
-  /* background-color: rgba(174, 231, 252, 0.39); */
+
 }
 
 .cajatitulo{
@@ -406,31 +404,53 @@ font-size: 1.3rem;
   position: relative;
   bottom: 2vh;
 }
+.botoninic{
+  text-align: center;
+  width: 8%;
+  height: 5vh;
+  padding: 6px;
+  text-decoration: none;
+  position: absolute;
+  left: 90%;
+  top: 17px;
+  background-color: #6745d0c4;
+  color: white;
+  border: solid 1px #a7aece;
+}
+.formulario{
+  display: flex;
+}
 .reg1{
 width: 20vw;
 height: 5vh;
 margin-left: 11px;
-/* border: solid 1px rgba(174, 231, 252, -0.9); */
 border-top: none;
 border-right: none;
 border-left: none;
 border-bottom: solid 2px #4c31a0;
+background-color: #82808e00;
 }
-/* .botonreg{
-  display: inline-block;
-  margin-top: 20px;
+.regh3{
+  margin-left: 11px;
+}
+.formulario2{
+background-color:  rgba(167, 174, 206, 0.6);
+color: #212121;
+padding-left: 4%
+}
+.f2{
+  margin-left: 17px
+}
+.botonreg{
+  width: 73%;
+  height: 5vh;
+  margin-left: 58px;
   text-decoration: none;
-  font-size: 20px;
-  color: #ffffff;
-  background-color: #1883ba;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
+  background-color: #6745d0c4;
+  color: white;
+  border: solid 1px #a7aece;
+  font-size: 1.0rem;
 }
-.botonreg:hover{
-  color: #ffffff;
-  background-color: rgb(122, 212, 241);
-  }*/
 
 .registro{
 background-color:  rgba(167, 174, 206, 0.6);
@@ -481,3 +501,51 @@ width: 5%;
   border: solid 1px #a7aece
 }
 /* Fin */
+.Home{
+  background-color: lightgrey;
+}
+.cuerpohome{
+  width: 90vw;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 5vh;
+}
+/* Secciones del Home */
+.seccionizq{
+  width: 60%;
+  height: 100vh;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+
+}
+.seccionizq header{
+  border: solid 1px blue;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+.perfilamigo{
+  border: solid 2px darkgreen;
+  display: flex;
+  flex-direction: column;
+}
+.descrip{
+  width: 100%;
+  background-color: white;
+}
+.icon-like{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.icon-comm{
+  margin-right: 75%;
+}
+
+
+
+
+.seccionder{
+  width: 36%;
+  background-color: blue;
+}
