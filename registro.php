@@ -24,17 +24,16 @@ $pais = [
     <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
       <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
         <a class="botoninic" href="home.php">Iniciar sesión</a>
+      <br>
+    <article class="cajareg">
       <div class="cajatitulo">
         <h1 class="titulog">Sloth</h1>
         <h3>Un espacio para tu mascota</h3>
       </div>
-      <br>
-    <article class="cajareg">
       <div class="formulario">
         <div class="formulario1">
-      <form class="registro" action="registro.html" method="post">
-          <h3 class="regh3">Resgistrate</h3>
       <form class="registro" action="registro-mascota.php" method="post">
+        <h3 class="regh3">Resgistrate</h3>
           <br>
           <label for="nombre">Nombre:</label>
           <input class="reg1" type="text" name="nombre">
