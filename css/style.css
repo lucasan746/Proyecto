@@ -214,7 +214,7 @@
 /* navbar home */
 .navbar{
   display: flex;
-  height: 17vh;
+  height: 12vh;
   background-color: #8c67ad;
 }
 .iconosderecha{
@@ -228,13 +228,10 @@
   display: flex;
   justify-content: flex-end;
 }
-.barrabus{
-  height: 40%;
-}
 .iconosbarra{
   width: 30px;
   height: 30px;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-right: 0;
   margin-left: 89px;
 }
@@ -246,10 +243,11 @@
   border-radius: 30%;
 }
 .input{
+  position: relative;
+  left: 40px;
+  top: 25px;
+  width: 15vw;
   height: 30px;
-    width: 40%;
-    margin-top: 10px;
-    margin-left: 10px;
 }
 .iconosbarra2{
   width: 30px;
