@@ -3,6 +3,8 @@
 <html lang="es" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title></title>
   </head>
@@ -35,9 +37,9 @@
 
 
   <article class="contenido1">
-    <img src="images/molang1.jpeg" alt="molang1">
+    <img src="images/molang1.jpeg" alt="molang1" class="imgpreg1">
   <h1 class="titulo1">Crea tu slot</h1>
-  <p>Dale voz a tu mascota. Crea tu perfil o el de tu mascota y cuenta cómo es su vida, cuáles son sus gustos o qué lugares han visitado.
+  <p class="parrafos">Dale voz a tu mascota. Crea tu perfil o el de tu mascota y cuenta cómo es su vida, cuáles son sus gustos o qué lugares han visitado.
 Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en común con ellos.
 </p>
 </article>
@@ -45,11 +47,11 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
 <section class="preg2">
   <article class="contenido2">
     <div class="data1">
-  <h1 class="titulo2">Conoce gente como tu </h1>
-  <p>¿Quieres encontrar a gente que comparta tu misma pasión por los animales? En Sloth puedes participar en grupos con tus mismos intereses, crear tus propias comunidades, organizar quedadas y eventos.
+  <h1 class="titulo1">Conoce gente como tu </h1>
+  <p class="parrafos">¿Quieres encontrar a gente que comparta tu misma pasión por los animales? En Sloth puedes participar en grupos con tus mismos intereses, crear tus propias comunidades, organizar quedadas y eventos.
 </p>
   </div>
-  <img src="images/molang.png" alt="molang">
+  <img src="images/molang.png" alt="molang" class="imgpreg2">
 </article>
 
 </section>
@@ -61,8 +63,8 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
     <article class="titulo3">
       <img class="a" src="images/a.gif" alt=":(">
       <div class="texto1">
-      <h1>Ayuda a otros animales</h1>
-      <p>Consulta las necesidades de las protectoras, apúntante a programas de voluntariado, haz donaciones... ¡haz que este mundo sea un poco más feliz para los animales que sufren!
+      <h1 class="titulo1">Ayuda a otros animales</h1>
+      <p class="parrafos">Consulta las necesidades de las protectoras, apúntante a programas de voluntariado, haz donaciones... ¡haz que este mundo sea un poco más feliz para los animales que sufren!
 .</p>
       </div>
     </article>
@@ -71,8 +73,8 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
     <article class="titulo4">
       <img class="b" src="images/b.gif" alt="uwu">
     <div class="texto2">
-      <h1>Unete a Sloth!</h1>
-      <p>Sumate a todos aquellos amantes de los animales que quieran compartir y disfrutar al máximo de la experiencia de tener una mascota.
+      <h1 class="titulo1">Unete a Sloth!</h1>
+      <p class="parrafos">Sumate a todos aquellos amantes de los animales que quieran compartir y disfrutar al máximo de la experiencia de tener una mascota.
 Te esperamos dentro!.</p>
     </div>
       <img class="b" src="images/b.gif" alt="uwu">

@@ -656,3 +656,43 @@ top: 21px;
   height: 224px;
   width: 267px;
 } */
+
+/* Media query */
+
+/* Celular */
+@media screen and (max-width: 480px){
+.imgpreg1{
+  display: none;
+}
+.imgpreg2{
+  display: none;
+}
+.a{
+  display: none;
+}
+.b{
+  display: none;
+}
+.preg1{
+  height: 50vh;
+}
+.preg2{
+  height: 50vh;
+}
+.caja3{
+  height: 50vh;
+}
+.caja4{
+  height: 50vh;
+}
+.titulo1{
+  font-size: 6rem;
+}
+.parrafos{
+  font-size: 3rem;
+}
+}
+
+
+
+/* FIN */
