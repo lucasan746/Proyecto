@@ -181,7 +181,7 @@
     }
     #j{
       background-image: url(../images/inicio/10.jpg);
-      background-size: contain;
+      background-size: 100% 100%;
     }
     #k{
       background-image: url(../images/inicio/11.jpg);
@@ -197,11 +197,11 @@
       background-size: 100% 100%;
     }
     #n{
-      background-image: url(../images/inicio/14.png);
+      background-image: url(../images/inicio/14.jpg);
       background-size: 100% 100%;
     }
     #o{
-      background-image: url(../images/inicio/15.png);
+      background-image: url(../images/inicio/15.jpg);
       background-size: 100% 100%;
     }
 
@@ -209,6 +209,22 @@
       background-image: url(../images/inicio/16.jpg);
       background-size: 100% 100%;
     }
+    #q{
+      background-image: url(../images/inicio/17.jpg);
+      background-size: 100% 100%;
+    }
+    #r{
+      background-image: url(../images/inicio/18.png);
+      background-size: 100% 100%;
+    }
+    #s{
+      background-image: url(../images/inicio/19.jpg);
+      background-size: 100% 100%;
+    }
+
+
+
+
 /* FIN */
     /*Fin*/
 /* navbar home */
