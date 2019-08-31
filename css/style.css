@@ -217,7 +217,7 @@
   top: 0;
   display: flex;
   height: 12vh;
-  background-color: #8c67ad;
+  background-color:#977fc2;
   z-index: 5;
 }
 .iconosderecha{
@@ -299,6 +299,7 @@
   height: 40vh;
   margin-bottom: 1.5%;
 }
+
 
 .preg2{
 
@@ -517,7 +518,7 @@ width: 5%;
 }
 /* Fin */
 .Home{
-  background-color: #fdf2ff;
+  background-color: #fafafa;
 }
 .cuerpohome{
   max-width: 935px;
@@ -534,7 +535,6 @@ width: 5%;
   max-width: 614px;
   width: 100%;
   height: 100vh;
-  border: solid 1px black;
   display: flex;
   flex-direction: column;
   margin-right: 5%;
@@ -544,7 +544,6 @@ width: 5%;
 
 }
 .headerperfil{
-  border: solid 1px blue;
   width: 100%;
   height: 60px;
   background-color: white;
@@ -555,7 +554,7 @@ width: 5%;
   display:inline-block;
   margin-left: 10px;
   margin-top: 5px;
-  border: solid 1px black;
+  border: solid 1px #424242;;
 
 }
 .nombreperfil{
@@ -567,7 +566,7 @@ margin-left: 10px;
 top: 21px;
 }
 .perfilamigo{
-  border: solid 2px darkgreen;
+  border: solid 1px grey;
   display: flex;
   flex-direction: column;
 }
@@ -582,11 +581,34 @@ top: 21px;
 .icon-comm{
   margin-right: 75%;
 }
-
+.linkmascoment{
+  text-decoration: none;
+  color: grey;
+}
 .nombrecoment{
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
+.descrip p{
+  display: inline-block;
+}
+.hacer-comentario textarea {
+  width: 100%;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  resize: none;
+}
+.hacer-comentario button{
+  border: none;
+  background-color: white;
+  color: grey;
+}
+.hacer-comentario button:focus{
+  color: #7943dd;
+}
+
 
 
 .seccionder{
@@ -622,7 +644,7 @@ top: 21px;
   border: solid black 1px;
 }
 .sugeridos{
-  border: solid black 2px;
+  border: solid 1px grey;
   width: 100%;
   height: 28vh;
   overflow: auto;
@@ -642,7 +664,7 @@ top: 21px;
   width: 100%;
   height: 28vh;
   margin-top: 9%;
-  border: solid black 2px;
+  border: solid 1px grey;
   }
 .adopciones button{
   position: relative;

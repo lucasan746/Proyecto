@@ -37,9 +37,15 @@
 
 
   <article class="contenido1">
+<<<<<<< HEAD
+    <img src="images/molang1.jpeg" alt="molang1" width="100%">
+  <h1 class="titulo1">Crea tu slot</h1>
+  <p>Dale voz a tu mascota. Crea tu perfil o el de tu mascota y cuenta cómo es su vida, cuáles son sus gustos o qué lugares han visitado.
+=======
     <img src="images/molang1.jpeg" alt="molang1" class="imgpreg1">
   <h1 class="titulopre">Crea tu slot</h1>
   <p class="parrafos">Dale voz a tu mascota. Crea tu perfil o el de tu mascota y cuenta cómo es su vida, cuáles son sus gustos o qué lugares han visitado.
+>>>>>>> d66c44015e60395eff2cdec486b99007fa97c82a
 Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en común con ellos.
 </p>
 </article>
