@@ -685,11 +685,39 @@ top: 21px;
 .caja4{
   height: 50vh;
 }
-.titulo1{
-  font-size: 6rem;
+.vid{
+  width: 100vw;
 }
-.parrafos{
-  font-size: 3rem;
+.artilogin{
+  width: 100vw;
+}
+.iconoprin{
+  width: 20vw;
+  z-index: 10;
+}
+.foot a{
+  font-size: 0.8em;
+}
+.botonlog3{
+ width: fit-content;
+}
+.botonlog4{
+  width: fit-content;
+}
+.container h1{
+  font-size: 2rem;
+}
+.container p{
+  font-size: 1rem;
+}
+.data1{
+   width: 60%;
+}
+.texto1{
+  width: 60%;
+}
+.texto2{
+  width: 60%;
 }
 }
 
