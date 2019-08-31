@@ -21,7 +21,7 @@
   </article>
 
   <article class="adopciones">
-    <img src="images/home/adopcion.jpg" alt="fondo">
+    <img src="images/home/adopcion.jpg" alt="fondo" width="100%" height="100%">
     <!-- <h2>Páginas de adopciones</h2> -->
     <button type="submit" name="adoptar">Adoptar</button>
   </article>
