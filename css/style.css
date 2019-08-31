@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 0;
 }
+body{
+  max-width: 1600px;
+}
 /*Menu de registro */
 #myVideo {
 
