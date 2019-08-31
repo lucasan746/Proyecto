@@ -513,7 +513,7 @@ width: 5%;
 }
 /* Fin */
 .Home{
-  background-color: lightgrey;
+  background-color: #fdf2ff;
 }
 .cuerpohome{
   max-width: 935px;
@@ -539,11 +539,28 @@ width: 5%;
   z-index: 1;
 
 }
-.seccionizq header{
+.headerperfil{
   border: solid 1px blue;
   width: 100%;
   height: 60px;
   background-color: white;
+  position: relative;
+}
+.headerperfil img{
+  border-radius: 50%;
+  display:inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  border: solid 1px black;
+
+}
+.nombreperfil{
+display: inline-block;
+text-decoration: none;
+color: black;
+position: absolute;
+margin-left: 10px;
+top: 21px;
 }
 .perfilamigo{
   border: solid 2px darkgreen;
@@ -560,6 +577,11 @@ width: 5%;
 }
 .icon-comm{
   margin-right: 75%;
+}
+
+.nombrecoment{
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -599,7 +621,8 @@ width: 5%;
   border: solid black 2px;
   width: 100%;
   height: 28vh;
-  overflow: scroll;
+  overflow: auto;
+  background-color: white;
 }
 .sugeridos a{
   width: 73%;
