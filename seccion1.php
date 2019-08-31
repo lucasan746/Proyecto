@@ -6,7 +6,7 @@
     <a class="nombreperfil"href="#"><h4>Milo.</h4></a>
   </header>
 <div class="imagenpefiles">
-  <img src="images/home/negrito.jpeg" alt="" width="100%">
+  <img src="images/home/negrito.jpeg" alt="" width="100%" >
 </div>
 <div class="descrip">
 <section>
@@ -19,26 +19,28 @@
 <div class="descrip1">
 <ul type="none">
 <li>
-<h3>Milo.</h3>
-<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+<h4>Milo.</h4>
+<span>Disfrutando del sol en las tardes de invierno. A Milo le fascinan los troncos de mi patio, y siempre que me siento ahi a tomar mi té me acompaña y puede pasar horas ahi sentadito.</span>
 </li>
 <li>
-<a href="#">Ver comentarios</a>
+<a class="linkmascoment" href="#">Ver más comentarios</a>
 </li>
 <br>
 <li>
-  <a class="nombrecoment"  href="#">Perfil amigo 1</a>
+  <a class="nombrecoment"  href="#"><h4>Mayaa</h4></a>
+  <p>Pensativo,todo un modelo.</p>
 </li>
 <li>
-  <a class="nombrecoment" href="#">Perfil amigo 2</a>
+  <a class="nombrecoment" href="#"><h4>Mataco_rebelde</h4></a>
+  <p>Genial foto amigo!</p>
 </li>
 </ul>
 </div>
 <br>
-<section>
-  <form class="" action="index.html" method="post">
+<section class="hacer-comentario">
+  <form class="" action="home.php" method="post">
     <textarea name="name" rows="4" cols="80" placeholder="Añade un comentario"></textarea>
-    <button  type="submit" name="button">Publicar</button>
+    <button  type="submit" name="button"><h4>Publicar</h4></button>
   </form>
 </section>
 </div>
@@ -65,26 +67,28 @@
 <div class="descrip1">
 <ul type="none">
 <li>
-<h3>Zini_la_corgi</h3>
-<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+<h4>Zini_la_corgi</h4>
+<span>Sintiendome como la princesa que soy con mi corona de flores, o como un hada del bosque. ¿Que opinan amigos?. </span>
 </li>
 <li>
-<a href="#">Ver comentarios</a>
+<a class="linkmascoment" href="#">Ver más comentarios</a>
 </li>
 <br>
 <li>
-<a class="nombrecoment" href="#">Perfil amigo 1</a>
+<a class="nombrecoment" href="#"><h4>Tina</h4></a>
+<p>Me encantaaa. Quiero una igual para mi!!</p>
 </li>
 <li>
-<a class="nombrecoment" href="#">Perfil amigo 2</a>
+<a class="nombrecoment" href="#"><h4>El-mestizo-Charlie</h4></a>
+<p>Yo digo que te ves como  princesa ;)</p>
 </li>
 </ul>
 </div>
 <br>
-<section>
-  <form class="" action="index.html" method="post">
+<section class="hacer-comentario">
+  <form class="" action="home.php" method="post">
     <textarea name="name" rows="4" cols="80" placeholder="Añade un comentario"></textarea>
-    <button  type="submit" name="button">Publicar</button>
+    <button  type="submit" name="button"><h4>Publicar</h4></button>
   </form>
 </section>
 </div>
@@ -111,26 +115,29 @@
 <div class="descrip1">
 <ul type="none">
 <li>
-<h3>ErizoKim</h3>
-<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+<h4>ErizoKim</h4>
+<span> A veces siento un poco de miedo de sacar a Kim al patio temiendo que se pueda hacer daño, siento que es tan fragil! Pero se que es bueno para su salud tener momentos de sol.
+No olviden tomar un poco de sol con sus pequeños.</span>
 </li>
 <li>
-<a  href="#">Ver comentarios</a>
+<a class="linkmascoment" href="#">Ver más comentarios</a>
 </li>
 <br>
 <li>
-<a class="nombrecoment" href="#">Perfil amigo 1</a>
+<a class="nombrecoment" href="#"><h4>Tiny-ratita</h4></a>
+<p>Si yo pudiera tomaria sol con mi ratita pero es muy peligroso. Pd: Está hermoso!</p>
 </li>
 <li>
-<a class="nombrecoment" href="#">Perfil amigo 2</a>
+<a class="nombrecoment" href="#"><h4>LoroBenito</h4></a>
+<p> Yo siempre saco a Benito al patio y tenemos nuestro momento de asolearnos.</p>
 </li>
 </ul>
 </div>
 <br>
-<section>
-  <form class="" action="index.html" method="post">
+<section class="hacer-comentario">
+  <form class="" action="home.php" method="post">
     <textarea name="name" rows="4" cols="80" placeholder="Añade un comentario"></textarea>
-    <button  type="submit" name="button">Publicar</button>
+    <button  type="submit" name="button"><h4>Publicar</h4></button>
   </form>
 </section>
 </div>
