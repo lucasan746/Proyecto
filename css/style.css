@@ -37,7 +37,6 @@
 .artilogin{
   text-align: center;
   box-sizing: border-box;
-  width: 20vw;
   position: relative;
   top: 20vh;
 }
@@ -685,7 +684,27 @@ top: 21px;
 
 /* Media query */
 
+/* Tablet */
+/* Index */
+@media screen and (max-width: 1199px){
+
+.vid{
+  width: 40vw;
+}
+.iconoprin{
+  width: 8vw;
+}
+.botonlog3{
+ width: fit-content;
+}
+.botonlog4{
+  width: fit-content;
+}
+}
+/* fin Tablet */
+
 /* Celular */
+/* index */
 @media screen and (max-width: 480px){
 .imgpreg1{
   display: none;
@@ -744,9 +763,6 @@ top: 21px;
 }
 .texto2{
   width: 60%;
-}
-}
-
-
-
-/* FIN */
+}}
+/* fin index */
+/* FIN celular */
