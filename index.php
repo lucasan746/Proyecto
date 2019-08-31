@@ -13,7 +13,7 @@
       <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
       <article class="artilogin">
         <video autoplay muted loop id="myVideo">
-          <source src="video/sloth.mp4" type="video/mp4">
+          <source src="<?= $videos[$vidalea] ?>" type="video/mp4">
         </video>
         <div class="vid">
         <h1 class="titulog">Sloth</h1>
