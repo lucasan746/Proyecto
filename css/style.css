@@ -218,6 +218,7 @@
   display: flex;
   height: 12vh;
   background-color: #8c67ad;
+  z-index: 5;
 }
 .iconosderecha{
   width: 90vw;
@@ -512,28 +513,54 @@ width: 5%;
 }
 /* Fin */
 .Home{
-  background-color: lightgrey;
+  background-color: #fdf2ff;
 }
 .cuerpohome{
-  width: 90vw;
+  max-width: 935px;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 14vh;
+  padding-top: 20vh;
+  position: relative;
+
+
 }
 /* Secciones del Home */
 .seccionizq{
-  width: 60%;
+  max-width: 614px;
+  width: 100%;
   height: 100vh;
   border: solid 1px black;
   display: flex;
   flex-direction: column;
+  margin-right: 5%;
+  position: absolute;
+  /* float: left; */
+  z-index: 1;
 
 }
-.seccionizq header{
+.headerperfil{
   border: solid 1px blue;
   width: 100%;
   height: 60px;
   background-color: white;
+  position: relative;
+}
+.headerperfil img{
+  border-radius: 50%;
+  display:inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  border: solid 1px black;
+
+}
+.nombreperfil{
+display: inline-block;
+text-decoration: none;
+color: black;
+position: absolute;
+margin-left: 10px;
+top: 21px;
 }
 .perfilamigo{
   border: solid 2px darkgreen;
@@ -552,10 +579,23 @@ width: 5%;
   margin-right: 75%;
 }
 
+.nombrecoment{
+  text-decoration: none;
+  color: black;
+}
+
 
 .seccionder{
-  width: 36%;
+  /* width: 36%; */
   border: solid black 2px;
+  /* - */
+ max-width: 293px;
+ right: 12%;
+ left: 67%;
+ position: fixed;
+ width: 100%;
+ height: 72vh;
+ margin-top: 50px;
 }
 
 /* Seccion 2 */
@@ -579,11 +619,10 @@ width: 5%;
 }
 .sugeridos{
   border: solid black 2px;
-  width: 62%;
-  height: 31vh;
-  margin-left: 20%;
-  margin-top: 7%;
-  overflow: scroll;
+  width: 100%;
+  height: 28vh;
+  overflow: auto;
+  background-color: white;
 }
 .sugeridos a{
   width: 73%;
@@ -596,9 +635,8 @@ width: 5%;
   font-size: 1rem;
 }
 .adopciones{
-  width: 62%;
-  height: 33vh;
-  margin-left: 20%;
+  width: 100%;
+  height: 28vh;
   margin-top: 9%;
   border: solid black 2px;
   }
@@ -614,7 +652,7 @@ width: 5%;
   padding: 6px;
   text-decoration: none;
 }
-.adopciones img{
+/* .adopciones img{
   height: 224px;
   width: 267px;
-}
+} */
