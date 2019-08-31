@@ -678,3 +678,71 @@ top: 21px;
   height: 224px;
   width: 267px;
 } */
+
+/* Media query */
+
+/* Celular */
+@media screen and (max-width: 480px){
+.imgpreg1{
+  display: none;
+}
+.imgpreg2{
+  display: none;
+}
+.a{
+  display: none;
+}
+.b{
+  display: none;
+}
+.preg1{
+  height: 50vh;
+}
+.preg2{
+  height: 50vh;
+}
+.caja3{
+  height: 50vh;
+}
+.caja4{
+  height: 50vh;
+}
+.vid{
+  width: 100vw;
+}
+.artilogin{
+  width: 100vw;
+}
+.iconoprin{
+  width: 20vw;
+  z-index: 10;
+}
+.foot a{
+  font-size: 0.8em;
+}
+.botonlog3{
+ width: fit-content;
+}
+.botonlog4{
+  width: fit-content;
+}
+.container h1{
+  font-size: 2rem;
+}
+.container p{
+  font-size: 1rem;
+}
+.data1{
+   width: 60%;
+}
+.texto1{
+  width: 60%;
+}
+.texto2{
+  width: 60%;
+}
+}
+
+
+
+/* FIN */
