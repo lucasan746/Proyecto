@@ -806,6 +806,85 @@ top: 21px;
   width: 80vw;
   height: 7vh;
 }
+#a{
+  background-image: url(../images/celular/1.jpg);
+  background-size: 100% 100%;
+}
+#b{
+  background-image: url(../images/celular/2.jpg);
+  background-size: 100% 100%;
+}
+#c{
+  background-image: url(../images/celular/3.jpg);
+  background-size: 100% 100%;
+}
+#d{
+  background-image: url(../images/celular/4.jpg);
+  background-size: 100% 100%;
+}
+#e{
+  background-image: url(../images/celular/5.jpg);
+  background-size: 100% 100%;
+}
+#f{
+  background-image: url(../images/celular/6.jpg);
+  background-size: 100% 100%;
+}
+#g{
+  background-image: url(../images/celular/7.jpg);
+  background-size: 100% 100%;
+}
+#h{
+  background-image: url(../images/celular/8.jpg);
+  background-size: 100% 100%;
+}
+#i{
+  background-image: url(../images/celular/9.jpg);
+  background-size: 100% 100%;
+}
+#j{
+  background-image: url(../images/celular/10.jpg);
+  background-size: 100% 100%;
+}
+#k{
+  background-image: url(../images/celular/11.jpg);
+  background-size: contain;
+}
+
+#l{
+  background-image: url(../images/celular/12.jpg);
+  background-size: 100% 100%;
+}
+#m{
+  background-image: url(../images/celular/13.jpg);
+  background-size: 100% 100%;
+}
+#n{
+  background-image: url(../images/celular/14.jpg);
+  background-size: 100% 100%;
+}
+#o{
+  background-image: url(../images/celular/15.jpg);
+  background-size: 100% 100%;
+}
+
+#p{
+  background-image: url(../images/celular/16.jpg);
+  background-size: 100% 100%;
+}
+#q{
+  background-image: url(../images/celular/17.jpg);
+  background-size: 100% 100%;
+}
+#r{
+  background-image: url(../images/celular/18.png);
+  background-size: 100% 100%;
+}
+#s{
+  background-image: url(../images/celular/19.jpg);
+  background-size: 100% 100%;
+}
+
 }
 /* Fin login */
 /* FIN celular */
