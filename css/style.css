@@ -129,6 +129,12 @@ body{
       text-shadow: -2px -2px 1px #000;
 
     }
+    .titulog2{
+      font-size: 6rem;
+      color: white;
+      text-shadow: -2px -2px 1px #000;
+
+    }
     .iconoprin{
       position: fixed;
       width: 5vw;
@@ -309,12 +315,12 @@ body{
 }
 .contenido1{
   width: 60%;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-bottom: 2%;
 
 }
 .contenido1 img{
-  height: 40vh;
+
   margin-bottom: 1.5%;
 }
 
@@ -335,7 +341,7 @@ justify-content: space-between;
 align-items: center;
 }
 .contenido2 img{
-  height: 50vh;
+  height: 60vh;
 
 }
 .data1{
@@ -377,7 +383,7 @@ margin: 2%;
 }
 .b{
   width: 30%;
-  border-radius: 48%;
+
 }
 .texto2{
   display: flex;
@@ -723,7 +729,11 @@ footer{
 .botonlog4{
   width: fit-content;
 }
-}
+/* Login */
+.botoninic{
+  left: 85%;
+  width: fit-content;
+}}
 /* fin Tablet */
 
 /* Celular */
@@ -786,6 +796,99 @@ footer{
 }
 .texto2{
   width: 60%;
-}}
+}
 /* fin index */
+/* Login */
+.botoninic{
+  left: 70%;
+  width: fit-content;
+}
+.login{
+  width: 80vw;
+}
+.login input{
+  width: 80vw;
+  height: 7vh;
+}
+#a{
+  background-image: url(../images/celular/1.jpg);
+  background-size: 100% 100%;
+}
+#b{
+  background-image: url(../images/celular/2.jpg);
+  background-size: 100% 100%;
+}
+#c{
+  background-image: url(../images/celular/3.jpg);
+  background-size: 100% 100%;
+}
+#d{
+  background-image: url(../images/celular/4.jpg);
+  background-size: 100% 100%;
+}
+#e{
+  background-image: url(../images/celular/5.jpg);
+  background-size: 100% 100%;
+}
+#f{
+  background-image: url(../images/celular/6.jpg);
+  background-size: 100% 100%;
+}
+#g{
+  background-image: url(../images/celular/7.jpg);
+  background-size: 100% 100%;
+}
+#h{
+  background-image: url(../images/celular/8.jpg);
+  background-size: 100% 100%;
+}
+#i{
+  background-image: url(../images/celular/9.jpg);
+  background-size: 100% 100%;
+}
+#j{
+  background-image: url(../images/celular/10.jpg);
+  background-size: 100% 100%;
+}
+#k{
+  background-image: url(../images/celular/11.jpg);
+  background-size: contain;
+}
+
+#l{
+  background-image: url(../images/celular/12.jpg);
+  background-size: 100% 100%;
+}
+#m{
+  background-image: url(../images/celular/13.jpg);
+  background-size: 100% 100%;
+}
+#n{
+  background-image: url(../images/celular/14.jpg);
+  background-size: 100% 100%;
+}
+#o{
+  background-image: url(../images/celular/15.jpg);
+  background-size: 100% 100%;
+}
+
+#p{
+  background-image: url(../images/celular/16.jpg);
+  background-size: 100% 100%;
+}
+#q{
+  background-image: url(../images/celular/17.jpg);
+  background-size: 100% 100%;
+}
+#r{
+  background-image: url(../images/celular/18.png);
+  background-size: 100% 100%;
+}
+#s{
+  background-image: url(../images/celular/19.jpg);
+  background-size: 100% 100%;
+}
+
+}
+/* Fin login */
 /* FIN celular */
