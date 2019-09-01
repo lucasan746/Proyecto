@@ -101,7 +101,7 @@ body{
       text-decoration: none;
       font-size: 20px;
       color: white;
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.5);
       width: 9%;
       height: 6vh;
       text-align: center;
@@ -341,7 +341,7 @@ justify-content: space-between;
 align-items: center;
 }
 .contenido2 img{
-  height: 60vh;
+  height: 50vh;
 
 }
 .data1{
@@ -733,7 +733,15 @@ top: 21px;
 .botoninic{
   left: 85%;
   width: fit-content;
-}}
+}
+.imgpreg1{
+  width: 60vw;
+  }
+.imgpreg2{
+  width: 40vw;
+  height: 50vh;
+}
+}
 /* fin Tablet */
 
 /* Celular */
@@ -856,11 +864,11 @@ top: 21px;
 }
 
 #l{
-  background-image: url(../images/celular/12.jpg);
+  background-image: url(../images/celular/12.webp);
   background-size: 100% 100%;
 }
 #m{
-  background-image: url(../images/celular/13.jpg);
+  background-image: url(../images/celular/13.webp);
   background-size: 100% 100%;
 }
 #n{
@@ -873,7 +881,7 @@ top: 21px;
 }
 
 #p{
-  background-image: url(../images/celular/16.jpg);
+  background-image: url(../images/celular/16.png);
   background-size: 100% 100%;
 }
 #q{
@@ -881,7 +889,7 @@ top: 21px;
   background-size: 100% 100%;
 }
 #r{
-  background-image: url(../images/celular/18.png);
+  background-image: url(../images/celular/18.jpg);
   background-size: 100% 100%;
 }
 #s{
