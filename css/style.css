@@ -307,12 +307,12 @@
 }
 .contenido1{
   width: 60%;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-bottom: 2%;
 
 }
 .contenido1 img{
-  height: 40vh;
+
   margin-bottom: 1.5%;
 }
 
@@ -333,7 +333,7 @@ justify-content: space-between;
 align-items: center;
 }
 .contenido2 img{
-  height: 50vh;
+  height: 60vh;
 
 }
 .data1{
@@ -375,7 +375,7 @@ margin: 2%;
 }
 .b{
   width: 30%;
-  border-radius: 48%;
+
 }
 .texto2{
   display: flex;
