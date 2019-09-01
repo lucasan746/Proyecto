@@ -129,6 +129,12 @@ body{
       text-shadow: -2px -2px 1px #000;
 
     }
+    .titulog2{
+      font-size: 6rem;
+      color: white;
+      text-shadow: -2px -2px 1px #000;
+
+    }
     .iconoprin{
       position: fixed;
       width: 5vw;
@@ -782,6 +788,20 @@ top: 21px;
 }
 .texto2{
   width: 60%;
-}}
+}
 /* fin index */
+/* Login */
+.botoninic{
+  left: 70%;
+  width: fit-content;
+}
+.login{
+  width: 80vw;
+}
+.login input{
+  width: 80vw;
+  height: 7vh;
+}
+}
+/* Fin login */
 /* FIN celular */
