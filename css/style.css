@@ -637,15 +637,15 @@ top: 21px;
 
 .seccionder{
   /* width: 36%; */
-  border: solid black 2px;
+  /* border: solid black 2px; */
   /* - */
- max-width: 293px;
- right: 12%;
- left: 67%;
+  max-width: 332px;
+  right: 5%;
+  left: 65%;
  position: fixed;
  width: 100%;
  height: 72vh;
- margin-top: 50px;
+ /* margin-top: 15px; */
 }
 
 /* Seccion 2 */
@@ -653,14 +653,9 @@ top: 21px;
   text-align: center;
   margin-top: 6px;
   margin-bottom: 6px;
-  background-color: darkgrey;
   font-size: 1.5rem;
+  color: #999;
 }
-/* .adopciones h2{
-  text-align: center;
-  position: relative;
-  top: -9vw;
-} */
 .img{
   width: 19%;
   border-radius: 5vh;
@@ -670,7 +665,7 @@ top: 21px;
 .sugeridos{
   border: solid 1px grey;
   width: 100%;
-  height: 28vh;
+  height: 231px;
   overflow: auto;
   background-color: white;
 }
@@ -678,21 +673,22 @@ top: 21px;
   width: 73%;
   display: inline-block;
   position: relative;
-  bottom: 16px;
-  margin-left: 5px;
+  bottom: 24px;
+  margin-left: 9px;
   text-decoration: none;
   color: black;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-family: monospace;
 }
 .adopciones{
   width: 100%;
   height: 28vh;
-  margin-top: 9%;
+  margin-top: 5%;
   border: solid 1px grey;
   }
 .adopciones button{
   position: relative;
-  left: 74%;
+  left: 77%;
   top: -6vh;
   height: 28px;
   width: 64px;
@@ -702,10 +698,18 @@ top: 21px;
   padding: 6px;
   text-decoration: none;
 }
-/* .adopciones img{
-  height: 224px;
-  width: 267px;
-} */
+.seccionder footer{
+  margin-top: 8%;
+}
+.foothome{
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+}
+.foothome a{
+  text-decoration: none;
+  color: #c7c7c7;
+}
 
 /* Media query */
 
