@@ -2,9 +2,10 @@
 <html lang="es" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed&display=swap" rel="stylesheet">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
     <title></title>
   </head>
   <body class="Home">
