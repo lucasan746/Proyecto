@@ -4,12 +4,13 @@
 <html lang="es" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>login mascota</title>
   </head>
-  <body>
-<section>
-  <section class="cajalogin" id="<?= $imagenes[$alea] ?>">
+  <body id="<?= $imagenes[$alea] ?>">
+  <section class="cajalogin3">
     <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
 <article class="registromascota">
   <div class="cajatitulo">

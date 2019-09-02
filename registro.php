@@ -51,7 +51,7 @@ $pais = [
         </form>
         </div>
         <div class="formulario2">
-          <form class="registro" action="registro-mascota.php">
+          <form class="registro2" action="registro-mascota.php">
           <br>
           <label class="f2" for="contraseña">Contraseña:</label>
           <input class="reg1" type="password" name="conraseña">
