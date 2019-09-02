@@ -339,7 +339,7 @@ body{
 }
 .contenido1{
   width: 60%;
-  margin-top: 2%;
+  margin-top: 12%;
   margin-bottom: 2%;
 
 }
@@ -936,8 +936,12 @@ top: 21px;
 .artilogin{
   width: 100vw;
 }
+.barramenu{
+  display: none
+}
 .iconoprin{
-  width: 20vw;
+  position: relative;
+  width: 15vw;
   z-index: 10;
 }
 .foot a{
