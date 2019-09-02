@@ -27,6 +27,12 @@ body{
   background-color: rgba(0, 0, 0, 0.30);
 
 }
+.cajalogin3{
+  /* background-color: rgb(110, 193, 201); */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.30);
+
+}
 .cajadelogin{
   /* background-color: rgb(110, 193, 201); */
   height: 100vh;
@@ -412,7 +418,7 @@ margin: 2%;
 
 .foot{
 display: flex;
-background-color: grey;
+background-color: white;
 list-style-type: none;
 width: 100%;
 height: 8vh;
@@ -424,7 +430,8 @@ font-size: 1.3rem;
 }
 .foot a{
   text-decoration: none;
-  color: white;
+  color: #bbb5b5db;
+  font-family: monospace;
 }
 /* Login */
 .login{
@@ -764,9 +771,17 @@ top: 21px;
 /* Media query */
 
 /* Tablet */
-/* Index */
-@media screen and (max-width: 1199px){
 
+@media screen and (max-width: 979px){
+  /* formulario 2 */
+.registro {
+  width: 50vw;
+}
+.registromascota{
+  width: 50vw;
+  top: 7vw;
+}
+/* Index */
 .vid{
   width: 40vw;
 }
@@ -802,6 +817,10 @@ top: 21px;
   background: none;
   background-color: #d284d2;
 }
+.cajalogin3{
+  background: none;
+  background-color: #d284d2;
+}
 .cajareg{
   height: auto;
   width: 90vw;
@@ -815,14 +834,35 @@ top: 21px;
 .registro{
   background: none;
 }
+.registro2{
+  background: none;
+}
 .formulario2{
   background: none;
 }
 .registro label{
   font-size: 1.5rem;
 }
+.registro2 label{
+  font-size: 1.5rem;
+}
 .registro input{
   font-size: 1.5rem;
+}
+.registro2 input{
+  font-size: 1.5rem;
+}
+.botonreg{
+  margin: 0;
+}
+.registro{
+  width: 50vw;
+}
+.registro2{
+  width: 45vw;
+}
+.formulario2{
+  padding: 0;
 }
 }
 /* fin Tablet */
@@ -830,6 +870,22 @@ top: 21px;
 /* Celular */
 
 @media screen and (max-width: 480px){
+  /* formulario 2 */
+  .registromascota{
+    width: 100vw;
+  }
+  .registro2{
+    width: 90vw;
+  }
+  .registro{
+    width: 90vw;
+  }
+  .botomitir{
+    width: fit-content;
+  }
+  .cajalogin3 .iconoprin{
+    display: none;
+  }
   /* formulario */
   .cajareg{
     position: static;
