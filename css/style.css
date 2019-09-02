@@ -339,7 +339,7 @@ body{
 }
 .contenido1{
   width: 60%;
-  margin-top: 12%;
+  margin-top: 6%;
   margin-bottom: 2%;
 
 }
@@ -773,6 +773,20 @@ top: 21px;
 /* Tablet */
 
 @media screen and (max-width: 979px){
+  /* home */
+  .seccionder{
+    display: none;
+  }
+  .seccionizq{
+    position: static;
+    margin: auto;
+  }
+  .iconoprin2{
+    width: 7vw;
+  }
+  .input{
+    width: 17vw;
+  }
   /* formulario 2 */
 .registro {
   width: 50vw;
@@ -815,11 +829,11 @@ top: 21px;
 /* Formularios */
 .cajalogin{
   background: none;
-  background-color: #d284d2;
+  background-color: #cec6e9;
 }
 .cajalogin3{
   background: none;
-  background-color: #d284d2;
+  background-color: #cec6e9;
 }
 .cajareg{
   height: auto;
@@ -870,6 +884,20 @@ top: 21px;
 /* Celular */
 
 @media screen and (max-width: 480px){
+  /* home */
+  .iconoprin2{
+    display: none;
+  }
+  .input{
+    display: none;
+  }
+  .fotoperfil{
+    display: none;
+  }
+  .cuerpohome{
+  padding-top: 15vw;
+  }
+
   /* formulario 2 */
   .registromascota{
     width: 100vw;
@@ -967,6 +995,9 @@ top: 21px;
 }
 .texto2{
   width: 60%;
+}
+.contenido1{
+  margin-top: 14vw;
 }
 /* fin index */
 /* Login */
