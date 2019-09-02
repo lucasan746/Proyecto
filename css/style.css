@@ -116,13 +116,13 @@ body{
       border: solid 1px rgba(0, 0, 0, 0.1);
       display: block;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: white;
       background-color: rgba(0, 0, 0, 0.5);
-      width: 9%;
+      width: 11%;
       height: 6vh;
       text-align: center;
-      padding: 6px;
+      padding: 7px;
       border-radius: 5%;
       font-family: 'Lato', sans-serif;
     }
@@ -132,13 +132,13 @@ body{
       /* border: solid 1px rgba(234, 164, 198, 0.5); */
       display: block;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #7c5cff;
       background-color: white;
       width: 9%;
       height: 6vh;
       text-align: center;
-      padding: 6px;
+      padding: 7px;
       border-radius: 5%;
       font-family: 'Lato', sans-serif;
     }
@@ -157,7 +157,7 @@ body{
     }
     .iconoprin{
       position: fixed;
-      width: 5vw;
+      width: 4%;
       left: 10px;
       top: 7px;
       border-radius: 30%;
@@ -418,7 +418,7 @@ margin: 2%;
 
 .foot{
 display: flex;
-background-color: white;
+background-color: #1e1c38;
 list-style-type: none;
 width: 100%;
 height: 8vh;
@@ -430,7 +430,7 @@ font-size: 1.3rem;
 }
 .foot a{
   text-decoration: none;
-  color: #bbb5b5db;
+  color: #c9c8c8;
   font-family: monospace;
 }
 /* Login */
