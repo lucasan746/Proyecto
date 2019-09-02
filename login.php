@@ -9,7 +9,7 @@
     <title>Login</title>
   </head>
   <body>
-    <section class="cajalogin2" id="<?= $imagenes[$alea] ?>">
+    <section class="cajadelogin" id="<?= $imagenes[$alea] ?>">
       <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
       <article class="login">
         <h1 class="titulog2">Sloth</h1>

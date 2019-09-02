@@ -27,7 +27,7 @@ body{
   background-color: rgba(0, 0, 0, 0.30);
 
 }
-.cajalogin2{
+.cajadelogin{
   /* background-color: rgb(110, 193, 201); */
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.30);
@@ -795,8 +795,28 @@ top: 21px;
 /* fin Tablet */
 
 /* Celular */
-/* index */
+
 @media screen and (max-width: 480px){
+  /* formulario */
+  .cajareg{
+    position: static;
+  }
+  .formulario{
+    display: inline-grid;
+  }
+  .cajalogin .iconoprin{
+    display: none;
+  }
+  .cajalogin{
+    height: auto;
+  }
+  .formulario2{
+    padding: 0;
+  }
+  .botonreg{
+    margin-bottom: 10px;
+  }
+  /* index */
 .imgpreg1{
   display: none;
 }
