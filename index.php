@@ -11,7 +11,7 @@
   <body>
     <!-- Menu de registro -->
     <!-- <section class="cajalogin" id="<?= $imagenes[$alea] ?>"> -->
-      <section class="cajalogin">
+      <section class="cajadelogin">
       <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
       <article class="artilogin">
         <video autoplay muted loop id="myVideo">

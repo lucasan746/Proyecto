@@ -27,6 +27,12 @@ body{
   background-color: rgba(0, 0, 0, 0.30);
 
 }
+.cajadelogin{
+  /* background-color: rgb(110, 193, 201); */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.30);
+
+}
 .vid{
   color: white;
   position: relaive;
@@ -753,12 +759,65 @@ top: 21px;
   width: 40vw;
   height: 50vh;
 }
+.login{
+  width: 28vw;
+}
+.login input {
+  width: 28vw;
+}
+/* Formularios */
+.cajalogin{
+  background: none;
+  background-color: #d284d2;
+}
+.cajareg{
+  height: auto;
+  width: 90vw;
+  top: 6vh;
+}
+.reg1{
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.registro{
+  background: none;
+}
+.formulario2{
+  background: none;
+}
+.registro label{
+  font-size: 1.5rem;
+}
+.registro input{
+  font-size: 1.5rem;
+}
 }
 /* fin Tablet */
 
 /* Celular */
-/* index */
+
 @media screen and (max-width: 480px){
+  /* formulario */
+  .cajareg{
+    position: static;
+  }
+  .formulario{
+    display: inline-grid;
+  }
+  .cajalogin .iconoprin{
+    display: none;
+  }
+  .cajalogin{
+    height: auto;
+  }
+  .formulario2{
+    padding: 0;
+  }
+  .botonreg{
+    margin-bottom: 10px;
+  }
+  /* index */
 .imgpreg1{
   display: none;
 }
@@ -822,6 +881,7 @@ top: 21px;
 .botoninic{
   left: 70%;
   width: fit-content;
+  display: none;
 }
 .login{
   width: 80vw;
