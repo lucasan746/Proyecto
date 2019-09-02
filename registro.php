@@ -26,7 +26,7 @@ $pais = [
   </head>
   <body id="<?= $imagenes[$alea] ?>">
     <section class="cajalogin">
-      <a href="#"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+      <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
         <a class="botoninic" href="login.php">Iniciar sesión</a>
       <br>
     <article class="cajareg">
