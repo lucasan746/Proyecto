@@ -42,6 +42,7 @@ body{
   /* background-color: rgba(174, 231, 252, 0.39); */
   padding: 20px;
   top: 20vh;
+  font-family: 'Lato', sans-serif;
 }
 .artilogin{
   text-align: center;
@@ -59,6 +60,9 @@ body{
   width: 100%;
   text-align: center;
   padding: 10px;
+  border-radius: 3%;
+  font-family: 'Lato', sans-serif;
+  border: solid 1px #5536b6;
 }
   .botonlog:hover{
     color: #ffffff;
@@ -74,6 +78,7 @@ body{
     text-align: center;
     padding: 10px;
     margin-top: 5px;
+    border-radius: 3%;
   }
     .botonlog2:hover{
       color: #ffffff;
@@ -105,7 +110,7 @@ body{
       border: solid 1px rgba(0, 0, 0, 0.1);
       display: block;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1.1rem;
       color: white;
       background-color: rgba(0, 0, 0, 0.5);
       width: 9%;
@@ -113,6 +118,7 @@ body{
       text-align: center;
       padding: 6px;
       border-radius: 5%;
+      font-family: 'Lato', sans-serif;
     }
     .botonlog4{
       margin: 0;
@@ -120,7 +126,7 @@ body{
       /* border: solid 1px rgba(234, 164, 198, 0.5); */
       display: block;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1.1rem;
       color: #7c5cff;
       background-color: white;
       width: 9%;
@@ -128,17 +134,19 @@ body{
       text-align: center;
       padding: 6px;
       border-radius: 5%;
+      font-family: 'Lato', sans-serif;
     }
     .titulog{
       font-size: 6rem;
       color: white;
-      text-shadow: -2px -2px 1px #000;
+      /* text-shadow: -2px -2px 1px #000; */
+      font-family: 'Merienda One', cursive;
 
     }
     .titulog2{
       font-size: 6rem;
       color: white;
-      text-shadow: -2px -2px 1px #000;
+      font-family: 'Merienda One', cursive;
 
     }
     .iconoprin{
@@ -306,10 +314,13 @@ body{
   font-size: 2.7rem;
   color: white;
   margin-bottom: 5%;
+  font-family: 'Merriweather', serif;
+
 }
 .container p{
   font-size: 1.5rem;
   color: white;
+  font-family: 'Lato', sans-serif;
 }
 .preg1{
   background-color: #7c5cff;
@@ -327,8 +338,8 @@ body{
 
 }
 .contenido1 img{
-
-  margin-bottom: 1.5%;
+  width: 58%;
+  margin-bottom: 3%;
 }
 
 
@@ -348,7 +359,7 @@ justify-content: space-between;
 align-items: center;
 }
 .contenido2 img{
-  height: 50vh;
+  width: 28%;
 
 }
 .data1{
@@ -370,7 +381,7 @@ align-items: center;
 margin: 2%;
 }
 .a{
-  width: 75vh;
+  width: 35%;
   border-radius: 10%;
 }
 .texto1{
@@ -389,7 +400,7 @@ margin: 2%;
   margin: 2%;
 }
 .b{
-  width: 30%;
+  width: 24%;
 
 }
 .texto2{
@@ -446,10 +457,12 @@ font-size: 1.3rem;
 .cajatitulo{
   text-align: center;
   color: white;
+
 }
 .cajatitulo h3{
   position: relative;
   bottom: 2vh;
+  font-family: 'Lato', sans-serif;
 }
 .botoninic{
   text-align: center;
@@ -463,9 +476,14 @@ font-size: 1.3rem;
   background-color: #6745d0c4;
   color: white;
   border: solid 1px #a7aece;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  border-radius: 5%;
 }
 .formulario{
   display: flex;
+  border-radius: 2%;
+
 }
 .reg1{
 width: 20vw;
@@ -476,6 +494,12 @@ border-right: none;
 border-left: none;
 border-bottom: solid 2px #4c31a0;
 background-color: #82808e00;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.1rem;
+
+}
+.reg1:focus{
+  background-color: #c1c6dc;
 }
 .regh3{
   margin-left: 11px;
@@ -495,16 +519,18 @@ padding-left: 4%
   text-decoration: none;
   background-color: #6745d0c4;
   color: white;
-  border: solid 1px #a7aece;
+  border: solid 1px #5536b6;
   font-size: 1.0rem;
+  border-radius: 5%;
 }
 
 .registro{
 background-color:  rgba(167, 174, 206, 0.7);
 color: #212121;
+border-radius: 2%;
 }
-.registro label{
-  font-size: 1.1rem;
+.formulario label{
+  font-family: 'Lato', sans-serif;
   margin-left: 16px;
   margin-top: 10px;
 }
@@ -520,7 +546,8 @@ color: #212121;
 }
 .genero{
 margin: 2%;
-width: 5%;
+width: 4%;
+font-family: 'Lato', sans-serif;
 }
 
 /* registro mascota */
@@ -533,6 +560,10 @@ width: 5%;
   position: relative;
   top: 13vh;
   width: 26%;
+  font-family: 'Lato', sans-serif;
+}
+.registromascota label{
+  margin-left: 10px;
 }
 .botomitir{
   text-align: center;
@@ -545,7 +576,9 @@ width: 5%;
   left: 12px;
   background-color: #6745d0c4;
   color: white;
-  border: solid 1px #a7aece
+  border: solid 1px #a7aece;
+  font-family: 'Lato', sans-serif;
+  border-radius: 5%;
 }
 /* Fin */
 .Home{

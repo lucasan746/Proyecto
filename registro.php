@@ -20,6 +20,8 @@ $pais = [
     <meta name="viewport"
     content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merienda+One|Merriweather|Montserrat&display=swap" rel="stylesheet">
+
     <title>Registro</title>
   </head>
   <body id="<?= $imagenes[$alea] ?>">
@@ -47,11 +49,11 @@ $pais = [
           <br><br>
           <label for="email">E-mail:</label>
           <input class="reg1" type="text" name="email">
-          <br><br>
+          <br><br><br>
         </form>
         </div>
         <div class="formulario2">
-          <form class="registro" action="registro-mascota.php">
+          <form class="" action="registro-mascota.php">
           <br>
           <label class="f2" for="contraseña">Contraseña:</label>
           <input class="reg1" type="password" name="conraseña">

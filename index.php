@@ -6,6 +6,7 @@
     <meta name="viewport"
     content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Lato|Merienda+One|Merriweather&display=swap" rel="stylesheet">
     <title></title>
   </head>
   <body>
@@ -39,7 +40,7 @@
   <article class="contenido1">
 
 
-    <img src="images/imagenpreg1.png" alt="molang1" class="imgpreg1" >
+    <img src="images/imagenpreg1.png" alt="" class="imgpreg1" >
 
   <h1 class="titulopre">Crea tu slot</h1>
   <p class="parrafos">Dale voz a tu mascota. Crea tu perfil o el de tu mascota y cuenta cómo es su vida, cuáles son sus gustos o qué lugares han visitado.
@@ -54,7 +55,7 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
   <p class="parrafos">¿Quieres encontrar a gente que comparta tu misma pasión por los animales? En Sloth puedes participar en grupos con tus mismos intereses, crear tus propias comunidades, organizar quedadas y eventos.
 </p>
   </div>
-  <img src="images/imagenpreg2.png" alt="molang" class="imgpreg2" >
+  <img src="images/imagenpreg2.png" alt="" class="imgpreg2" >
 </article>
 
 </section>

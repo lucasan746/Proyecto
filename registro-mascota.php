@@ -4,6 +4,8 @@
 <html lang="es" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merienda+One|Merriweather|Montserrat&display=swap" rel="stylesheet">
+
     <meta charset="utf-8">
     <title>login mascota</title>
   </head>
@@ -18,7 +20,7 @@
   </div>
 
   <form class="registro" action="login.php" method="post"  >
-  <h4>Registra a tu mascota</h4>
+
   <br>
      <label for="">Nombre de tu mascota:</label>
      <input class="reg1" type="text" name="nombre">
@@ -63,7 +65,7 @@
        <option value="">No tiene pelaje</option>
  </select>
 
-
+<br>
   <button type="submit" name="enviar" class="botonlog">Registrate</button>
 
   </form>
