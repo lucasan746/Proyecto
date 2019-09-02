@@ -292,7 +292,7 @@ body{
 }
 .input{
   position: relative;
-  right: 35%;
+  right: 27%;
   top: 30%;
   width: 30vw;
   height: 33px;
@@ -590,6 +590,8 @@ font-family: 'Lato', sans-serif;
 /* Fin */
 .Home{
   background-color: #fafafa;
+  font-family: 'Alegreya Sans', sans-serif;
+ font-size: 0.9rem;
 }
 .cuerpohome{
   max-width: 935px;
@@ -640,6 +642,7 @@ top: 21px;
   border: solid 1px grey;
   display: flex;
   flex-direction: column;
+
 }
 .descrip{
   width: 100%;
@@ -726,6 +729,7 @@ top: 21px;
   overflow: auto;
   background-color: white;
   position: relative;
+  border-radius: 2%;
 }
 .sugeridos a{
   width: 73%;
@@ -742,19 +746,9 @@ top: 21px;
   height: 27vh;
   margin-top: 5%;
   border: solid 1px grey;
+  border-radius: 2%;
   }
-/* .adopciones button{
-  position: relative;
-  left: 77%;
-  top: -6vh;
-  height: 28px;
-  width: 64px;
-  background-color: #603dce;
-  color: white;
-  border: solid 1px #a7aece;
-  padding: 6px;
-  text-decoration: none;
-} */
+
 .seccionder footer{
   margin-top: 8%;
 }

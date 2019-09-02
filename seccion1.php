@@ -39,7 +39,7 @@
 <br>
 <section class="hacer-comentario">
   <form class="" action="home.php" method="post">
-    <textarea name="name" rows="4" cols="80" placeholder="Añade un comentario"></textarea>
+    <textarea name="name" rows="3" cols="80" placeholder="Añade un comentario"></textarea>
     <button  type="submit" name="button"><h4>Publicar</h4></button>
   </form>
 </section>
@@ -87,7 +87,7 @@
 <br>
 <section class="hacer-comentario">
   <form class="" action="home.php" method="post">
-    <textarea name="name" rows="4" cols="80" placeholder="Añade un comentario"></textarea>
+    <textarea name="name" rows="3" cols="80" placeholder="Añade un comentario"></textarea>
     <button  type="submit" name="button"><h4>Publicar</h4></button>
   </form>
 </section>
@@ -136,11 +136,11 @@ No olviden tomar un poco de sol con sus pequeños.</span>
 <br>
 <section class="hacer-comentario">
   <form class="" action="home.php" method="post">
-    <textarea name="name" rows="4" cols="80" placeholder="Añade un comentario"></textarea>
+    <textarea name="name" rows="3" cols="80" placeholder="Añade un comentario"></textarea>
     <button  type="submit" name="button"><h4>Publicar</h4></button>
   </form>
 </section>
 </div>
 </article>
-
+<br>
 </section>

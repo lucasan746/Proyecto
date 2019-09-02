@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed&display=swap" rel="stylesheet">    <meta charset="utf-8">
     <title></title>
   </head>
   <body class="Home">
