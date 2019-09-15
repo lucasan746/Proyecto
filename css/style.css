@@ -331,26 +331,67 @@ body{
 .preg1{
   background-color: #7c5cff;
   height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+
 
 }
 .contenido1{
-  width: 60%;
-  margin-top: 6%;
-  margin-bottom: 2%;
+  margin: 5% auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 98vh;
+  width: 95%;
 
 }
-.contenido1 img{
-  width: 58%;
-  margin-bottom: 3%;
+.media1 {
+  width: 85%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  padding: 4%;
+}
+.m1-a{
+  position: absolute;
+  left:12%;
+  top:20%;
+
+}
+.m1-b{
+position: absolute;
+left:28%;
+top:-17%;
+}
+.m1-c{
+position:absolute;
+left:42%;
+bottom: 5%;
+}
+.m1-d{
+position:absolute;
+right: 30%;
+bottom: -12%;
+}
+.m1-e{
+position:absolute;
+right: 22%;
+top:-16%;
+}
+.m1-f{
+  position: absolute;
+  right: 8%;
+  top:35%;
 }
 
+.data1{
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
 
 .preg2{
-
  background-color: #ff8a00;
   height: 100vh;
   text-align: center;
@@ -359,57 +400,54 @@ body{
 }
 .contenido2{
 display: flex;
-flex-wrap: wrap;
-margin: 2%;
-justify-content: space-between;
+margin: 4%;
 align-items: center;
 }
-.contenido2 img{
-  width: 28%;
+.data2{
+  width: 60%;
+}
+.media2 img{
+  width: 55%;
 
 }
-.data1{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
+
 
 /* fin parte fati */
 
-.caja3{
+.preg3{
   background-color: #0b7477;
   height: 100vh;
   display: flex;
 }
-.titulo3{
+.contenido3{
 display: flex;
 align-items: center;
-margin: 2%;
+margin: 4%;
 }
-.a{
-  width: 35%;
+.media3 img{
+  width: 60%;
   border-radius: 10%;
 }
-.texto1{
+.data3{
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 55%;
 }
-.caja4{
+.preg4{
   background-color: #5cb127;
   height: 100vh;
   display: flex;
 }
-.titulo4{
+.contenido4{
   display: flex;
   align-items: center;
-  margin: 2%;
+  margin: 4%;
 }
 .b{
-  width: 24%;
+  width: 55%;
 
 }
-.texto2{
+.data4{
   display: flex;
   flex-direction: column;
   width: 30%;
