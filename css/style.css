@@ -254,67 +254,8 @@ body{
 
 
 /* FIN */
-    /*Fin*/
-/* navbar home */
-.navbar{
-  position: fixed;
-  top: 0;
-  display: flex;
-  height: 10vh;
-  background-color:#977fc2;
-  z-index: 5;
-}
-.iconosderecha{
-  width: 90vw;
-}
-.perfil{
-  width: 10vw;
-  text-align: center;
-}
-.ic{
-  height: 60%;
-  display: flex;
-  justify-content: flex-end;
-}
-.iconosbarra{
-  width: 30px;
-  height: 30px;
-  margin-top: 15px;
-  margin-right: 20px;
-  margin-left: 15px;
-}
-.iconoprin2{
-  position:  fixed;
-  width: 4%;
-  left: 4px;
-  top: 3px;
-  border-radius: 30%;
-}
-.input{
-  position: relative;
-  right: 27%;
-  top: 30%;
-  width: 30vw;
-  height: 33px;
-}
-.iconosbarra2{
-  width: 30px;
-  height: 30px;
-  margin-top: 30px;
-  margin-left: 90px;
-}
-.fotoperfil{
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin: 10px;
-  margin-right: 50px;
-}
-.nombreusuario{
-  text-align: center;
-}
 
-/* Fin */
+
 /* Preguntas y respuestas */
 .container h1{
   font-size: 2.7rem;
@@ -386,9 +327,9 @@ width: 10%;
 }
 .m1-f{
   position: absolute;
-  right: 8%;
-  top:42%;
-  width:17%;
+  right: 9%;
+  top:44%;
+  width:15%;
 
 }
 
@@ -742,6 +683,66 @@ font-family: 'Lato', sans-serif;
   font-family: 'Lato', sans-serif;
   border-radius: 5%;
 }
+/* Fin */
+/* navbar home */
+.navbar{
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 10vh;
+  background-color:#977fc2;
+  z-index: 5;
+}
+.iconosderecha{
+  width: 90vw;
+}
+.perfil{
+  width: 10vw;
+  text-align: center;
+}
+.ic{
+  height: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+.iconosbarra{
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 15px;
+}
+.iconoprin2{
+  position:  fixed;
+  width: 4%;
+  left: 4px;
+  top: 3px;
+  border-radius: 30%;
+}
+.input{
+  position: relative;
+  right: 27%;
+  top: 30%;
+  width: 30vw;
+  height: 33px;
+}
+.iconosbarra2{
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 90px;
+}
+.fotoperfil{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  margin-right: 50px;
+}
+.nombreusuario{
+  text-align: center;
+}
+
 /* Fin */
 .Home{
   background-color: #fafafa;
