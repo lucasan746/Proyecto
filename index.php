@@ -25,7 +25,7 @@
         <a class="botonlog2" href="login.php">Iniciar Sesión</a>
       </div>
       </article>
-      <a href="#ancla"><img src="images/flecha.png" alt="flecha" class="flecha"></a>
+      <a href="#ancla"><img src="images/flecha2.png" alt="flecha" class="flecha"></a>
     </section>
     <div class="container">
     <div class="barramenu">
@@ -39,12 +39,12 @@
 
   <article class="contenido1">
 <div class="media1">
-  <img class="m1-a" src="images/girl-2.png"  width="200px" height="200px">
-  <img class="m1-b" src="images/paw.png" width="130px" height="130px" >
-    <img class="m1-c" src="images/website.png" width="200px" height="200px" class="imgpreg1" >
-    <img class="m1-d" src="images/photos.png" width="100px" height="100px" >
-    <img class="m1-e" src="images/photo.png" width="130px" height="130px" >
-    <img class="m1-f"src="images/cat.png" width="170px" height="170px">
+  <img class="m1-a" src="images/index/girl-2.png"   >
+  <img class="m1-b" src="images/index/paw.png"  >
+    <img class="m1-c" src="images/index/website.png"   >
+    <img class="m1-d" src="images/index/photos.png" >
+    <img class="m1-e" src="images/index/photo.png"  >
+    <img class="m1-f"src="images/index/cat.png"  >
 
 </div>
 <div class="data1">
@@ -64,9 +64,9 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
 </p>
   </div>
   <div class="media2">
-
-
-  <img src="images/imagenpreg2.png" alt="" class="imgpreg2" >
+  <img class="m2-a" src="images/index/chat.png" alt="">
+  <img class="m2-b" src="images/index/friends-1.png" alt="" class="imgpreg2" >
+  <img class="m2-c" src="images/index/dog-1.png" alt="">
 </div>
 </article>
 
@@ -78,7 +78,11 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
 <section class="preg3">
     <article class="contenido3">
       <div class="media3">
-      <img class="a" src="images/imagenpreg3.png" >
+      <img class="m3-a" src="images/index/assistant.png" >
+      <img class="m3-b" src="images/index/food.png" alt="">
+      <img class="m3-c" src="images/index/heart.png" alt="">
+      <img class="m3-d" src="images/index/dog-house.png" alt="">
+      <img class="m3-e" src="images/index/dog-body.png" alt="">
       </div>
       <div class="data3">
       <h1 class="titulopre">Ayuda a otros animales</h1>
@@ -90,7 +94,9 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
 <section class="preg4">
     <article class="contenido4">
       <div class="media4-iz">
-      <img class="b" src="images/imagenpreg4-1.png" >
+        <img class="m4-a" src="images/index/bff.png" alt="">
+      <img class="m4-b" src="images/index/heart-2.png" >
+      <img class="m4-c" src="images/index/girl.png" alt="">
       </div>
     <div class="data4">
       <h1 class="titulopre">Unete a Sloth!</h1>
@@ -98,7 +104,9 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
 Te esperamos dentro!.</p>
     </div>
     <div class="media4-dr">
-      <img class="b" src="images/imagenpreg4-2.png">
+      <img class="m4-d" src="images/index/boy.png">
+      <img class="m4-e" src="images/index/give-heart.png" alt="">
+      <img class="m4-f" src="images/index/star.png" alt="">
       </div>
     </article>
   <!-- Fin  -->
