@@ -18,7 +18,6 @@ if ($_POST) {
     guardarUsuario($usuario);
   }
 }
-var_dump($usuario);
 ?>
 
 <?php include 'images.php'; ?>
