@@ -14,10 +14,12 @@ include_once 'validacion.php';
 if ($_POST) {
   $errores=validar($_POST);
   if ($errores==0) {
-    $usuario=armarUsuario($_POST);
+    $FotoDePerfil=fotoPerfil($_FILES["fotoperfil"]);
+    $usuario=armarUsuario($_POST,$FotoDePerfil);
     guardarUsuario($usuario);
   }
 }
+var_dump($_FILES);
 ?>
 
 <?php include 'images.php'; ?>

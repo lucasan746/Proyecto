@@ -22,7 +22,7 @@ function validar($datos){
       return $errores;
     }
 
-function armarUsuario($datos)
+function armarUsuario($datos,$imagen)
 {
   $usuario=[
     "nombre" => $datos["nombre"],
@@ -31,7 +31,8 @@ function armarUsuario($datos)
     "contrasenia"=>$datos["contraseña"],
     "pais"=>$datos["pais"],
     "sexo"=>$datos["sexo"],
-    "Nacimiento"=>$datos["fecha"]
+    "Nacimiento"=>$datos["fecha"],
+    "FotoDePerfil"=>$imagen
   ];
   return $usuario;
 }
@@ -41,5 +42,15 @@ function armarUsuario($datos)
    file_put_contents("usuarios.json",$json.PHP_EOL, FILE_APPEND);
  }
 
-
+ function fotoPerfil($imagen){
+   $nombre = $_FILES["fotoperfil"]["name"];
+   $ext = pathinfo($nombre, PATHINFO_EXTENSION);
+   $archivoOrigen = $_FILES["fotoperfil"]["tmp_name"];
+   $rutaDestino = dirname(__FILE__);
+   $rutaDestino = $rutaDestino."/fotos/";
+   $nombreImg = uniqid();
+   $rutaDestino = $rutaDestino.$nombreImg.".".$ext;
+   move_uploaded_file ($archivoOrigen, $rutaDestino);
+   return $nombreImg.".".$ext;
+ }
 ?>
