@@ -13,13 +13,18 @@ $pais = [
 include_once 'validacion.php';
 if ($_POST) {
   $errores=validar($_POST);
+  $user=ValirdarUser($_POST);
+  var_dump($user);
+  if ($user==false) {
   if ($errores==0) {
     $FotoDePerfil=fotoPerfil($_FILES["fotoperfil"]);
     $usuario=armarUsuario($_POST,$FotoDePerfil);
     guardarUsuario($usuario);
   }
+}}
+if ($user==true) {
+  echo "el email esta registrado";
 }
-var_dump($_FILES);
 ?>
 
 <?php include 'images.php'; ?>

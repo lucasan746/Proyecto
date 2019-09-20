@@ -53,4 +53,27 @@ function armarUsuario($datos,$imagen)
    move_uploaded_file ($archivoOrigen, $rutaDestino);
    return $nombreImg.".".$ext;
  }
+ function BaseDeDatos()
+ {
+   $baseDeDatos=file_get_contents("usuarios.json");
+   $baseDeDatos=Explode(PHP_EOL,$baseDeDatos);
+   array_pop($baseDeDatos);
+   foreach ($baseDeDatos as $usuarios) {
+     $ListaUsuarios[]=json_decode($usuarios,true);
+   }
+   return $ListaUsuarios;
+
+ }
+ function ValirdarUser($usuario)
+ {
+   $usuarios=BaseDeDatos();
+   foreach ($usuarios as $key => $personas) {
+     if ($personas===$usuario["email"]) {
+       return true;
+     }
+     else {
+       return false;
+     }
+   }
+ }
 ?>
