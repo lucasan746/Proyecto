@@ -10,6 +10,21 @@ $pais = [
   "Brs" => "Brasil",
   "Esñ" => "España"
 ];
+include_once 'validacion.php';
+if ($_POST) {
+  $errores=validar($_POST);
+  $user=ValirdarUser($_POST);
+  var_dump($user);
+  if ($user==false) {
+  if ($errores==0) {
+    $FotoDePerfil=fotoPerfil($_FILES["fotoperfil"]);
+    $usuario=armarUsuario($_POST,$FotoDePerfil);
+    guardarUsuario($usuario);
+  }
+}}
+if ($user==true) {
+  echo "el email esta registrado";
+}
 ?>
 
 <?php include 'images.php'; ?>
@@ -35,8 +50,8 @@ $pais = [
         <h3>Un espacio para tu mascota</h3>
       </div>
       <div class="formulario">
+        <form class="registro" action="registro.php" method="post" enctype="multipart/form-data">
         <div class="formulario1">
-      <form class="registro" action="registro-mascota.php" method="post">
           <br>
           <label for="nombre">Nombre:</label>
           <input class="reg1" type="text" name="nombre">
@@ -50,13 +65,11 @@ $pais = [
           <label for="email">E-mail:</label>
           <input class="reg1" type="text" name="email">
           <br><br><br>
-        </form>
         </div>
         <div class="formulario2">
-          <form class="" action="registro-mascota.php">
           <br>
           <label class="f2" for="contraseña">Contraseña:</label>
-          <input class="reg1" type="password" name="conraseña">
+          <input class="reg1" type="password" name="contraseña">
           <br><br>
           <label class="f2"for="confcontra">Confirmar contraseña:</label>
           <input class="reg1" type="password" name="confcontra">
@@ -74,6 +87,8 @@ $pais = [
               <option value=<?=$codigo?>><?=$pais?></option>
             <?php endforeach; ?>
           </select>
+          <label for="fotoperfil">Subí una foto de perfil</label>
+          <input type="file" name="fotoperfil">
           <br><br>
           <button type="submit" name="siguiente" class="botonreg">Siguiente</button>
         </div>

@@ -38,7 +38,7 @@
 
 
   <article class="contenido1">
-<div class="media1">
+<div class="media1 imagenesres">
   <img class="m1-a" src="images/index/girl-2.png"   >
   <img class="m1-b" src="images/index/paw.png"  >
     <img class="m1-c" src="images/index/website.png"   >
@@ -63,7 +63,7 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
   <p class="parrafos">¿Quieres encontrar a gente que comparta tu misma pasión por los animales? En Sloth puedes participar en grupos con tus mismos intereses, crear tus propias comunidades, organizar quedadas y eventos.
 </p>
   </div>
-  <div class="media2">
+  <div class="media2 imagenesres">
   <img class="m2-a" src="images/index/chat.png" alt="">
   <img class="m2-b" src="images/index/friends-1.png" alt="" class="imgpreg2" >
   <img class="m2-c" src="images/index/dog-1.png" alt="">
@@ -77,7 +77,7 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
 <!-- Preguntas y respuestas -->
 <section class="preg3">
     <article class="contenido3">
-      <div class="media3">
+      <div class="media3 imagenesres">
       <img class="m3-a" src="images/index/assistant.png" >
       <img class="m3-b" src="images/index/food.png" alt="">
       <img class="m3-c" src="images/index/heart.png" alt="">
@@ -93,7 +93,7 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
 </section>
 <section class="preg4">
     <article class="contenido4">
-      <div class="media4-iz">
+      <div class="media4-iz imagenesres">
         <img class="m4-a" src="images/index/bff.png" alt="">
       <img class="m4-b" src="images/index/heart-2.png" >
       <img class="m4-c" src="images/index/girl.png" alt="">
@@ -103,7 +103,7 @@ Encuentra amigos y compañeros de juegos para tu mascota y haz actividades en co
       <p class="parrafos">Sumate a todos aquellos amantes de los animales que quieran compartir y disfrutar al máximo de la experiencia de tener una mascota.
 Te esperamos dentro!.</p>
     </div>
-    <div class="media4-dr">
+    <div class="media4-dr imagenesres">
       <img class="m4-d" src="images/index/boy.png">
       <img class="m4-e" src="images/index/give-heart.png" alt="">
       <img class="m4-f" src="images/index/star.png" alt="">
