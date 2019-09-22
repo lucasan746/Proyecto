@@ -591,12 +591,9 @@ font-size: 1.3rem;
 .reg1{
 width: 20vw;
 height: 5vh;
-margin-left: 11px;
-border-top: none;
-border-right: none;
-border-left: none;
-border-bottom: solid 2px #4c31a0;
-background-color: #82808e00;
+margin-left: 36px;
+border: solid 1px #4c31a0;
+background-color: white;
 font-family: 'Montserrat', sans-serif;
 font-size: 1.1rem;
 
@@ -628,7 +625,7 @@ padding-left: 4%
 }
 
 .registro{
-background-color:  rgba(167, 174, 206, 0.7);
+background-color:  rgba(227, 228, 255, 0.89);
 color: #212121;
 border-radius: 2%;
 }
@@ -638,7 +635,7 @@ border-radius: 2%;
   margin-top: 10px;
 }
 .registro h4{
-  margin-left: 16px;
+  text-align: center;
   font-size: 1.1rem;
 }
 
@@ -657,7 +654,11 @@ font-family: 'Lato', sans-serif;
 .selectorcolor{
   width: 100%;
 }
-
+.selector{
+  height: 45px;
+width: 76%;
+margin-left: 36px;
+}
 .registromascota{
   box-sizing: border-box;
   position: relative;

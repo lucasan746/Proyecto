@@ -21,15 +21,15 @@
   </div>
 
   <form class="registro" action="login.php" method="post"  >
-
+<h4>Datos de tu mascota</h4>
   <br>
-     <label for="">Nombre de tu mascota:</label>
-     <input class="reg1" type="text" name="nombre">
+
+     <input class="reg1" type="text" placeholder="Nombre de tu mascota" name="nombre">
       <br>
       <br>
-      <label for="">Elige su tipo</label>
-      <select name="type">
-   <option selected value="0"> ¿Que animal es? </option>
+
+      <select class="selector"name="type">
+   <option selected value="0">¿Que animal es?</option>
 
        <option value="1">Gato</option>
        <option value="2">Perro</option>
@@ -44,13 +44,15 @@
       <br>
       <br>
       <label for="">Genero:</label>
+    
       <input class="genero" type="radio" name="gender" value="male"> Macho
      <input class="genero" type="radio" name="gender" value="female"> Hembra
       <input class="genero" type="radio" name="gender" value="female"> No lo sé
      <br>
     <br>
       <label for="start">Su cumpleaños</label>
-      <input type="date" id="start" name="trip-start"
+      <br>
+      <input type="date" id="start"  placeholder="Nacimiento "name="trip-start"
        value=""
        min="1993-01-01" max="2019-12-31">
       <br>
