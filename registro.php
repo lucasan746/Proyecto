@@ -22,9 +22,9 @@ if ($_POST) {
     guardarUsuario($usuario);
   }
 }}
-if ($user==true) {
-  echo "el email esta registrado";
-}
+// if ($user==true) {
+//   echo "el email esta registrado";
+// }
 ?>
 
 <?php include 'images.php'; ?>
@@ -44,54 +44,70 @@ if ($user==true) {
       <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
         <a class="botoninic" href="login.php">Iniciar sesión</a>
       <br>
-    <article class="cajareg">
+    <article class="registro-persona">
       <div class="cajatitulo">
         <h1 class="titulog">Sloth</h1>
         <h3>Un espacio para tu mascota</h3>
       </div>
       <div class="formulario">
+        <h4 class="datos">Tus datos</h4>
+
         <form class="registro" action="registro.php" method="post" enctype="multipart/form-data">
-        <div class="formulario1">
+
+          <input class="reg1" type="text" placeholder="Nombre" name="nombre">
           <br>
-          <label for="nombre">Nombre:</label>
-          <input class="reg1" type="text" name="nombre">
-          <br><br>
-          <label for="apellido">Apellido:</label>
-          <input class="reg1" type="text" name="apellido">
-          <br><br>
-          <label for="confcontra">Nombre de Usuario:</label>
-          <input class="reg1" type="text" name="usuario">
-          <br><br>
-          <label for="email">E-mail:</label>
-          <input class="reg1" type="text" name="email">
-          <br><br><br>
-        </div>
-        <div class="formulario2">
+
+          <input class="reg2" type="text" placeholder="Apellido" name="apellido">
           <br>
-          <label class="f2" for="contraseña">Contraseña:</label>
-          <input class="reg1" type="password" name="contraseña">
-          <br><br>
-          <label class="f2"for="confcontra">Confirmar contraseña:</label>
-          <input class="reg1" type="password" name="confcontra">
-          <br><br>
-          <label class="f2" for="sexo">Género:</label>
-          <input class="genero" type="radio" name="sexo" value="M">Mujer
-          <input class="genero" type="radio" name="sexo" value="H">Hombre
-          <input class="genero" type="radio" name="sexo" value="O">Otro
-          <label class="f2" for="date">Fecha:</label>
-          <input class="date" type="date" name="fecha">
-          <br><br>
-          <label class="f2" for="pais">País:</label>
-          <select class="" name="pais">
+
+          <input class="reg3" type="text" placeholder="Nombre de usuario" name="usuario">
+          <br>
+
+          <input class="reg4" type="text"placeholder="Correo electrónico" name="email">
+          <br>
+
+          <input class="reg5" type="password" placeholder="Contraseña" name="contraseña">
+          <br>
+
+          <input class="reg6" type="password" placeholder="Confirmar contraseña"name="confcontra">
+          <br>
+
+          <input class="gen1" type="radio" name="sexo" value="M">
+           <span class="muj">Mujer</span>
+          <input class="gen2" type="radio" name="sexo"  value="H">
+          <span class="hom">Hombre</span>
+          <input class="gen3" type="radio" name="sexo" value="O">
+          <span class="otr">Otro</span>
+          <br>
+          <select class="regday" name="dia">
+            <option selected value="0">Dia</option>
+            <option value="">1</option>
+            <option value="">2</option>
+          </select>
+          <select class="regmonth" name="mes">
+            <option selected value="">Mes</option>
+            <option value="">Enero</option>
+            <option value="">Febrero</option>
+          </select>
+          <select class="regyear" name="año">
+            <option selected value="">Año</option>
+            <option value="">1950</option>
+            <option value="">2006</option>
+
+          </select>
+          <br>
+
+          <select class="regpais" name="pais">
             <?php foreach ($pais as $codigo => $pais): ?>
               <option value=<?=$codigo?>><?=$pais?></option>
             <?php endforeach; ?>
           </select>
-          <label for="fotoperfil">Subí una foto de perfil</label>
-          <input type="file" name="fotoperfil">
+          <br><br>
+          <label class="sube"for="">Sube una foto tuya o de tu mascota</label>
+          <input class="subeimg"type="file"  name="fotoperfil">
           <br><br>
           <button type="submit" name="siguiente" class="botonreg">Siguiente</button>
-        </div>
+
       </form>
       </div>
     </article>

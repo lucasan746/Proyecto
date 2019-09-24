@@ -547,26 +547,6 @@ font-size: 1.3rem;
 /* fin */
 
 /* Formularios de registros  */
-.cajareg{
-  position: relative;
-  top: 12vh;
-  width: 45%;
-  height: 48vh;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.cajatitulo{
-  text-align: center;
-  color: white;
-
-}
-.cajatitulo h3{
-  position: relative;
-  bottom: 2vh;
-  font-family: 'Lato', sans-serif;
-}
 .botoninic{
   text-align: center;
   width: 8%;
@@ -583,61 +563,274 @@ font-size: 1.3rem;
   font-size: 1rem;
   border-radius: 5%;
 }
-.formulario{
+.registro-persona{
+  position: relative;
+  top: 2vh;
+  width: 55%;
+  height: 80vh;
   display: flex;
-  border-radius: 2%;
+  flex-direction: column;
 
+}
+
+.cajatitulo{
+  text-align: center;
+  color: white;
+
+}
+.cajatitulo h3{
+  position: relative;
+  bottom: 2vh;
+  font-family: 'Lato', sans-serif;
+}
+
+.formulario{
+  width: 80%;
+  height: 100%;
+  margin-top: 2%;
+  background-color:  rgba(251, 252, 255, 0.89);
+  color: #212121;
+  border-radius: 2%;
+}
+.datos{
+  font-size: 1.2rem;
+  margin-top: 4%;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 5%
+}
+.registro{
+position: relative;
+height: 55vh;
+}
+.registro input:focus{
+  background-color: #d0d5eb;
+  border-bottom: solid 2px #5a11dd;
+  border-top: none;
 }
 .reg1{
-width: 20vw;
+width: 42%;
 height: 5vh;
-margin-left: 36px;
-border: solid 1px #4c31a0;
-background-color: white;
+border-bottom: solid 2px #7d56f8;
+background-color: rgba(232, 236, 248, 0.29);
 font-family: 'Montserrat', sans-serif;
-font-size: 1.1rem;
+position: absolute;
+left: 5%;
+top:6%;
+border-top: none;
+border-left: none;
+border-right: none;
 
 }
-.reg1:focus{
-  background-color: #c1c6dc;
+.reg2{
+  width: 42%;
+  height: 5vh;
+  border-bottom: solid 2px #7d56f8;
+  background-color: rgba(232, 236, 248, 0.29);
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: 5%;
+  top:6%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
 }
-.regh3{
-  margin-left: 11px;
+.reg3{
+  width: 42%;
+  height: 5vh;
+  border-bottom: solid 2px #7d56f8;
+  background-color: rgba(232, 236, 248, 0.29);
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 5%;
+  top:22%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
 }
-.formulario2{
-background-color:  rgba(167, 174, 206, 0.7);
-color: #212121;
-padding-left: 4%
+.reg4{
+  width: 42%;
+  height: 5vh;
+  border-bottom: solid 2px #7d56f8;
+  background-color:rgba(232, 236, 248, 0.29);
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: 5%;
+  top:22%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
 }
-.f2{
-  margin-left: 17px
+.reg5{
+  width: 42%;
+  height: 5vh;
+  border-bottom: solid 2px #7d56f8;
+  background-color:rgba(232, 236, 248, 0.29);
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 5%;
+  top:38%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+
+}
+.reg6{
+  width: 42%;
+  height: 5vh;
+  border-bottom: solid 2px #7d56f8;
+  background-color:rgba(232, 236, 248, 0.29);
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: 5%;
+  top:38%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+
+}
+.gen1{
+  position: absolute;
+  top:55%;
+  left: 6%;
+}
+.muj{
+position: absolute;
+top: 54.8%;
+left: 7%;
+margin-left: 2%;
+font-family: 'Alegreya Sans', sans-serif;
+color: #2d2c2c;
+}
+.gen2{
+  position: absolute;
+  top: 55%;
+  left: 19%;
+}
+.hom{
+position: absolute;
+top: 54.8%;
+left: 21%;
+margin-left: 1%;
+font-family: 'Alegreya Sans', sans-serif;
+color: #2d2c2c;
+}
+.gen3{
+  position: absolute;
+  top: 55%;
+  left: 34%;
+}
+.otr{
+  position: absolute;
+  top:54.8%;
+  left: 36%;
+  margin-left: 1%;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #2d2c2c;
+
+}
+
+.regday{
+  position: absolute;
+  top: 54%;
+  right: 35%;
+  background-color: #9379e5b0;
+  width: 10%;
+  border-radius: 10%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+}
+.regday:focus{
+  background-color: white;
+  color:black;
+}
+.regmonth{
+  position: absolute;
+  top: 54%;
+  right: 22%;
+  background-color: #9379e5b0;
+  width: 10%;
+  border-radius: 10%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+}
+.regmonth:focus{
+  background-color: white;
+  color:black;
+}
+.regyear{
+  position: absolute;
+  top: 54%;
+  right: 9%;
+  background-color: #9379e5b0;
+  width: 10%;
+  border-radius: 10%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+}
+.regyear:focus{
+  background-color: white;
+  color:black;
+}
+.regpais{
+  position: absolute;
+  bottom: 27%;
+  right: 7%;
+  width: 36%;
+  height: 4vh;
+  background-color: #9379e5b0;
+  border-radius: 5%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+}
+.regpais:focus{
+  background-color: white;
+  color:black;
+}
+.sube{
+  position: absolute;
+  bottom: 28%;
+  left: 5%;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.1rem;
+}
+.subeimg{
+  position: absolute;
+    bottom: 20%;
+    left: 5%;
+    font-family: 'Montserrat', sans-serif;
 }
 .botonreg{
-  width: 73%;
+  width: 40%;
   height: 5vh;
   margin-left: 58px;
   text-decoration: none;
-  background-color: #6745d0c4;
+  background-color: #6745d0e6;
   color: white;
   border: solid 1px #5536b6;
   font-size: 1.0rem;
   border-radius: 5%;
+  position: absolute;
+  bottom: 6%;
+  right: 5%;
 }
 
-.registro{
-background-color:  rgba(227, 228, 255, 0.89);
-color: #212121;
-border-radius: 2%;
-}
-.formulario label{
-  font-family: 'Lato', sans-serif;
-  margin-left: 16px;
-  margin-top: 10px;
-}
-.registro h4{
-  text-align: center;
-  font-size: 1.1rem;
-}
+
+
+
+
 
 .date{
   margin-right: 48px;
