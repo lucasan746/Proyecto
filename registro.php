@@ -106,7 +106,7 @@ if ($_POST) {
           <label class="sube"for="">Sube una foto tuya o de tu mascota</label>
           <input class="subeimg"type="file"  name="fotoperfil">
           <br><br>
-          <button type="submit" name="siguiente" class="botonreg">Siguiente</button>
+          <button type="submit" name="siguiente" class="botonsig">Siguiente</button>
 
       </form>
       </div>
