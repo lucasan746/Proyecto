@@ -38,8 +38,6 @@ if ($_POST) {
     }
   }
   }
-
-var_Dump($usuario);
 ?>
 
 <?php include 'images.php'; ?>

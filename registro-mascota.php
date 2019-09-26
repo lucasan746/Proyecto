@@ -14,22 +14,22 @@
   <body id="<?= $imagenes[$alea] ?>">
   <section class="cajalogin3">
     <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
-<article class="registromascota">
+<article class="registro-mascota">
   <div class="cajatitulo">
   <h1 class="titulog">Sloth</h1>
   <h3>Un espacio para tu mascota</h3>
   </div>
+<div class="formulario-mascota">
+  <h4 class="datos">Datos de tu mascota</h4>
 
-  <form class="registro" action="login.php" method="post"  >
-<h4>Datos de tu mascota</h4>
-  <br>
+  <form class="registro1" action="login.php" method="post"  >
 
-     <input class="reg1" type="text" placeholder="Nombre de tu mascota" name="nombre">
+      <input class="regmasc" type="" placeholder="Nombre" name="" value="">
       <br>
+      <label class="eligea" for="">Elige su tipo</label>
       <br>
-
-      <select class="selector"name="type">
-   <option selected value="0">¿Que animal es?</option>
+      <select class="selecani"name="type">
+   <option selected value="0">Tipos de mascota</option>
 
        <option value="1">Gato</option>
        <option value="2">Perro</option>
@@ -41,25 +41,38 @@
        <option value="">Otro</option>
 
  </select>
+ <label class="cumple-m" for="">Su cumpleaños</label>
       <br>
-      <br>
-      <label for="">Genero:</label>
-    
-      <input class="genero" type="radio" name="gender" value="male"> Macho
-     <input class="genero" type="radio" name="gender" value="female"> Hembra
-      <input class="genero" type="radio" name="gender" value="female"> No lo sé
+
+      <input class="gen-m1" type="radio" name="gender" >
+      <span class="ma">Macho</span>
+      <input class="gen-m2" type="radio" name="gender" >
+      <span class="hem">Hembra</span>
+      <input class="gen-m3" type="radio" name="gender" >
+      <span class="nolo">No lo sé</span>
      <br>
-    <br>
-      <label for="start">Su cumpleaños</label>
+
+    <select class="regday-m" name="dia">
+      <option selected value="0">Dia</option>
+      <option value="">1</option>
+      <option value="">2</option>
+    </select>
+    <select class="regmonth-m" name="mes">
+      <option selected value="">Mes</option>
+      <option value="">Enero</option>
+      <option value="">Febrero</option>
+    </select>
+    <select class="regyear-m" name="año">
+      <option selected value="">Año</option>
+      <option value="">1950</option>
+      <option value="">2006</option>
+
+    </select>
+
       <br>
-      <input type="date" id="start"  placeholder="Nacimiento "name="trip-start"
-       value=""
-       min="1993-01-01" max="2019-12-31">
+      <label class="pelaje" for="">Que color predomina </label>
       <br>
-      <br>
-      <label for="">Que color predomina en su pelaje</label>
-      <br>
-      <select class="selectorcolor" name="color">
+      <select class="colorpelaje" name="color">
    <option selected value="0"> Elige un color </option>
 
        <option value="">Negro</option>
@@ -69,10 +82,10 @@
  </select>
 
 <br>
-  <button type="submit" name="enviar" class="botonlog">Registrate</button>
+  <button type="submit" name="enviar" class="botonreg">Registrate</button>
 
   </form>
-
+</div>
 </article>
 <a class="botomitir" href="login.php">Omitir</a>
 

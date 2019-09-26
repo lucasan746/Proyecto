@@ -804,7 +804,7 @@ color: #2d2c2c;
   bottom: 28%;
   left: 5%;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 .subeimg{
   position: absolute;
@@ -812,7 +812,7 @@ color: #2d2c2c;
     left: 5%;
     font-family: 'Montserrat', sans-serif;
 }
-.botonreg{
+.botonsig{
   width: 40%;
   height: 5vh;
   margin-left: 58px;
@@ -828,39 +828,196 @@ color: #2d2c2c;
 }
 
 
-
-
-
-
-.date{
-  margin-right: 48px;
-  margin-top: 18px;
-  margin-left: 10px;
-}
-.genero{
-margin: 2%;
-width: 4%;
-font-family: 'Lato', sans-serif;
-}
-
 /* registro mascota */
-.selectorcolor{
-  width: 100%;
-}
-.selector{
-  height: 45px;
-width: 76%;
-margin-left: 36px;
-}
-.registromascota{
-  box-sizing: border-box;
+
+
+.registro-mascota{
   position: relative;
-  top: 13vh;
-  width: 26%;
-  font-family: 'Lato', sans-serif;
+  top: 5vh;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
 }
-.registromascota label{
-  margin-left: 10px;
+
+.formulario-mascota{
+  width: 80%;
+  height: 57vh;
+  margin-top: 2%;
+  background-color:  rgba(251, 252, 255, 0.89);
+  color: #212121;
+  border-radius: 2%;
+}
+.registro1{
+position: relative;
+height: 50vh;
+}
+.regmasc{
+  width: 62%;
+  height: 5vh;
+  border-bottom: solid 2px #7d56f8;
+  background-color: rgba(232, 236, 248, 0.29);
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 5%;
+  top:6%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.eligea{
+  position: absolute;
+  left: 5%;
+  top:22%;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.05rem;
+}
+.selecani{
+  position: absolute;
+  left: 5%;
+  top:32%;
+  width: 36%;
+  height: 4vh;
+  background-color: #9379e5b0;
+  border-radius: 5%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+}
+.selecani:focus{
+  background-color: white;
+  color:black;
+}
+.cumple-m{
+  position: absolute;
+  top:22%;
+  right: 26%;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.05rem;
+}
+.regday-m{
+  position: absolute;
+  top: 34%;
+  right: 36%;
+  background-color: #9379e5b0;
+  width: 10%;
+  border-radius: 10%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+}
+.regday-m:focus{
+  background-color: white;
+  color:black;
+}
+.regmonth-m{
+  position: absolute;
+  top: 34%;
+  right: 22%;
+  background-color: #9379e5b0;
+  width: 10%;
+  border-radius: 10%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+}
+.regmonth-m:focus{
+  background-color: white;
+  color:black;
+}
+.regyear-m{
+  position: absolute;
+  top: 34%;
+  right: 8%;
+  background-color: #9379e5b0;
+  width: 10%;
+  border-radius: 10%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+}
+.regyear-m:focus{
+  background-color: white;
+  color:black;
+}
+.gen-m1{
+  position: absolute;
+  top:52%;
+  left:5%;
+}
+.ma{
+position: absolute;
+top:51.5%;
+left: 8%;
+font-family: 'Alegreya Sans', sans-serif;
+color: #2d2c2c;
+
+}
+.gen-m2{
+  position: absolute;
+  top:52%;
+  left: 18%;
+}
+.hem{
+position: absolute;
+top:51.5%;
+left: 21%;
+font-family: 'Alegreya Sans', sans-serif;
+color: #2d2c2c;margin-left: 1%;
+}
+.gen-m3{
+  position: absolute;
+  top:52%;
+  left: 34%;
+}
+.nolo{
+  position: absolute;
+  top:51.5%;
+  left: 37%;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #2d2c2c;
+
+}
+.pelaje{
+  position: absolute;
+  right: 18%;
+  top:51%;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.05rem;
+}
+.colorpelaje{
+  position: absolute;
+  top: 60%;
+  right: 9%;
+  width: 36%;
+  height: 4vh;
+  background-color: #9379e5b0;
+  border-radius: 5%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2px;
+  color:white;
+  border: solid 1px #6b48dd;
+  }
+  .colorpelaje:focus{
+    background-color: white;
+    color:black;
+  }
+.botonreg{
+  width: 50%;
+  margin-left: 58px;
+  text-decoration: none;
+  background-color: #603cd0;
+  color: white;
+  border: solid 1px #5536b6;
+  font-size: 20px;
+  border-radius: 5%;
+  position: absolute;
+  bottom: 8%;
+  right: 25%;
+  padding: 10px;
 }
 .botomitir{
   text-align: center;
