@@ -11,7 +11,9 @@ function validar($datos,$imagen){
         $errores["usuario"]= "El nombre de usuario no puede estar vacio";
       }
       if (filter_var($datos["email"],FILTER_VALIDATE_EMAIL)) {
-        $errores["email"] = "El email es incorrecto";
+      }
+      else {
+        $errores["email"]="el email es incorrecto";
       }
       if (strlen($datos["contraseña"])<=6) {
         $errores["contraseña"]= "La contraseña debe tener minimo 6 caracteres";
@@ -30,19 +32,21 @@ function validar($datos,$imagen){
       if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
         $errores["fotoperfil"] = "La extension del archivo es incorrecto";
       }
+
       return $errores;
     }
 
-function armarUsuario($datos,$imagen)
+function armarUsuario($datos,$imagen,$fecha)
 {
   $usuario=[
     "nombre" => $datos["nombre"],
     "apellido" => $datos["apellido"],
+    "usuario"=>$datos["usuario"],
     "email" => $datos["email"],
     "contrasenia"=>$datos["contraseña"],
     "pais"=>$datos["pais"],
     "sexo"=>$datos["sexo"],
-    "Nacimiento"=>$datos["fecha"],
+    "Nacimiento"=>$fecha,
     "FotoDePerfil"=>$imagen
   ];
   return $usuario;
@@ -75,17 +79,43 @@ function armarUsuario($datos,$imagen)
    return $ListaUsuarios;
 
  }
- function ValirdarUser($usuario)
+ function ValirdarEmail($usuario)
  {
    $usuarios=BaseDeDatos();
-   foreach ($usuarios as $key => $personas) {
-     if ($personas===$usuario["email"]) {
-       return true;
-     }
-     else {
-       return false;
-     }
+   for ($i=0; $i < count($usuarios); $i++) {
+     $users[]=$usuarios[$i]["email"];
    }
- }
-
+foreach ($users as $key) {
+  if ($key===$usuario) {
+    $ts=true;
+    break;
+  }
+  else {
+    $ts=false;
+  }
+}
+return $ts;
+   }
+ function ValirdarUser($usuario)
+   {
+     $usuarios=BaseDeDatos();
+     for ($i=0; $i < count($usuarios); $i++) {
+       $users[]=$usuarios[$i]["usuario"];
+     }
+  foreach ($users as $key) {
+    if ($key===$usuario) {
+      $ts=true;
+      break;
+    }
+    else {
+      $ts=false;
+    }
+  }
+  return $ts;
+     }
+  function armarFecha($datos)
+  {
+    $fecha=$datos["dia"]."-".$datos["mes"]."-".$datos["año"];
+    return $fecha;
+  }
 ?>
