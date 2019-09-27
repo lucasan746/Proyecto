@@ -1,4 +1,5 @@
 <?php
+session_start();
 function validar($datos,$imagen){
       $errores=[];
       if (strlen($datos["nombre"])==0) {
@@ -114,9 +115,42 @@ return $ts;
   }
   return $ts;
      }
+     function contraseña($usuario)
+       {
+         $usuarios=BaseDeDatos();
+         for ($i=0; $i < count($usuarios); $i++) {
+           $users[]=$usuarios[$i]["contrasenia"];
+         }
+
+      foreach ($users as $key) {
+        if (password_verify($usuario, $key)) {
+          $ts=true;
+          break;
+        }
+        else {
+          $ts=false;
+        }
+      }
+      return $ts;
+         }
   function armarFecha($datos)
   {
     $fecha=$datos["dia"]."-".$datos["mes"]."-".$datos["año"];
     return $fecha;
   }
+  function validarLogin($datos){
+    $val=ValirdarUser($datos);
+    if ($val==true) {
+      return $ts=true;
+    }
+    else {
+      return $ts=false;
+    }
+  }
+  function inicioSesion($usuario, $dato){
+  $_SESSION["nombre"] = $usuario["nombre"];
+  $_SESSION["apellido"] = $usuario["apellido"];
+  $_SESSION["usuario"] = $usuario["usuario"];
+  $_SESSION["FotoDePerfil"] = $usuario["FotoDePerfil"];
+}
 ?>

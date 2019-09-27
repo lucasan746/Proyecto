@@ -33,12 +33,17 @@ if ($_POST) {
       }
       else {
         guardarUsuario($usuario);
+        inicioSesion($usuario);
         header("location:registro-mascota.php");
       }
 
     }
   }
   }
+  if ($_SESSION["usuario"]!=null) {
+    header("location:home.php");
+  }
+  var_dump($_SESSION);
 ?>
 
 <?php include 'images.php'; ?>
