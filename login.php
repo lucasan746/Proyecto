@@ -1,4 +1,22 @@
-<?php include 'images.php'; ?>
+<?php include 'images.php';
+include 'validacion.php';
+if ($_POST) {
+  $us=validarLogin($_POST["usuario"]);
+  if ($us==true) {
+    $us=contraseña($_POST["contraseña"]);
+    if ($us==true) {
+      header("location:home.php");
+    }
+    else {
+      echo "La contraseña es incorrecta";
+    }
+  }
+  else {
+    echo "el usuario es incorrecto";
+  }
+}
+
+ ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -15,9 +33,9 @@
       <article class="login">
         <h1 class="titulog2">Sloth</h1>
 
-        <form class="iniciases" action="home.php" method="post">
-          <label for="email"></label>
-          <input type="text" name="email" placeholder="Email o Nombre de usuario">
+        <form class="iniciases" action="login.php" method="post">
+          <label for="usuario"></label>
+          <input type="text" name="usuario" placeholder="Nombre de usuario">
           <label for="Contraseña"></label>
           <input type="text" name="contraseña" placeholder="Contraseña">
           <button type="submit" name="enviar" class="botonlog">Iniciar Sesión</button>

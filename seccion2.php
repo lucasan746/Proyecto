@@ -1,7 +1,7 @@
 <section class="seccionder">
   <div class="perfilderecha">
-    <img src="images/iconos/perfil.jpg" alt="" width="25%">
-    <h4>Phoebe</h4>
+    <img src="<?php echo "fotos/".$_SESSION["FotoDePerfil"]; ?>" alt="fotoperfil" width="25%">
+    <h4><?php echo $_SESSION["usuario"]; ?></h4>
   </div>
   <article class="sugeridos">
     <h4 class="titusugeridos">Sugeridos para ti</h4>

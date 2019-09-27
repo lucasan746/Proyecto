@@ -10,12 +10,12 @@
           <img src="images/iconos/bocadillo.png" alt="mensajes" class="iconosbarra">
           <img src="images/iconos/notificacion.png" alt="notificaciones" class="iconosbarra">
           <img src="images/iconos/grupo.png" alt="grupos" class="iconosbarra">
-          <img src="images/iconos/ajustes.png" alt="ajustes" class="iconosbarra">
+          <a href="finsesion.php"><img src="images/iconos/ajustes.png" alt="ajustes" class="iconosbarra"></a>
         </div>
       </div>
       <div class="perfil">
-        <img src="images/iconos/perfil.jpg" alt="fotoperfil" class="fotoperfil">
-      
+        <img src="<?php echo "fotos/".$_SESSION["FotoDePerfil"]; ?>" alt="fotoperfil" class="fotoperfil">
+
       </div>
   </nav>
 </header>

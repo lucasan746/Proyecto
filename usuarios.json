@@ -1,12 +1,4 @@
-{"nombre":"Lucas","apellido":"Sanchez","email":"cariverp9@gmail.com","contrasenia":"asdasdasd","pais":"Arg","sexo":"H","Nacimiento":"2019-09-23","FotoDePerfil":"5d8555523798f.png"}
-{"nombre":"Lucas","apellido":"Sanchez","email":"cariverp9@gmail.com","contrasenia":"asdasdasd","pais":"Ven","sexo":"H","Nacimiento":"2019-09-10","FotoDePerfil":"5d8555da4b81e.png"}
-{"nombre":"Lucas","apellido":"Sanchez","email":"cariverp9@gmail.com","contrasenia":"asdasdasd","pais":"Ven","sexo":"H","Nacimiento":"2019-09-10","FotoDePerfil":"5d85573c08468.png"}
-{"nombre":"Lucas","apellido":"Sanchez","email":"carivelrp9@gmail.com","contrasenia":"asdasdasd","pais":"Brs","sexo":"O","Nacimiento":"2019-09-24","FotoDePerfil":"5d8558d119070.png"}
-{"nombre":"Lucas","apellido":"Sanchez","email":"carivelrp9@gmail.com","contrasenia":"asdasdasd","pais":"Es\u00f1","sexo":"H","Nacimiento":"2019-09-17","FotoDePerfil":"5d85591028415.png"}
-{"nombre":"asdas","apellido":"Sanchez","email":"carivelrp9@gmail.com","contrasenia":"asdasdasd","pais":"Arg","sexo":"H","Nacimiento":"2019-09-25","FotoDePerfil":"5d855969b98a7.png"}
-{"nombre":"asdas","apellido":"Sanchez","email":"carivelrp9@gmail.com","contrasenia":"asdasdasd","pais":"Arg","sexo":"H","Nacimiento":"2019-09-25","FotoDePerfil":"5d855b45386f0.png"}
-{"nombre":"asdas","apellido":"Sanchez","email":"carivelrp9@gmail.com","contrasenia":"asdasdasd","pais":"Arg","sexo":"H","Nacimiento":"2019-09-25","FotoDePerfil":"5d855b48c9521.png"}
-{"nombre":"","apellido":"","email":"","contrasenia":"","pais":"Arg","sexo":null,"Nacimiento":"","FotoDePerfil":"5d87ed3128be6."}
-{"nombre":"","apellido":"","email":"","contrasenia":"","pais":"Arg","sexo":null,"Nacimiento":"","FotoDePerfil":"5d87f95fc9611."}
-{"nombre":"","apellido":"","email":"","contrasenia":"","pais":"Arg","sexo":null,"Nacimiento":"","FotoDePerfil":"5d87f9731460c."}
-{"nombre":"","apellido":"","email":"","contrasenia":"","pais":"Arg","sexo":null,"Nacimiento":null,"FotoDePerfil":"5d8bff6bcd76f."}
+
+{"nombre":"Lucas","apellido":"Sanchez","usuario":"asdasd","email":"cariverp9@gmail.com","contrasenia":"$2y$10$LNsgAKJL7MrDqlBAkPRhe.jI3OFoK8PUcmbnWe8yQfe.pMQLBcuR2","pais":"Arg","sexo":"H","Nacimiento":"1-Enero-1950","FotoDePerfil":"5d8e082a365bd.png"}
+{"nombre":"Lucas","apellido":"Sanchez","usuario":"Lucasss","email":"lucas@gmail.com","contrasenia":"$2y$10$voVSjLY5J3QGLVQoDEOyuOmuBUMnyqZ53bL4Z\/WwP309kSL\/VRkC.","pais":"Arg","sexo":"H","Nacimiento":"1-Enero-1950","FotoDePerfil":"5d8e162e3512e.png"}
+{"nombre":"Lucas","apellido":"Sanchez","usuario":"Lucasanchez","email":"sdasda@gmail.com","contrasenia":"$2y$10$yGsVZRThZhGgPaV219VUmOJL.JNabPxoABw9RhwEGmIpvXBU\/1fZO","pais":"Arg","sexo":"H","Nacimiento":"1-Enero-1950","FotoDePerfil":"5d8e1690176eb.png"}
