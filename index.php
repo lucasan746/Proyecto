@@ -1,4 +1,9 @@
-<?php include_once 'images.php';?>
+<?php include_once 'images.php';
+include 'validacion.php';
+if (isset($_SESSION["usuario"])) {
+  header("location:home.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>

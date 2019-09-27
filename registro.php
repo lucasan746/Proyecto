@@ -40,10 +40,9 @@ if ($_POST) {
     }
   }
   }
-  if ($_SESSION["usuario"]!=null) {
+  if (isset($_SESSION["usuario"])) {
     header("location:home.php");
   }
-  var_dump($_SESSION);
 ?>
 
 <?php include 'images.php'; ?>

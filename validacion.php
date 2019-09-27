@@ -147,10 +147,20 @@ return $ts;
       return $ts=false;
     }
   }
-  function inicioSesion($usuario, $dato){
+  function inicioSesion($usuario){
   $_SESSION["nombre"] = $usuario["nombre"];
   $_SESSION["apellido"] = $usuario["apellido"];
   $_SESSION["usuario"] = $usuario["usuario"];
   $_SESSION["FotoDePerfil"] = $usuario["FotoDePerfil"];
 }
+function buscarUsuario($datos)
+{
+  $listusus=BaseDeDatos();
+  unset($listusus[0]);
+  rsort($listusus);
+  $user=array_search($datos,array_column($listusus,'usuario'));
+  $_SESSION["usuario"]=$listusus[$user]["usuario"];
+  $_SESSION["FotoDePerfil"]=$listusus[$user]["FotoDePerfil"];
+
+  }
 ?>
