@@ -1,5 +1,6 @@
 <?php include 'images.php'; ?>
-
+<?php
+ ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>

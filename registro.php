@@ -1,15 +1,5 @@
 <?php
-$pais = [
-  "Arg" => "Argentina",
-  "Chi" => "Chile",
-  "Col" => "Colombia",
-  "Ale" => "Alemania",
-  "Itl" => "Italia",
-  "Ecu" => "Ecuador",
-  "Ven" => "Venezuela",
-  "Brs" => "Brasil",
-  "Esñ" => "España"
-];
+
 include_once 'validacion.php';
 if ($_POST) {
   $errores=validar($_POST,$_FILES);
@@ -26,7 +16,7 @@ if ($_POST) {
   $ListaUsuarios=BaseDeDatos();
 
 ?>
-
+<?php include "arrays.php" ?>
 <?php include 'images.php'; ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">

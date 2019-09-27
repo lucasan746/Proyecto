@@ -643,7 +643,7 @@ border-right: none;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   left: 5%;
-  top:22%;
+  top:20%;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -657,7 +657,7 @@ border-right: none;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   right: 5%;
-  top:22%;
+  top:20%;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -671,7 +671,7 @@ border-right: none;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   left: 5%;
-  top:38%;
+  top:36%;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -686,7 +686,7 @@ border-right: none;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   right: 5%;
-  top:38%;
+  top:36%;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -695,12 +695,12 @@ border-right: none;
 }
 .gen1{
   position: absolute;
-  top:55%;
+  top:54%;
   left: 6%;
 }
 .muj{
 position: absolute;
-top: 54.8%;
+top: 53.8%;
 left: 7%;
 margin-left: 2%;
 font-family: 'Alegreya Sans', sans-serif;
@@ -708,12 +708,12 @@ color: #2d2c2c;
 }
 .gen2{
   position: absolute;
-  top: 55%;
+  top: 54%;
   left: 19%;
 }
 .hom{
 position: absolute;
-top: 54.8%;
+top: 53.8%;
 left: 21%;
 margin-left: 1%;
 font-family: 'Alegreya Sans', sans-serif;
@@ -721,12 +721,12 @@ color: #2d2c2c;
 }
 .gen3{
   position: absolute;
-  top: 55%;
+  top: 54%;
   left: 34%;
 }
 .otr{
   position: absolute;
-  top:54.8%;
+  top:53.8%;
   left: 36%;
   margin-left: 1%;
   font-family: 'Alegreya Sans', sans-serif;
@@ -736,7 +736,7 @@ color: #2d2c2c;
 
 .regday{
   position: absolute;
-  top: 54%;
+  top: 53%;
   right: 35%;
   background-color: #9379e5b0;
   width: 10%;
@@ -752,7 +752,7 @@ color: #2d2c2c;
 }
 .regmonth{
   position: absolute;
-  top: 54%;
+  top: 53%;
   right: 22%;
   background-color: #9379e5b0;
   width: 10%;
@@ -768,7 +768,7 @@ color: #2d2c2c;
 }
 .regyear{
   position: absolute;
-  top: 54%;
+  top: 53%;
   right: 9%;
   background-color: #9379e5b0;
   width: 10%;
