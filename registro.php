@@ -33,6 +33,7 @@ if ($_POST) {
       }
       else {
         guardarUsuario($usuario);
+        header("location:registro-mascota.php");
       }
 
     }

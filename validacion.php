@@ -38,12 +38,13 @@ function validar($datos,$imagen){
 
 function armarUsuario($datos,$imagen,$fecha)
 {
+    $contraHash = password_hash($datos["contraseña"], PASSWORD_DEFAULT);
   $usuario=[
     "nombre" => $datos["nombre"],
     "apellido" => $datos["apellido"],
     "usuario"=>$datos["usuario"],
     "email" => $datos["email"],
-    "contrasenia"=>$datos["contraseña"],
+    "contrasenia"=>$contraHash,
     "pais"=>$datos["pais"],
     "sexo"=>$datos["sexo"],
     "Nacimiento"=>$fecha,
