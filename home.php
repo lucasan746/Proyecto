@@ -15,6 +15,9 @@ content="width=device-width, initial-scale=1">
   <body class="Home">
     <?php require_once 'navbar.php'; ?>
     <section class="cuerpohome">
+      <section class="barratablet">
+        <img src="<?php echo "fotos/".$_SESSION["FotoDePerfil"]; ?>" alt="fotoperfil" class="fotoperfil">
+      </section>
     <?php require_once 'seccion1.php'; ?>
     <?php require_once 'seccion2.php'; ?>
   </section>

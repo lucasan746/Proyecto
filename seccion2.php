@@ -1,6 +1,6 @@
 <section class="seccionder">
   <div class="perfilderecha">
-    <img src="<?php echo "fotos/".$_SESSION["FotoDePerfil"]; ?>" alt="fotoperfil" width="25%">
+    <img src="<?php echo "fotos/".$_SESSION["FotoDePerfil"]; ?>" alt="fotoperfil" class="fotoperfil2">
     <h4><?php echo $_SESSION["usuario"]; ?></h4>
   </div>
   <article class="sugeridos">

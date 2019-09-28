@@ -8,7 +8,6 @@ if ($_POST) {
       $us=compararDatos($_POST);
       if ($us==true) {
         buscarUsuario($_POST["usuario"]);
-        $record["recordar"]=recordar($_POST);
         recordarUsu($_POST,$record);
         header("location:home.php");
       }

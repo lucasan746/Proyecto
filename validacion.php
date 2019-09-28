@@ -189,27 +189,15 @@ function buscarUsuario($datos)
       return $_POST[$input];
     }
   }
-  function recordarUsu($datos,$ts)
+  function recordarUsu($datos)
   {
-    if ($ts['recordar'] = true) {
+    if (isset($datos["recordar"])) {
       $usu=$datos["usuario"];
       $contra=$datos["contraseña"];
         setcookie("usuario",$usu);
         setcookie("contraseña",$contra);
+}
 
-    }
-    else {
-      unset($_COOKIE);
-    }
   }
-  function recordar($datos)
-  {
-    if (isset($datos["recordar"])) {
-      $ts=true;
-    }
-    else {
-      $ts = false;
-    }
-    return $ts;
-  }
+
 ?>
