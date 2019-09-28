@@ -5,8 +5,14 @@ if ($_POST) {
   if ($us==true) {
     $us=contraseña($_POST["contraseña"]);
     if ($us==true) {
-      buscarUsuario($_POST["usuario"]);
-      header("location:home.php");
+      $us=compararDatos($_POST);
+      if ($us==true) {
+        buscarUsuario($_POST["usuario"]);
+        header("location:home.php");
+      }
+      else {
+        echo "La contrasña es incorrecta";
+      }
     }
     else {
       echo "La contraseña es incorrecta";

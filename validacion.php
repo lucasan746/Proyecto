@@ -163,4 +163,19 @@ function buscarUsuario($datos)
   $_SESSION["FotoDePerfil"]=$listusus[$user]["FotoDePerfil"];
 
   }
+  function compararDatos($datos)
+  {
+    $listusus=BaseDeDatos();
+    unset($listusus[0]);
+    rsort($listusus);
+    $user=array_search($datos["usuario"],array_column($listusus,'usuario'));
+    if ($listusus[$user]["usuario"]==$datos["usuario"]&&password_verify($datos["contraseña"],$listusus[$user]["contrasenia"])) {
+      $ts=true;
+      return $ts;
+    }
+    else {
+      $ts=false;
+      return $ts;
+    }
+  }
 ?>
