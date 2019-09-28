@@ -5,6 +5,7 @@ if ($_POST) {
   if ($us==true) {
     $us=contraseña($_POST["contraseña"]);
     if ($us==true) {
+      buscarUsuario($_POST["usuario"]);
       header("location:home.php");
     }
     else {
@@ -14,6 +15,9 @@ if ($_POST) {
   else {
     echo "el usuario es incorrecto";
   }
+}
+if (isset($_SESSION["usuario"])) {
+  header("location:home.php");
 }
 
  ?>
