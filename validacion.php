@@ -176,6 +176,40 @@ function buscarUsuario($datos)
     else {
       $ts=false;
       return $ts;
+    }}
+  function validarmascota($datos){
+    $errores = [];
+      if (strlen($datos["nombre"])==0) {
+        $errores["nombre"] = "El nombre no puede estar vacio";
+  }
+  return $errores;
+  }
+  function persistir($input){
+    if(isset($_POST[$input])){
+      return $_POST[$input];
     }
+  }
+  function recordarUsu($datos,$ts)
+  {
+    if ($ts['recordar'] = true) {
+      $usu=$datos["usuario"];
+      $contra=$datos["contraseña"];
+        setcookie("usuario",$usu);
+        setcookie("contraseña",$contra);
+
+    }
+    else {
+      unset($_COOKIE);
+    }
+  }
+  function recordar($datos)
+  {
+    if (isset($datos["recordar"])) {
+      $ts=true;
+    }
+    else {
+      $ts = false;
+    }
+    return $ts;
   }
 ?>

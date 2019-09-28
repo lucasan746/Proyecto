@@ -1,7 +1,7 @@
 <?php include 'validacion.php';
 if (isset($_SESSION["usuario"])==false) {
   header("location:login.php");
-} ?>
+}?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>

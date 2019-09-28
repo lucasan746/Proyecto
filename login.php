@@ -8,6 +8,8 @@ if ($_POST) {
       $us=compararDatos($_POST);
       if ($us==true) {
         buscarUsuario($_POST["usuario"]);
+        $record["recordar"]=recordar($_POST);
+        recordarUsu($_POST,$record);
         header("location:home.php");
       }
       else {
@@ -25,7 +27,6 @@ if ($_POST) {
 if (isset($_SESSION["usuario"])) {
   header("location:home.php");
 }
-
  ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
@@ -45,9 +46,11 @@ if (isset($_SESSION["usuario"])) {
 
         <form class="iniciases" action="login.php" method="post">
           <label for="usuario"></label>
-          <input type="text" name="usuario" placeholder="Nombre de usuario">
+          <input type="text" name="usuario" placeholder="Nombre de usuario" value="<?php if(isset($_COOKIE["usuario"])){echo $_COOKIE["usuario"];} ?>">
           <label for="Contraseña"></label>
-          <input type="text" name="contraseña" placeholder="Contraseña">
+          <input type="password" name="contraseña" placeholder="Contraseña" value="<?php if(isset($_COOKIE["contraseña"])){echo $_COOKIE["contraseña"];} ?>">
+          <label for="recordarus">Recordar Usuario</label>
+          <input type="checkbox" name="recordar" value="si">
           <button type="submit" name="enviar" class="botonlog">Iniciar Sesión</button>
         </form>
       </article>

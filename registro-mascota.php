@@ -1,5 +1,11 @@
-<?php include 'images.php'; ?>
+<?php include 'images.php' ?>
+<?php include "arrays.php" ?>
+<?php include_once "validacion.php" ?>
+<?php  if ($_POST) {
+  $errores=validarmascota($_POST);
 
+}
+  ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -19,66 +25,71 @@
   <h1 class="titulog">Sloth</h1>
   <h3>Un espacio para tu mascota</h3>
   </div>
+  <?php if (isset($errores)): ?>
+    <?php foreach ($errores as $key => $error): ?>
+        <li class="alert"><?=$error?></li>
+    <?php endforeach; ?>
+  <?php endif; ?>
 <div class="formulario-mascota">
   <h4 class="datos">Datos de tu mascota</h4>
 
-  <form class="registro1" action="login.php" method="post"  >
-
-      <input class="regmasc" type="" placeholder="Nombre" name="" value="">
+  <form class="registro1" action="registro-mascota.php" method="post" enctype="multipart/form-data"  >
+      <label for="Nombre"></label>
+      <input  class="regmasc" type="text" placeholder="<?php if (isset($errores["nombre"])) {
+        echo $errores["nombre"];
+      } else {
+        echo "Nombre";
+      }?>" name="nombre"  >
       <br>
       <label class="eligea" for="">Elige su tipo</label>
       <br>
-      <select class="selecani"name="type">
+      <select class="selecani" name="mascotas" required>
    <option selected value="0">Tipos de mascota</option>
-
-       <option value="1">Gato</option>
-       <option value="2">Perro</option>
-       <option value="3">Tortuga</option>
-       <option value="">Pez</option>
-       <option value="">Hurón</option>
-       <option value="">Conejo</option>
-       <option value="">Ave</option>
-       <option value="">Otro</option>
-
+    <?php foreach ($mascotas as $key => $mascotas): ?>
+    <option value= <?=$key?>><?=$mascotas?></option>
+    <?php endforeach; ?>
  </select>
+
  <label class="cumple-m" for="">Su cumpleaños</label>
       <br>
 
-      <input class="gen-m1" type="radio" name="gender" >
-      <span class="ma">Macho</span>
-      <input class="gen-m2" type="radio" name="gender" >
-      <span class="hem">Hembra</span>
-      <input class="gen-m3" type="radio" name="gender" >
-      <span class="nolo">No lo sé</span>
-     <br>
+     <select class="regday-m"  name="dia" required >
+       <option selected value="">Dia</option>
+       <?php foreach ($dia as $key => $dia): ?>
+         <option value=<?=$key?>><?= $dia?></option>
+       <?php endforeach; ?>
+     </select>
+     <select class="regmonth-m" name="mes" required>
+       <option selected value="">Mes</option>
+   <?php foreach ($mes as $key => $mes): ?>
+         <option value=<?=$key?>><?=$mes?></option>
+   <?php endforeach; ?>
+     </select>
 
-    <select class="regday-m" name="dia">
-      <option selected value="0">Dia</option>
-      <option value="">1</option>
-      <option value="">2</option>
-    </select>
-    <select class="regmonth-m" name="mes">
-      <option selected value="">Mes</option>
-      <option value="">Enero</option>
-      <option value="">Febrero</option>
-    </select>
-    <select class="regyear-m" name="año">
-      <option selected value="">Año</option>
-      <option value="">1950</option>
-      <option value="">2006</option>
+     <select class="regyear-m" name="año" required>
+       <option selected value="">Año</option>
+       <?php foreach ($año as $key => $año): ?>
+         <option value=<?=$key?>><?=$año?></option>
+       <?php endforeach; ?>
+     </select>
 
-    </select>
+
+     <input class="gen-m1" type="radio" name="gender" required>
+     <span class="ma">Macho</span>
+     <input class="gen-m2" type="radio" name="gender"  >
+     <span class="hem">Hembra</span>
+     <input class="gen-m3" type="radio" name="gender" >
+     <span class="nolo">No lo sé</span>
+    <br>
 
       <br>
       <label class="pelaje" for="">Que color predomina </label>
       <br>
-      <select class="colorpelaje" name="color">
+      <select class="colorpelaje" name="pelaje" required>
    <option selected value="0"> Elige un color </option>
-
-       <option value="">Negro</option>
-       <option value="">Blanco</option>
-       <option value="">Marron</option>
-       <option value="">No tiene pelaje</option>
+      <?php foreach ($pelaje as $key => $pelaje): ?>
+        <option value=<?=$key?>><?=$pelaje?></option>
+      <?php endforeach; ?>
  </select>
 
 <br>
@@ -87,6 +98,9 @@
   </form>
 </div>
 </article>
+
 <a class="botomitir" href="login.php">Omitir</a>
 
 </section>
+</body>
+</html>
