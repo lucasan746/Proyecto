@@ -3,11 +3,11 @@
 include_once 'validacion.php';
 if ($_POST) {
   $errores=validar($_POST,$_FILES);
-  if ($errores!=0) {
-    foreach ($errores as $key => $value) {
-      echo "<p class='error'>* $value";
-    }
-  }
+  // if ($errores!=0) {
+  //   foreach ($errores as $key => $value) {
+  //     echo "<p class='error'>* $value";
+  //   }
+  // }
   if ($errores==null) {
     $imagendeperfil=fotoPerfil($_FILES);
     $fecha=armarFecha($_POST);
@@ -29,13 +29,14 @@ if ($_POST) {
 
     }
   }
-  }
+
   if ($_SESSION["usuario"]!=null) {
     header("location:home.php");
   }
-  var_dump($_SESSION);
+}
+  // var_dump($_SESSION);
 ?>
-<?php include "arrays.php" ?>
+<?php include "arrays.php"; ?>
 <?php include 'images.php'; ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
@@ -58,6 +59,7 @@ if ($_POST) {
         <h1 class="titulog">Sloth</h1>
         <h3>Un espacio para tu mascota</h3>
       </div>
+    
       <div class="formulario">
         <h4 class="datos">Tus datos</h4>
 
@@ -67,7 +69,7 @@ if ($_POST) {
             echo $errores["nombre"];
           } else {
             echo "Nombre";
-          }?>" name="nombre">
+          }?>" name="nombre" value="<?=persistir("nombre")?>">
           <br>
 
           <label for="apellido"></label>
@@ -118,24 +120,28 @@ if ($_POST) {
           <input class="gen3" type="radio" name="sexo" value="O">
           <span class="otr">Otro</span>
           <br>
-          <select class="regday" name="dia" required>
+          <select class="regday"  name="dia" required >
             <option selected value="">Dia</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
+            <?php foreach ($dia as $key => $dia): ?>
+              <option value=<?=$key?>><?= $dia?></option>
+            <?php endforeach; ?>
           </select>
+
           <select class="regmonth" name="mes" required>
             <option selected value="">Mes</option>
-            <option value="Enero">Enero</option>
-            <option value="Febrero">Febrero</option>
+        <?php foreach ($mes as $key => $mes): ?>
+              <option value=<?=$key?>><?=$mes?></option>
+        <?php endforeach; ?>
           </select>
+
           <select class="regyear" name="año" required>
             <option selected value="">Año</option>
-            <option value="1950">1950</option>
-            <option value="2006">2006</option>
-
+            <?php foreach ($año as $key => $año): ?>
+              <option value=<?=$key?>><?=$año?></option>
+            <?php endforeach; ?>
           </select>
-          <br>
 
+          <br>
           <label for="pais"></label>
           <select class="regpais" name="pais">
             <?php foreach ($pais as $codigo => $pais): ?>
@@ -146,10 +152,11 @@ if ($_POST) {
           <label class="sube"for="">Sube una foto tuya o de tu mascota</label>
           <input class="subeimg"type="file"  name="fotoperfil">
           <br><br>
-          <button type="submit" class="botonreg">Siguiente</button>
+          <button type="submit" class="botonsig">Siguiente</button>
 
       </form>
       </div>
     </article>
+  </section>
   </body>
 </html>

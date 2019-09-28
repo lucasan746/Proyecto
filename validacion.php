@@ -153,4 +153,17 @@ return $ts;
   $_SESSION["usuario"] = $usuario["usuario"];
   $_SESSION["FotoDePerfil"] = $usuario["FotoDePerfil"];
 }
+
+function validarmascota($datos){
+  $errores = [];
+    if (strlen($datos["nombre"])==0) {
+      $errores["nombre"] = "El nombre no puede estar vacio";
+}
+return $errores;
+}
+function persistir($input){
+  if(isset($_POST[$input])){
+    return $_POST[$input];
+  }
+}
 ?>

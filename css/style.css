@@ -1034,6 +1034,18 @@ color: #2d2c2c;margin-left: 1%;
   font-family: 'Lato', sans-serif;
   border-radius: 5%;
 }
+
+.alert{
+  background: #f4cfcf;
+  color: #6a1010;
+  padding: 10px;
+  border-radius: 5%;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: -33%;
+  top: 38%;
+
+}
 /* Fin */
 /* navbar home */
 .navbar{
