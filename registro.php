@@ -112,9 +112,9 @@ if ($_POST) {
 
           <label for="sexo"></label>
           <input class="gen1" type="radio" name="sexo" value="M" checked >
-           <span class="muj">Mujer</span>
+           <span class="muj">Hombre</span>
           <input class="gen2" type="radio" name="sexo"  value="H">
-          <span class="hom">Hombre</span>
+          <span class="hom">Mujer</span>
           <input class="gen3" type="radio" name="sexo" value="O">
           <span class="otr">Otro</span>
           <br>

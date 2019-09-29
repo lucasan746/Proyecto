@@ -704,20 +704,22 @@ top: 53.8%;
 left: 7%;
 margin-left: 2%;
 font-family: 'Alegreya Sans', sans-serif;
-color: #2d2c2c;
+color: #6f6e6e;
+font-size: 0.8rem;
 }
 .gen2{
   position: absolute;
   top: 54%;
-  left: 19%;
+  left: 21%;
 }
 .hom{
 position: absolute;
 top: 53.8%;
-left: 21%;
+left: 23%;
 margin-left: 1%;
 font-family: 'Alegreya Sans', sans-serif;
-color: #2d2c2c;
+color: #6f6e6e;
+font-size: 0.8rem;
 }
 .gen3{
   position: absolute;
@@ -730,7 +732,8 @@ color: #2d2c2c;
   left: 36%;
   margin-left: 1%;
   font-family: 'Alegreya Sans', sans-serif;
-  color: #2d2c2c;
+  color: #6f6e6e;
+  font-size: 0.8rem;
 
 }
 
@@ -805,13 +808,16 @@ color: #2d2c2c;
   left: 5%;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.05rem;
+  color: #6f6e6e;
 }
+
 .subeimg{
   position: absolute;
     bottom: 20%;
     left: 5%;
     font-family: 'Montserrat', sans-serif;
 }
+
 .botonsig{
   width: 40%;
   height: 5vh;
@@ -892,6 +898,7 @@ height: 50vh;
   top:22%;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.05rem;
+  color:#5f5e5e;
 }
 .selecani{
   position: absolute;
@@ -916,6 +923,7 @@ height: 50vh;
   right: 26%;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.05rem;
+  color:#5f5e5e;
 }
 .regday-m{
   position: absolute;
@@ -975,7 +983,8 @@ position: absolute;
 top:51.5%;
 left: 8%;
 font-family: 'Alegreya Sans', sans-serif;
-color: #2d2c2c;
+font-size: 0.8rem;
+color:#6f6e6e;
 
 }
 .gen-m2{
@@ -988,19 +997,22 @@ position: absolute;
 top:51.5%;
 left: 21%;
 font-family: 'Alegreya Sans', sans-serif;
-color: #2d2c2c;margin-left: 1%;
+color: #6f6e6e;
+margin-left: 1%;
+font-size: 0.8rem;
 }
 .gen-m3{
   position: absolute;
   top:52%;
-  left: 34%;
+  left: 33%;
 }
 .nolo{
   position: absolute;
   top:51.5%;
-  left: 37%;
+  left: 36%;
   font-family: 'Alegreya Sans', sans-serif;
-  color: #2d2c2c;
+  color: #6f6e6e;
+  font-size: 0.8rem;
 
 }
 .pelaje{
@@ -1009,6 +1021,7 @@ color: #2d2c2c;margin-left: 1%;
   top:51%;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.05rem;
+  color:#5f5e5e;
 }
 .colorpelaje{
   position: absolute;
