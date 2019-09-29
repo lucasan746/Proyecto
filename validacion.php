@@ -23,7 +23,7 @@ function validar($datos,$imagen){
         $errores["confcontra"]= "Las contraseñas no coinciden";
       }
       if ($datos["dia"]==null||$datos["mes"]==null||$datos["año"]==null) {
-        $errores["fecha"]= "Debes seleccionar una fecha de Nacimiento";
+        $errores["fecha"]= "Debes seleccionar una fecha de nacimiento";
       }
       if ($imagen["fotoperfil"]["error"]!=0) {
         $errores["imagen"]="Error en la imagen";
@@ -182,13 +182,58 @@ function buscarUsuario($datos)
       if (strlen($datos["nombre"])==0) {
         $errores["nombre"] = "El nombre no puede estar vacio";
   }
+  if ($datos["mascotas"]==null) {
+    $errores["mascotas"]= "Selecciona un tipo de mascota";
+  }
+  if ($datos["dia"]==null||$datos["mes"]==null||$datos["año"]==null) {
+    $errores["fecha"]= "Debes seleccionar una fecha de nacimiento";
+  }
+  if ($datos["pelaje"]==null) {
+    $errores["pelaje"]= "Selecciona un color";
+  }
+
   return $errores;
   }
+
+  function armarMascota($datos,$fecha)
+  {
+    $mascota=[
+      "nombre" => $datos["nombre"],
+      "mascotas"=>$datos["mascotas"],
+      "sexo"=>$datos["sexo"],
+      "Nacimiento"=>$fecha,
+      "pelaje"=>$datos["pelaje"]
+
+    ];
+    return $mascota;
+  }
+  function guardarMascota($datos)
+  {
+    $json = json_encode($datos);
+    file_put_contents("mascotas.json",$json.PHP_EOL, FILE_APPEND);
+  }
+  function BaseDeDatosMascota()
+  {
+    $baseDeDatos=file_get_contents("mascotas.json");
+    $baseDeDatos=Explode(PHP_EOL,$baseDeDatos);
+    array_pop($baseDeDatos);
+    foreach ($baseDeDatos as $mascotas) {
+      $ListaMascotas[]=json_decode($mascotas,true);
+    }
+    return $ListaMascotas;
+
+  }
+
+
   function persistir($input){
     if(isset($_POST[$input])){
       return $_POST[$input];
     }
   }
+
+
+
+
   function recordarUsu($datos)
   {
     if (isset($datos["recordar"])) {

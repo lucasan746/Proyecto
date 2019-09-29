@@ -25,11 +25,11 @@
   <h1 class="titulog">Sloth</h1>
   <h3>Un espacio para tu mascota</h3>
   </div>
-  <?php if (isset($errores)): ?>
+  <!-- <?php if (isset($errores)): ?>
     <?php foreach ($errores as $key => $error): ?>
         <li class="alert"><?=$error?></li>
     <?php endforeach; ?>
-  <?php endif; ?>
+  <?php endif; ?> -->
 <div class="formulario-mascota">
   <h4 class="datos">Datos de tu mascota</h4>
 
@@ -39,42 +39,46 @@
         echo $errores["nombre"];
       } else {
         echo "Nombre";
-      }?>" name="nombre"  >
+      }?>" name="nombre" value="<?=persistir("nombre")?>" >
       <br>
       <label class="eligea" for="">Elige su tipo</label>
       <br>
-      <select class="selecani" name="mascotas" required>
-   <option selected value="0">Tipos de mascota</option>
+      <select  class="selecani" name="mascotas" >
+   <option selected value="">Tipos de mascota</option>
     <?php foreach ($mascotas as $key => $mascotas): ?>
     <option value= <?=$key?>><?=$mascotas?></option>
     <?php endforeach; ?>
  </select>
+ <label class="errormascota" for=""><?php if(isset($errores["mascotas"])) {
+   echo $errores["mascotas"];
+ } ?> </label>
 
  <label class="cumple-m" for="">Su cumpleaños</label>
       <br>
-
-     <select class="regday-m"  name="dia" required >
+     <select class="regday-m"  name="dia"  >
        <option selected value="">Dia</option>
        <?php foreach ($dia as $key => $dia): ?>
          <option value=<?=$key?>><?= $dia?></option>
        <?php endforeach; ?>
      </select>
-     <select class="regmonth-m" name="mes" required>
+     <select class="regmonth-m" name="mes" >
        <option selected value="">Mes</option>
    <?php foreach ($mes as $key => $mes): ?>
          <option value=<?=$key?>><?=$mes?></option>
    <?php endforeach; ?>
      </select>
 
-     <select class="regyear-m" name="año" required>
+     <select class="regyear-m" name="año" >
        <option selected value="">Año</option>
        <?php foreach ($año as $key => $año): ?>
          <option value=<?=$key?>><?=$año?></option>
        <?php endforeach; ?>
      </select>
+     <label class="errorfecha-m" for=""><?php if(isset($errores["fecha"])) {
+       echo $errores["fecha"];
+     } ?> </label>
 
-
-     <input class="gen-m1" type="radio" name="gender" required>
+     <input class="gen-m1" type="radio" name="gender" checked>
      <span class="ma">Macho</span>
      <input class="gen-m2" type="radio" name="gender"  >
      <span class="hem">Hembra</span>
@@ -85,13 +89,15 @@
       <br>
       <label class="pelaje" for="">Que color predomina </label>
       <br>
-      <select class="colorpelaje" name="pelaje" required>
-   <option selected value="0"> Elige un color </option>
+      <select class="colorpelaje" name="pelaje" >
+   <option selected value=""> Elige un color </option>
       <?php foreach ($pelaje as $key => $pelaje): ?>
         <option value=<?=$key?>><?=$pelaje?></option>
       <?php endforeach; ?>
  </select>
-
+ <label class="errorpelaje" for=""><?php if(isset($errores["pelaje"])) {
+   echo $errores["pelaje"];
+ } ?> </label>
 <br>
   <button type="submit" name="enviar" class="botonreg">Registrate</button>
 

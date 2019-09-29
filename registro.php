@@ -57,13 +57,13 @@ if ($_POST) {
         <h1 class="titulog">Sloth</h1>
         <h3>Un espacio para tu mascota</h3>
       </div>
-    
+
       <div class="formulario">
         <h4 class="datos">Tus datos</h4>
 
         <form class="registro" action="registro.php" method="post" enctype="multipart/form-data">
           <label for="Nombre"></label>
-          <input required class="reg1" type="text" placeholder="<?php if (isset($errores["nombre"])) {
+          <input  class="reg1" type="text" placeholder="<?php if (isset($errores["nombre"])) {
             echo $errores["nombre"];
           } else {
             echo "Nombre";
@@ -71,31 +71,31 @@ if ($_POST) {
           <br>
 
           <label for="apellido"></label>
-          <input required class="reg2" type="text" placeholder="<?php if (isset($errores["apellido"])) {
+          <input  class="reg2" type="text" placeholder="<?php if (isset($errores["apellido"])) {
             echo $errores["apellido"];
           } else {
             echo "Apellido";
-          }?>" name="apellido">
+          }?>" name="apellido"  value=<?=persistir("apellido")?>>
           <br>
 
           <label for="usuario"></label>
-          <input required class="reg3" type="text" placeholder="<?php if (isset($errores["usuario"])) {
+          <input  class="reg3" type="text" placeholder="<?php if (isset($errores["usuario"])) {
             echo $errores["usuario"];
           } else {
             echo "Nombre de usuario";
-          }?>" name="usuario">
+          }?>" name="usuario"  value=<?=persistir("usuario")?>>
           <br>
 
           <label for="email"></label>
-          <input required class="reg4" type="text"placeholder="<?php if (isset($errores["email"])) {
+          <input  class="reg4" type="text"placeholder="<?php if (isset($errores["email"])) {
             echo $errores["email"];
           } else {
             echo "Correo electronico";
-          }?>" name="email">
+          }?>" name="email"  value=<?=persistir("email")?>>
           <br>
 
           <label for="contraseña"></label>
-          <input required class="reg5" type="password" placeholder="<?php if (isset($errores["contraseña"])) {
+          <input  class="reg5" type="password" placeholder="<?php if (isset($errores["contraseña"])) {
             echo $errores["contraseña"];
           } else {
             echo "Contraseña";
@@ -111,28 +111,29 @@ if ($_POST) {
           <br>
 
           <label for="sexo"></label>
-          <input class="gen1" type="radio" name="sexo" value="M" checked>
+          <input class="gen1" type="radio" name="sexo" value="M" checked >
            <span class="muj">Mujer</span>
           <input class="gen2" type="radio" name="sexo"  value="H">
           <span class="hom">Hombre</span>
           <input class="gen3" type="radio" name="sexo" value="O">
           <span class="otr">Otro</span>
           <br>
-          <select class="regday"  name="dia" required >
+
+          <select class="regday"  name="dia"  >
             <option selected value="">Dia</option>
             <?php foreach ($dia as $key => $dia): ?>
               <option value=<?=$key?>><?= $dia?></option>
             <?php endforeach; ?>
           </select>
 
-          <select class="regmonth" name="mes" required>
+          <select class="regmonth" name="mes" >
             <option selected value="">Mes</option>
         <?php foreach ($mes as $key => $mes): ?>
               <option value=<?=$key?>><?=$mes?></option>
         <?php endforeach; ?>
           </select>
 
-          <select class="regyear" name="año" required>
+          <select class="regyear" name="año" >
             <option selected value="">Año</option>
             <?php foreach ($año as $key => $año): ?>
               <option value=<?=$key?>><?=$año?></option>
@@ -141,14 +142,24 @@ if ($_POST) {
 
           <br>
           <label for="pais"></label>
-          <select class="regpais" name="pais">
+          <select  class="regpais" name="pais">
             <?php foreach ($pais as $codigo => $pais): ?>
               <option value=<?=$codigo?>><?=$pais?></option>
             <?php endforeach; ?>
           </select>
+          <label class="errorfecha" for=""><?php if(isset($errores["fecha"])) {
+            echo $errores["fecha"];
+          } ?> </label>
+          
           <br><br>
           <label class="sube"for="">Sube una foto tuya o de tu mascota</label>
-          <input class="subeimg"type="file"  name="fotoperfil">
+          <input  class="subeimg"type="file"  name="fotoperfil">
+          <label class="errorimagen" for=""><?php if(isset($errores["imagen"])) {
+            echo $errores["imagen"];
+          } ?> </label>
+          <label class="errorexten" for=""><?php if(isset($errores["fotoperfil"])) {
+            echo $errores["fotoperfil"];
+          } ?> </label>
           <br><br>
           <button type="submit" class="botonsig">Siguiente</button>
 
