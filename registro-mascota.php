@@ -3,7 +3,18 @@
 <?php include_once "validacion.php" ?>
 <?php  if ($_POST) {
   $errores=validarmascota($_POST);
-
+  if ($errores==null) {
+    $fecha=armarFecha($_POST);
+    $mascota=armarMascota($_POST,$fecha);
+    guardarMascota($mascota);
+    unset($_COOKIE);
+    header("location:login.php");
+  }
+}
+if (isset($_COOKIE["form"])) {
+}
+else {
+  header("location:registro.php");
 }
   ?>
 <!DOCTYPE html>

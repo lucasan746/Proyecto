@@ -23,7 +23,7 @@ if ($_POST) {
       }
       else {
         guardarUsuario($usuario);
-        inicioSesion($usuario);
+        reg($usuario["nombre"]);
         header("location:registro-mascota.php");
       }
 
@@ -150,7 +150,7 @@ if ($_POST) {
           <label class="errorfecha" for=""><?php if(isset($errores["fecha"])) {
             echo $errores["fecha"];
           } ?> </label>
-          
+
           <br><br>
           <label class="sube"for="">Sube una foto tuya o de tu mascota</label>
           <input  class="subeimg"type="file"  name="fotoperfil">

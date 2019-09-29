@@ -200,7 +200,7 @@ function buscarUsuario($datos)
     $mascota=[
       "nombre" => $datos["nombre"],
       "mascotas"=>$datos["mascotas"],
-      "sexo"=>$datos["sexo"],
+      "sexo"=>$datos["gender"],
       "Nacimiento"=>$fecha,
       "pelaje"=>$datos["pelaje"]
 
@@ -244,5 +244,8 @@ function buscarUsuario($datos)
 }
 
   }
-
+  function reg($datos)
+  {
+    setcookie("form",$datos);
+  }
 ?>
