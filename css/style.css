@@ -1294,6 +1294,17 @@ top: 21px;
 /* Tablet */
 
 @media screen and (max-width: 979px){
+  /* Index */
+  .data4{
+    width: 60vw;
+  }
+  .data3{
+    width: 66vw;
+    margin: auto;
+  }
+  .data1{
+    margin-top: 15%;
+  }
   /* home */
   .iconosderecha{
     width: 60vw;
@@ -1491,70 +1502,27 @@ top: 21px;
     margin-bottom: 10px;
   }
   /* index */
-.imgpreg1{
+.iconoprin{
   display: none;
-}
-.imgpreg2{
-  display: none;
-}
-.a{
-  display: none;
-}
-.b{
-  display: none;
-}
-.preg1{
-  height: 50vh;
-}
-.preg2{
-  height: 50vh;
-}
-.caja3{
-  height: 50vh;
-}
-.caja4{
-  height: 50vh;
 }
 .vid{
-  width: 100vw;
-}
-.artilogin{
-  width: 100vw;
-}
-.barramenu{
-  display: none
-}
-.iconoprin{
-  position: relative;
-  width: 15vw;
-  z-index: 10;
-}
-.foot a{
-  font-size: 0.8em;
-}
-.botonlog3{
- width: fit-content;
-}
-.botonlog4{
-  width: fit-content;
-}
-.container h1{
-  font-size: 2rem;
-}
-.container p{
-  font-size: 1rem;
+  width: 65vw;
 }
 .data1{
-   width: 60%;
+  width: 90Vw;
+  text-align: center;
 }
-.texto1{
-  width: 60%;
+.data4{
+  width: 90Vw;
+  text-align: center;
 }
-.texto2{
-  width: 60%;
+.data3{
+  width: 90Vw;
+  text-align: center;
 }
-.contenido1{
-  margin-top: 14vw;
+.data2{
+  width: 90Vw;
+  text-align: center;
 }
 /* fin index */
 /* Login */
