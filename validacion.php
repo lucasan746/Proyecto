@@ -150,6 +150,7 @@ return $ts;
       return $ts=false;
     }
   }
+
   function inicioSesion($usuario){
   $_SESSION["nombre"] = $usuario["nombre"];
   $_SESSION["apellido"] = $usuario["apellido"];
