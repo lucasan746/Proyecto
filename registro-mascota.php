@@ -29,8 +29,13 @@ else {
     <title>login mascota</title>
   </head>
   <body id="<?= $imagenes[$alea] ?>">
+    <header>
+      <nav>
+        <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+
+      </nav>
+    </header>
   <section class="cajalogin3">
-    <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
 <article class="registro-mascota">
   <div class="cajatitulo">
   <h1 class="titulog">Sloth</h1>

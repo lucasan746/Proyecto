@@ -14,12 +14,12 @@ if ($_POST) {
     $usuario=armarUsuario($_POST,$imagendeperfil,$fecha);
     $mailreg=ValirdarEmail($usuario["email"]);
     if ($mailreg==true) {
-      echo "El email ya está registrado";
+      $errores["email2"]="El email ya está registrado";
     }
     else {
       $user=ValirdarUser($usuario["usuario"]);
       if ($user==true) {
-        echo "El usuario está registrado";
+        $errores["usuario2"]= "El usuario está registrado";
       }
       else {
         guardarUsuario($usuario);
@@ -48,9 +48,14 @@ if ($_POST) {
     <title>Registro</title>
   </head>
   <body id="<?= $imagenes[$alea] ?>">
+    <head>
+      <nav>
+        <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+          <a class="botoninic" href="login.php">Iniciar sesión</a>
+      </nav>
+    </head>
     <section class="cajalogin">
-      <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
-        <a class="botoninic" href="login.php">Iniciar sesión</a>
+
       <br>
     <article class="registro-persona">
       <div class="cajatitulo">
@@ -78,7 +83,9 @@ if ($_POST) {
           }?>" name="apellido"  value=<?=persistir("apellido")?>>
           <br>
 
-          <label for="usuario"></label>
+          <label for="usuario"><?php if (isset($errores["usuario2"])) {
+             echo $errores["usuario"];
+          } ?></label>
           <input  class="reg3" type="text" placeholder="<?php if (isset($errores["usuario"])) {
             echo $errores["usuario"];
           } else {
@@ -86,7 +93,9 @@ if ($_POST) {
           }?>" name="usuario"  value=<?=persistir("usuario")?>>
           <br>
 
-          <label for="email"></label>
+          <label for="email"><?php if (isset($errores["email2"])) {
+            echo $errores["email"];
+          } ?></label>
           <input  class="reg4" type="text"placeholder="<?php if (isset($errores["email"])) {
             echo $errores["email"];
           } else {
