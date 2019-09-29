@@ -1100,7 +1100,7 @@ font-size: 0.8rem;
   position: fixed;
   top: 0;
   display: flex;
-  height: 10vh;
+  height: 85px;
   background-color:#977fc2;
   z-index: 5;
 }
@@ -1123,19 +1123,17 @@ font-size: 0.8rem;
   margin-right: 20px;
   margin-left: 15px;
 }
-.iconoprin2{
-  position:  fixed;
-  width: 4%;
-  left: 4px;
-  top: 3px;
-  border-radius: 30%;
+.iconoprin3{
+width: 75px;
+position: absolute;
+left: 20px;
 }
 .input{
   position: relative;
-  right: 27%;
   top: 30%;
-  width: 30vw;
+  width: 17vw;
   height: 33px;
+  margin-left: 10vw;
 }
 .iconosbarra2{
   width: 30px;
@@ -1143,10 +1141,14 @@ font-size: 0.8rem;
   margin-top: 30px;
   margin-left: 90px;
 }
+.fotoperfil2{
+  width: 50px;
+  height: 50px;
+}
 .fotoperfil{
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin: 10px;
   margin-right: 50px;
 }
@@ -1169,6 +1171,9 @@ font-size: 0.8rem;
   position: relative;
 
 
+}
+.barratablet{
+  display: none;
 }
 /* Secciones del Home */
 .seccionizq{
@@ -1265,6 +1270,8 @@ top: 21px;
 /* Seccion 2 */
 .perfilderecha{
   position: relative;
+  background-color: #977fc2;
+ border-radius: 10px;
 }
 .perfilderecha img{
   border-radius: 50%;
@@ -1274,8 +1281,10 @@ top: 21px;
 .perfilderecha h4{
   display: inline-block;
   position: absolute;
-  top: 28px;
   margin-left: 10px;
+  top: 20px;
+  font-size: 20px;
+ color: white;
 }
 .titusugeridos{
   margin-left: 5px;
@@ -1346,18 +1355,37 @@ top: 21px;
     margin-top: 15%;
   }
   /* home */
-  .seccionder{
+  .input{
     display: none;
   }
   .seccionizq{
     position: static;
     margin: auto;
   }
-  .iconoprin2{
-    width: 7vw;
+  .seccionder{
+    display: none;
   }
-  .input{
-    width: 17vw;
+  .iconosderecha{
+    width: 60vw;
+  }
+  .navbar{
+    width: 100vw;
+  }
+  .perfil{
+    display: none;
+  }
+  .cuerpohome{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .barratablet{
+    display: block;
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+    z-index: 100;
+    bottom: -5px;
+    background-color: #7943dd;
   }
   /* formulario 2 */
 .registro {
@@ -1457,14 +1485,43 @@ top: 21px;
 }
 }
 /* fin Tablet */
-
+.iconosbarra{
+  margin-left: auto;
+  margin-right: auto;
+}
+.ic{
+  justify-content: space-between;
+}
+.navbar .ic form{
+  margin: 0;
+}
 /* Celular */
 
 @media screen and (max-width: 480px){
   /* home */
-  .iconoprin2{
+  .barratablet{
+    height: 50px;
+  }
+  .fotoperfil{
+    height: 30px;
+    width: 30px;
+  }
+  .navbar{
+    height: 60px;
+  }
+  .iconoprin3{
     display: none;
   }
+  .descrip{
+   padding: 5px;
+ }
+ .imagenpefiles{
+   padding: 5px;
+ }
+ .iconosderecha{
+   width: 100vw;
+ }
+ .iconoprin3{
   .input{
     display: none;
   }
@@ -1472,7 +1529,8 @@ top: 21px;
     display: none;
   }
   .cuerpohome{
-  padding-top: 15vw;
+    padding-top: 20vw;
+
   }
 
   /* formulario 2 */
