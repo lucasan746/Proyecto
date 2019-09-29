@@ -7,7 +7,7 @@ if ($_POST) {
     if ($us==true) {
       $us=compararDatos($_POST);
       if ($us==true) {
-        buscarUsuario($_POST);
+        buscarUsuario($_POST["usuario"]);
         recordarUsu($_POST,$record);
         header("location:home.php");
       }
@@ -39,8 +39,14 @@ if (isset($_SESSION["usuario"])) {
     <title>Login</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+          <a class="botoninic" href="registro.php">Registrate</a>
+      </nav>
+    </header>
     <section class="cajadelogin" id="<?= $imagenes[$alea] ?>">
-      <a href="index.php"><img src="images/icon-lazy.png" alt="icono"  class="iconoprin"></a>
+
       <article class="login">
         <h1 class="titulog2">Sloth</h1>
 
@@ -64,7 +70,6 @@ if (isset($_SESSION["usuario"])) {
           <button type="submit" name="enviar" class="botonlog">Iniciar Sesión</button>
         </form>
       </article>
-      <a class="botoninic" href="registro.php">Registrate</a>
     </section>
   </body>
 </html>
