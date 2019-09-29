@@ -83,24 +83,23 @@ if ($_POST) {
           }?>" name="apellido"  value=<?=persistir("apellido")?>>
           <br>
 
-          <label for="usuario"><?php if (isset($errores["usuario2"])) {
-             echo $errores["usuario"];
-          } ?></label>
           <input  class="reg3" type="text" placeholder="<?php if (isset($errores["usuario"])) {
             echo $errores["usuario"];
           } else {
             echo "Nombre de usuario";
           }?>" name="usuario"  value=<?=persistir("usuario")?>>
-          <br>
-
-          <label for="email"><?php if (isset($errores["email2"])) {
-            echo $errores["email"];
+          <label class="usregis" for="usuario"><?php if (isset($errores["usuario2"])) {
+             echo $errores["usuario2"];
           } ?></label>
+
           <input  class="reg4" type="text"placeholder="<?php if (isset($errores["email"])) {
             echo $errores["email"];
           } else {
             echo "Correo electronico";
           }?>" name="email"  value=<?=persistir("email")?>>
+          <label  class="mailregis"for="email"><?php if (isset($errores["email2"])) {
+            echo $errores["email2"];
+          } ?></label>
           <br>
 
           <label for="contraseña"></label>

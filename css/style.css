@@ -879,6 +879,22 @@ font-size: 0.8rem;
     font-size: 0.7rem;
     color: red;
 }
+.usregis{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+}
+.mailregis{
+  position: absolute;
+  top: 30%;
+  right: 19%;
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+}
 /* registro mascota */
 
 
