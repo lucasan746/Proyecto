@@ -1344,15 +1344,22 @@ top: 21px;
 
 @media screen and (max-width: 979px){
   /* Index */
+  .container{
+    text-align: center;
+  }
   .data4{
-    width: 60vw;
+    width: 90vw;
   }
   .data3{
-    width: 66vw;
+    width: 90vw;
     margin: auto;
   }
   .data1{
-    margin-top: 15%;
+    margin-top: 40%;
+    width: 90vw;
+  }
+  .data2{
+    width: 90vw;
   }
   /* home */
   .input{
@@ -1407,11 +1414,11 @@ top: 21px;
 }
 .botonlog3{
  width: fit-content;
- height: 45px;
+ height: 40px;
 }
 .botonlog4{
   width: fit-content;
-  height: 45px;
+  height: 40px;
 }
 /* Login */
 .botoninic{
@@ -1498,6 +1505,13 @@ top: 21px;
 /* Celular */
 
 @media screen and (max-width: 480px){
+  /* index */
+  .vid{
+    width: 65vw;
+  }
+  .iconoprin{
+    display: none;
+  }
   /* home */
   .barratablet{
     height: 50px;
