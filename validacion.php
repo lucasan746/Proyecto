@@ -3,21 +3,21 @@ session_start();
 function validar($datos,$imagen){
       $errores=[];
       if (strlen($datos["nombre"])==0) {
-        $errores["nombre"]= "El nombre no puede estar vacio";
+        $errores["nombre"]= "No puede estar vacio";
       }
       if (strlen($datos["apellido"])==0) {
-        $errores["apellido"]= "El apellido no puede estar vacio";
+        $errores["apellido"]= "No puede estar vacio";
       }
       if (strlen($datos["usuario"])==0) {
-        $errores["usuario"]= "El nombre de usuario no puede estar vacio";
+        $errores["usuario"]= "No puede estar vacio";
       }
       if (filter_var($datos["email"],FILTER_VALIDATE_EMAIL)) {
       }
       else {
-        $errores["email"]="el email es incorrecto";
+        $errores["email"]="El email es incorrecto";
       }
       if (strlen($datos["contraseña"])<=6) {
-        $errores["contraseña"]= "La contraseña debe tener minimo 6 caracteres";
+        $errores["contraseña"]= "Debe tener minimo 6 caracteres";
       }
       if ($datos["contraseña"]!=$datos["confcontra"]) {
         $errores["confcontra"]= "Las contraseñas no coinciden";
@@ -28,11 +28,14 @@ function validar($datos,$imagen){
       if ($imagen["fotoperfil"]["error"]!=0) {
         $errores["imagen"]="Error en la imagen";
       }
-      $nombimg = $_FILES["fotoperfil"]["name"];
-      $ext = pathinfo($nombimg, PATHINFO_EXTENSION);
-      if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
-        $errores["fotoperfil"] = "La extension del archivo es incorrecto";
+      else {
+        $nombimg = $_FILES["fotoperfil"]["name"];
+        $ext = pathinfo($nombimg, PATHINFO_EXTENSION);
+        if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
+          $errores["fotoperfil"] = "La extension del archivo es incorrecto";
+        }
       }
+
 
       return $errores;
     }
