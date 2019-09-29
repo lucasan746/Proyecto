@@ -14,12 +14,12 @@ if ($_POST) {
     $usuario=armarUsuario($_POST,$imagendeperfil,$fecha);
     $mailreg=ValirdarEmail($usuario["email"]);
     if ($mailreg==true) {
-      $errores["email"]="El email ya está registrado";
+      $errores["email2"]="El email ya está registrado";
     }
     else {
       $user=ValirdarUser($usuario["usuario"]);
       if ($user==true) {
-        $errores["usuario"]= "El usuario está registrado";
+        $errores["usuario2"]= "El usuario está registrado";
       }
       else {
         guardarUsuario($usuario);
@@ -83,7 +83,9 @@ if ($_POST) {
           }?>" name="apellido"  value=<?=persistir("apellido")?>>
           <br>
 
-          <label for="usuario"><?php echo $errores["usuario"]; ?></label>
+          <label for="usuario"><?php if (isset($errores["usuario2"])) {
+             echo $errores["usuario"];
+          } ?></label>
           <input  class="reg3" type="text" placeholder="<?php if (isset($errores["usuario"])) {
             echo $errores["usuario"];
           } else {
@@ -91,7 +93,9 @@ if ($_POST) {
           }?>" name="usuario"  value=<?=persistir("usuario")?>>
           <br>
 
-          <label for="email"><?php echo $errores["email"]; ?></label>
+          <label for="email"><?php if (isset($errores["email2"])) {
+            echo $errores["email"];
+          } ?></label>
           <input  class="reg4" type="text"placeholder="<?php if (isset($errores["email"])) {
             echo $errores["email"];
           } else {
