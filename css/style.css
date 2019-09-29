@@ -826,8 +826,30 @@ color: #2d2c2c;
   bottom: 6%;
   right: 5%;
 }
-
-
+ .errorfecha{
+   position: absolute;
+    bottom: 36%;
+    right: 6%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: red;
+ }
+.errorimagen{
+  position: absolute;
+    bottom: 16%;
+    left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: red;
+}
+.errorexten{
+  position: absolute;
+    bottom: 16%;
+    left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: red;
+}
 /* registro mascota */
 
 
@@ -1034,25 +1056,38 @@ color: #2d2c2c;margin-left: 1%;
   font-family: 'Lato', sans-serif;
   border-radius: 5%;
 }
-
-.alert{
-  background: #f4cfcf;
-  color: #6a1010;
-  padding: 10px;
-  border-radius: 5%;
-  font-family: 'Montserrat', sans-serif;
+.errormascota{
   position: absolute;
-  right: -33%;
-  top: 38%;
-
+  top: 41%;
+  left: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  color: red;
 }
+.errorfecha-m{
+  position: absolute;
+  top: 41%;
+  right: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  color: red;
+}
+.errorpelaje{
+  position: absolute;
+  bottom: 27%;
+  right: 26%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  color: red;
+}
+
 /* Fin */
 /* navbar home */
 .navbar{
   position: fixed;
   top: 0;
   display: flex;
-  height: 80px;
+  height: 10vh;
   background-color:#977fc2;
   z-index: 5;
 }
@@ -1075,15 +1110,18 @@ color: #2d2c2c;margin-left: 1%;
   margin-right: 20px;
   margin-left: 15px;
 }
-.iconoprin3{
-width: 75px;
-position: absolute;
-left: 20px;
+.iconoprin2{
+  position:  fixed;
+  width: 4%;
+  left: 4px;
+  top: 3px;
+  border-radius: 30%;
 }
 .input{
   position: relative;
+  right: 27%;
   top: 30%;
-  width: 17vw;
+  width: 30vw;
   height: 33px;
 }
 .iconosbarra2{
@@ -1092,14 +1130,10 @@ left: 20px;
   margin-top: 30px;
   margin-left: 90px;
 }
-.fotoperfil2{
-  width: 50px;
-  height: 50px;
-}
 .fotoperfil{
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 10px;
   margin-right: 50px;
 }
@@ -1214,15 +1248,10 @@ top: 21px;
  height: 80vh;
 
 }
-.barratablet{
-  display: none;
-}
 
 /* Seccion 2 */
 .perfilderecha{
   position: relative;
-  background-color: #977fc2;
-  border-radius: 10px;
 }
 .perfilderecha img{
   border-radius: 50%;
@@ -1232,10 +1261,8 @@ top: 21px;
 .perfilderecha h4{
   display: inline-block;
   position: absolute;
-  top: 20px;
+  top: 28px;
   margin-left: 10px;
-  font-size: 20px;
-  color: white;
 }
 .titusugeridos{
   margin-left: 5px;
@@ -1295,28 +1322,6 @@ top: 21px;
 
 @media screen and (max-width: 979px){
   /* home */
-  .iconosderecha{
-    width: 60vw;
-  }
-  .navbar{
-    width: 100vw;
-  }
-  .perfil{
-    display: none;
-  }
-  .cuerpohome{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-  }
-  .barratablet{
-    display: block;
-    position: fixed;
-    height: 70px;
-    width: 100vw;
-    z-index: 100;
-    bottom: -5px;
-    background-color: #7943dd;
-  }
   .seccionder{
     display: none;
   }
@@ -1433,16 +1438,7 @@ top: 21px;
 
 @media screen and (max-width: 480px){
   /* home */
-  .descrip{
-    padding: 5px;
-  }
-  .imagenpefiles{
-    padding: 5px;
-  }
-  .iconosderecha{
-    width: 80vw;
-  }
-  .iconoprin3{
+  .iconoprin2{
     display: none;
   }
   .input{
@@ -1452,7 +1448,7 @@ top: 21px;
     display: none;
   }
   .cuerpohome{
-  padding-top: 20vw;
+  padding-top: 15vw;
   }
 
   /* formulario 2 */
