@@ -1244,6 +1244,12 @@ font-size: 0.8rem;
   background-color:#7d5bb9;
   z-index: 5;
 }
+.navbar2{
+  position: fixed;
+  height: 56px;
+  background-color:#7d5bb9;
+  z-index: 5;
+}
 .logohome{
 width: 56px;
 position: absolute;
@@ -1516,6 +1522,12 @@ top: 21px;
 
 @media screen and (max-width: 979px){
   /* Index */
+  .botomitir{
+    width: fit-content;
+  }
+  .vid{
+    width: 40vw;
+  }
   .container{
     text-align: center;
   }
@@ -1534,9 +1546,6 @@ top: 21px;
     width: 90vw;
   }
   /* home */
-  .input{
-    display: none;
-  }
   .seccionizq{
     position: static;
     margin: auto;
@@ -1544,35 +1553,15 @@ top: 21px;
   .seccionder{
     display: none;
   }
-  .iconosderecha{
-    width: 60vw;
-  }
-  .navbar{
-    width: 100vw;
-  }
-  .perfil{
-    display: none;
-  }
-  .cuerpohome{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-  }
-  .barratablet{
-    display: block;
-    position: fixed;
-    height: 70px;
-    width: 100vw;
-    z-index: 100;
-    bottom: -5px;
-    background-color: #7943dd;
-  }
+.busqueda{
+  left: 20%;
+}
   /* formulario 2 */
 .registro {
-  width: 50vw;
+  width: 65vw;
 }
-.registromascota{
-  width: 50vw;
-  top: 7vw;
+.registro-mascota{
+  width: 90%;
 }
 /* Index */
 .imagenesres{
@@ -1593,8 +1582,13 @@ top: 21px;
   height: 40px;
 }
 /* Login */
+.inputrecuerda{
+  height: 12px;
+/* display: block; */
+width: 20px;
+}
 .botoninic{
-  left: 85%;
+  left: 75%;
   width: fit-content;
 }
 .imgpreg1{
@@ -1624,11 +1618,6 @@ top: 21px;
   width: 90vw;
   top: 6vh;
 }
-.reg1{
-  width: auto;
-  height: auto;
-  margin: 0;
-}
 .registro{
   background: none;
 }
@@ -1639,22 +1628,22 @@ top: 21px;
   background: none;
 }
 .registro label{
-  font-size: 1.5rem;
+  font-size: 1.0rem;
 }
 .registro2 label{
   font-size: 1.5rem;
 }
+.registro-persona{
+  width: 80%;
+}
 .registro input{
-  font-size: 1.5rem;
+  font-size: 1.0rem;
 }
 .registro2 input{
   font-size: 1.5rem;
 }
 .botonreg{
   margin: 0;
-}
-.registro{
-  width: 50vw;
 }
 .registro2{
   width: 45vw;
@@ -1677,7 +1666,16 @@ top: 21px;
 /* Celular */
 
 @media screen and (max-width: 480px){
+  /* mascota */
+  .pelaje{
+    right: 2%;
+    top: 46%;
+  }
+  .formulario-mascota{
+    width: 100%;
+  }
   /* index */
+
   .vid{
     width: 65vw;
   }
@@ -1685,8 +1683,22 @@ top: 21px;
     display: none;
   }
   /* home */
+  .iconosderecha{
+    display: flex;
+
+  }
+  .iconosderecha img{
+    margin-top: 10px;
+    position:static;
+  }
+.navbar{
+  display: none;
+}
   .barratablet{
+    display: inline;
     height: 50px;
+    position: absolute;
+      top: 91vh;
   }
   .fotoperfil{
     height: 30px;
@@ -1707,7 +1719,6 @@ top: 21px;
  .iconosderecha{
    width: 100vw;
  }
- .iconoprin3{
   .input{
     display: none;
   }
@@ -1715,45 +1726,18 @@ top: 21px;
     display: none;
   }
   .cuerpohome{
-    padding-top: 20vw;
+    padding-top: 0vw;
 
   }
 
-  /* formulario 2 */
-  .registromascota{
-    width: 100vw;
-  }
-  .registro2{
-    width: 90vw;
-  }
-  .registro{
-    width: 90vw;
-  }
-  .botomitir{
-    width: fit-content;
-  }
-  .cajalogin3 .iconoprin{
-    display: none;
-  }
+
   /* formulario */
-  .cajareg{
-    position: static;
-  }
-  .formulario{
-    display: inline-grid;
-  }
-  .cajalogin .iconoprin{
-    display: none;
-  }
-  .cajalogin{
-    height: auto;
-  }
-  .formulario2{
-    padding: 0;
-  }
-  .botonreg{
-    margin-bottom: 10px;
-  }
+.registro input{
+  font-size: 0.5rem;
+}
+.registro label{
+  font-size: 0.5rem;
+}
   /* index */
 .iconoprin{
   display: none;
@@ -1780,7 +1764,7 @@ top: 21px;
 /* fin index */
 /* Login */
 .botoninic{
-  left: 70%;
+  left: 73%;
   width: fit-content;
   display: none;
 }
@@ -1789,7 +1773,7 @@ top: 21px;
 }
 .login input{
   width: 80vw;
-  height: 7vh;
+  height: 4vh;
 }
 #a{
   background-image: url(../images/celular/1.jpg);
