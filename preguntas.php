@@ -12,8 +12,8 @@
     <nav class="navbarpreg">
       <div class="iconospreg">
 
+<a href="index.php">  <img class="logopreg" src="images/icon-lazy.png" alt=""></a>
 
-      <img class="logopreg" src="images/icon-lazy.png" alt="">
       <ul class="listanav">
         <li class="linkpreg1"><a href="#">Centro de ayuda</a></li>
         <li class="linkpreg2"><a href="#">Comunicate</a></li>
@@ -22,7 +22,7 @@
       <form class="" action="#" method="get">
         <input type="text" name="buscar" class="buscar-p" placeholder="Busqueda">
       </form>
-      <a class="botoninic-p" href="#">Inicia Sesion</a>
+      <a class="botoninic-p" href="login.php">Inicia Sesion</a>
         </div>
     </nav>
       </header>
