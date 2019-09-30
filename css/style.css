@@ -116,10 +116,10 @@ body{
       border: solid 1px rgba(0, 0, 0, 0.1);
       display: block;
       text-decoration: none;
-      font-size: 1rem;
       color: white;
+      font-size: 93%;
       background-color: rgba(0, 0, 0, 0.5);
-      width: 11%;
+      width: 10%;
       height: 6vh;
       text-align: center;
       padding: 7px;
@@ -132,10 +132,9 @@ body{
       /* border: solid 1px rgba(234, 164, 198, 0.5); */
       display: block;
       text-decoration: none;
-      font-size: 1rem;
       color: #7c5cff;
       background-color: white;
-      width: 9%;
+      width: 10%;
       height: 6vh;
       text-align: center;
       padding: 7px;
@@ -528,6 +527,110 @@ font-size: 1.3rem;
   text-decoration: none;
   color: #c9c8c8;
   font-family: monospace;
+}
+/* pagina de preguntas frecuentes */
+
+
+.navbarpreg{
+  position: fixed;
+  height: 56px;
+  width: 100vw;
+  background-color:#7d5bb9;
+
+}
+.iconospreg{
+  position: relative;
+  height: 58px;
+}
+.logopreg{
+  position: absolute;
+  width: 56px;
+  left: 10px;
+  border-radius: 30%;
+}
+.listanav{
+  list-style: none;
+}
+.linkpreg1{
+position: absolute;
+top: 28%;
+left: 10%;
+}
+.linkpreg2{
+position: absolute;
+top: 28%;
+left: 21%;
+}
+.linkpreg3{
+position: absolute;
+top: 28%;
+left: 30%;
+}
+.listanav a{
+  color:white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+.buscar-p{
+  position: absolute;
+  top: 23%;
+  left: 40%;
+  width: 20%;
+  height: 33px;
+  padding: 1%;
+}
+.botoninic-p{
+  text-align: center;
+  width: 8%;
+  height: 5vh;
+  padding: 6px;
+  text-decoration: none;
+  position: absolute;
+  left: 90%;
+  top: 10px;
+  background-color: #6745d0c4;
+  color: white;
+  border: solid 1px #a7aece;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  border-radius: 5%;
+}
+.titufrec{
+  background-color: #7d5bb9;
+padding: 8%;
+text-align: center;
+font-size: 3rem;
+color: white;
+font-family: 'Montserrat', sans-serif;
+}
+.cajafrec{
+  width: 55vw;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.frecuente1{
+margin-bottom: 4%;
+}
+.frecuente1 h1{
+color: #7d5bb9;
+font-size: 2.5rem;
+font-family: 'Montserrat', sans-serif;
+}
+.frecuente1 h3{
+  color: grey;
+  font-size: 1.5rem;
+  margin-top: 3%;
+  font-family: 'Montserrat', sans-serif;
+}
+.frecuente1 p{
+  margin-top: 2%;
+  font-family: 'Lato', sans-serif;
+  display: inline;
+}
+.frecuente1 a{
+  display: inline;
+  text-decoration: none;
+  color:#7d5bb9;
 }
 /* Login */
 .login{

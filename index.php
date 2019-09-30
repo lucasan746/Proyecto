@@ -122,6 +122,7 @@ Te esperamos dentro!.</p>
     <li><a href="#">Legales</a></li>
     <li><a href="#">Ayuda</a></li>
     <li><a href="#">Privacidad</a></li>
+    <li><a href="preguntas.php">Preguntas frecuentes</a></li>
   </ul>
 </footer>
 </div>
