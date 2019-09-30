@@ -42,6 +42,7 @@
       <li><a href="#">Legales</a></li>
       <li><a href="#">Ayuda</a></li>
       <li><a href="#">Privacidad</a></li>
+      <li><a href="preguntas.php">FAQ</a></li>
     </ul>
   </footer>
 </section>
