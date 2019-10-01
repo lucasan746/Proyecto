@@ -96,7 +96,11 @@ if ($_POST) {
             echo $errores["email"];
           } else {
             echo "Correo electronico";
-          }?>" name="email"  value=<?=persistir("email")?>>
+          }?>" name="email"  value=<?php if(isset($errores["email"])) {}else {
+
+              $asd = persistir("email");
+            echo $asd;
+          } ?>>
           <label  class="mailregis"for="email"><?php if (isset($errores["email2"])) {
             echo $errores["email2"];
           } ?></label>
@@ -126,7 +130,6 @@ if ($_POST) {
           <input class="gen3" type="radio" name="sexo" value="O">
           <span class="otr">Otro</span>
           <br>
-
           <select class="regday"  name="dia"  >
             <option selected value="">Dia</option>
             <?php foreach ($dia as $key => $dia): ?>

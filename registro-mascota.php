@@ -1,19 +1,18 @@
-<?php include 'images.php' ?>
-<?php include "arrays.php" ?>
-<?php include_once "validacion.php" ?>
+<?php include 'images.php'; ?>
+<?php include "arrays.php"; ?>
+<?php include_once "validacion.php"; ?>
 <?php  if ($_POST) {
   $errores=validarmascota($_POST);
   if ($errores==null) {
     $fecha=armarFecha($_POST);
     $mascota=armarMascota($_POST,$fecha);
     guardarMascota($mascota);
-    unset($_COOKIE);
+    setcookie("form",null);
     header("location:login.php");
+    exit;
   }
 }
-if (isset($_COOKIE["form"])) {
-}
-else {
+if ($_COOKIE["form"]==null) {
   header("location:registro.php");
 }
   ?>
@@ -86,7 +85,7 @@ else {
 
      <select class="regyear-m" name="año" >
        <option selected value="">Año</option>
-       <?php foreach ($año as $key => $año): ?>
+       <?php foreach ($añomasco as $key => $año): ?>
          <option value=<?=$key?>><?=$año?></option>
        <?php endforeach; ?>
      </select>
@@ -94,11 +93,11 @@ else {
        echo $errores["fecha"];
      } ?> </label>
 
-     <input class="gen-m1" type="radio" name="gender" checked>
+     <input class="gen-m1" type="radio" name="gender" checked value="macho">
      <span class="ma">Macho</span>
-     <input class="gen-m2" type="radio" name="gender"  >
+     <input class="gen-m2" type="radio" name="gender" value="hembra">
      <span class="hem">Hembra</span>
-     <input class="gen-m3" type="radio" name="gender" >
+     <input class="gen-m3" type="radio" name="gender" value="desconocido">
      <span class="nolo">No lo sé</span>
     <br>
 

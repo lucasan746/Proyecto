@@ -16,7 +16,7 @@ function validar($datos,$imagen){
       else {
         $errores["email"]="El email es incorrecto";
       }
-      if (strlen($datos["contraseña"])<=6) {
+      if (strlen($datos["contraseña"])<6) {
         $errores["contraseña"]= "Debe tener minimo 6 caracteres";
       }
       if ($datos["contraseña"]!=$datos["confcontra"]) {
@@ -160,7 +160,6 @@ return $ts;
 function buscarUsuario($datos)
 {
   $listusus=BaseDeDatos();
-  unset($listusus[0]);
   rsort($listusus);
   $user=array_search($datos,array_column($listusus,'usuario'));
   $_SESSION["usuario"]=$listusus[$user]["usuario"];
@@ -170,7 +169,6 @@ function buscarUsuario($datos)
   function compararDatos($datos)
   {
     $listusus=BaseDeDatos();
-    unset($listusus[0]);
     rsort($listusus);
     $user=array_search($datos["usuario"],array_column($listusus,'usuario'));
     if ($listusus[$user]["usuario"]==$datos["usuario"]&&password_verify($datos["contraseña"],$listusus[$user]["contrasenia"])) {

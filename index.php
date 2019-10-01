@@ -34,8 +34,8 @@ if (isset($_SESSION["usuario"])) {
     </section>
     <div class="container">
     <div class="barramenu">
-      <a href="#" name="ancla" class="botonlog3">Inicia Sesión</a>
-      <a href="#" class="botonlog4">Registrate</a>
+      <a href="login.php" name="ancla" class="botonlog3">Inicia Sesión</a>
+      <a href="registro.php" class="botonlog4">Registrate</a>
     </div>
     <!-- fin :c -->
       <!-- Preguntas y respuestas -->

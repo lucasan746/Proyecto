@@ -1,9 +1,6 @@
 <?php include 'validacion.php';
 if (isset($_SESSION["usuario"])==false) {
   header("location:login.php");
-}
-if (isset($_COOKIE["form"])) {
-  unset($_COOKIE);
 }?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
