@@ -143,7 +143,7 @@ body{
     }
     .titulog{
       font-size: 6rem;
-      color: white;
+
       /* text-shadow: -2px -2px 1px #000; */
       font-family: 'Merienda One', cursive;
 
@@ -1557,9 +1557,7 @@ top: 21px;
   left: 20%;
 }
   /* formulario 2 */
-.registro {
-  width: 65vw;
-}
+
 .registro-mascota{
   width: 90%;
 }
@@ -1588,7 +1586,7 @@ top: 21px;
 width: 20px;
 }
 .botoninic{
-  left: 75%;
+  left: 80%;
   width: fit-content;
 }
 .imgpreg1{
@@ -1609,6 +1607,7 @@ width: 20px;
   background: none;
   background-color: #cec6e9;
 }
+
 .cajalogin3{
   background: none;
   background-color: #cec6e9;
@@ -1620,6 +1619,8 @@ width: 20px;
 }
 .registro{
   background: none;
+  height: 53vh;
+
 }
 .registro2{
   background: none;
@@ -1627,31 +1628,31 @@ width: 20px;
 .formulario2{
   background: none;
 }
-.registro label{
-  font-size: 1.0rem;
-}
+
 .registro2 label{
   font-size: 1.5rem;
 }
 .registro-persona{
-  width: 80%;
+  width: 100%;
+  top:1%;
 }
 .registro input{
   font-size: 1.0rem;
 }
+
 .registro2 input{
   font-size: 1.5rem;
 }
+
 .botonreg{
   margin: 0;
 }
-.registro2{
-  width: 45vw;
+
+/* errores de registro persona */
+.errorfecha{
+  bottom: 35%;
 }
-.formulario2{
-  padding: 0;
-}
-}
+
 /* fin Tablet */
 .iconosbarra{
   margin-left: auto;
@@ -1735,8 +1736,38 @@ width: 20px;
 .registro input{
   font-size: 0.5rem;
 }
+.cajalogin{
+  background-color: #fafbff;
+}
 .registro label{
   font-size: 0.5rem;
+}
+.cajatitulo{
+  color:#b2a2ed;
+}
+.reg1{
+  width: 90%;
+
+}
+.reg2{
+  width: 90%;
+  top:20%;
+}
+.reg3{
+  width: 90%;
+  top:36%;
+}
+.reg4{
+  width: 90%;
+  top:47%;
+}
+.reg5{
+  width: 90%;
+  top:58%;
+}
+.reg6{
+  width: 90%;
+  top:70%;
 }
   /* index */
 .iconoprin{
