@@ -1517,7 +1517,26 @@ top: 21px;
 }
 
 /* Media query */
-
+@media screen and (max-width:1300px) {
+  /* registro persona */
+  .sube{
+    font-size: 0.9rem;
+  }
+  .botoninic{
+    width: 97px;
+    font-size: 0.9rem;
+    left:89%;
+  }
+  .regday{
+    width: 54px;
+  }
+  .regmonth{
+    width: 54px;
+  }
+  .regyear{
+    width: 54px;
+  }
+}
 /* Tablet */
 
 @media screen and (max-width: 979px){
@@ -1636,8 +1655,8 @@ width: 20px;
   width: 100%;
   top:1%;
 }
-.registro input{
-  font-size: 1.0rem;
+.sube{
+  font-size: 1rem;
 }
 
 .registro2 input{
@@ -1733,41 +1752,111 @@ width: 20px;
 
 
   /* formulario */
-.registro input{
-  font-size: 0.5rem;
+  .cajalogin{
+    background-color: #fafbff;
+    height:160vh;
+  }
+.registro-persona{
+    height: 100vh;
+  }
+.registro{
+  height: 112vh;
 }
-.cajalogin{
-  background-color: #fafbff;
+.registro input{
+  font-size: 0.7rem;
 }
 .registro label{
-  font-size: 0.5rem;
+  font-size: 0.7rem;
 }
+
+.formulario{
+  height: 100vh;
+}
+
 .cajatitulo{
   color:#b2a2ed;
 }
 .reg1{
   width: 90%;
+  top:3%;
 
 }
 .reg2{
   width: 90%;
-  top:20%;
+  top:12%;
 }
 .reg3{
   width: 90%;
-  top:36%;
+  top:22%;
 }
 .reg4{
   width: 90%;
-  top:47%;
+  top:32%;
 }
 .reg5{
   width: 90%;
-  top:58%;
+  top:42%;
 }
 .reg6{
   width: 90%;
-  top:70%;
+  top:52%;
+}
+.gen1{
+top:63%;
+left:7%;
+}
+.muj{
+top:62.8%;
+left:11%;
+}
+.gen2{
+top:63%;
+left:41%;
+
+}
+.hom{
+top:62.8%;
+left:47%;
+}
+.gen3{
+top:63%;
+left:74%;
+}
+.otr{
+top:62.8%;
+left:80%;
+}
+.regday{
+top: 68%;
+right: 74%;
+width: 20%;
+}
+.regmonth{
+top: 68%;
+right: 40%;
+width:20%;
+}
+.regyear{
+top: 68%;
+right: 7%;
+width: 20%;
+}
+.regpais{
+bottom: 20%;
+right: 6%;
+width: 88%;
+}
+.sube{
+bottom: 13%;
+left: 5%;
+}
+.subeimg{
+bottom: 7%;
+left: 5%;
+}
+.botonsig{
+bottom: 0%;
+right: 5%;
 }
   /* index */
 .iconoprin{
