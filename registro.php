@@ -33,6 +33,7 @@ if ($_POST) {
   if (isset($_SESSION["usuario"])) {
     header("location:home.php");
   }
+
 ?>
 <?php include "arrays.php"; ?>
 <?php include 'images.php'; ?>

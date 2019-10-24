@@ -712,7 +712,7 @@ font-family: 'Montserrat', sans-serif;
 
 .formulario{
   width: 80%;
-  height: 100%;
+
   margin-top: 2%;
   background-color:  rgba(251, 252, 255, 0.89);
   color: #212121;
@@ -1520,6 +1520,9 @@ top: 21px;
 /* laptop */
 @media screen and (max-width:1300px) {
   /* registro persona */
+  .registro-persona{
+    width: 72%;
+  }
   .sube{
     font-size: 0.9rem;
   }
@@ -1641,6 +1644,7 @@ width: 20px;
 .cajalogin{
   background: none;
   background-color: #cec6e9;
+  height: 121vh;
 }
 
 .cajalogin3{
@@ -1654,7 +1658,7 @@ width: 20px;
 }
 .registro{
   background: none;
-  height: 53vh;
+height: 75vh;
 
 }
 .registro2{
@@ -1865,6 +1869,7 @@ width: 88%;
 .sube{
 bottom: 13%;
 left: 5%;
+font-size: 0.9rem;
 }
 .subeimg{
 bottom: 7%;
@@ -1873,6 +1878,14 @@ left: 5%;
 .botonsig{
 bottom: 0%;
 right: 5%;
+}
+.errorfecha{
+  bottom: 25%;
+left: 6%;
+}
+.errorimagen{
+  bottom: 4%;
+left: 5%;
 }
   /* index */
 .iconoprin{

@@ -1,17 +1,28 @@
-<?php include 'validacion.php';
-$datos=[];
-$datos["usuario"]="Phoebe";
-$datos["contraseña"]="asdasdasd";
-
-$listusus=BaseDeDatos();
-var_dump($listusus);
-rsort($listusus);
-$user=array_search($datos["usuario"],array_column($listusus,'usuario'));
-if ($listusus[$user]["usuario"]==$datos["usuario"]&&password_verify($datos["contraseña"],$listusus[$user]["contrasenia"])) {
-  $ts="asf";
-}
-else {
-  $ts="no";
-}
+<?php include 'clases/BaseMySQL.php';
+// include 'clases/Usuario.php';
+// $host="localhost";
+// $usuario="root";
+// $contraseña="";
+// $nombreDB="sloth_db";
+// $puerto=3306;
+// $conexion=new BaseDatos;
+// $DB=$conexion->conectarDB($host,$nombreDB,$usuario,$contraseña,$puerto);
+//
+// $usuario =[
+// 'user'=>"lucasan",
+// "nombre"=>"Lucas",
+// "apellido"=>"Sanchez",
+// "email"=>"Lucas@gmail.com",
+// "sexo"=>"m",
+// "pais"=>"arg",
+// "avatar"=>"ajsuq.jpg",
+// "contraseña"=>"asdasdasd"
+// ];
+//
+// $usu= new Usuario ($usuario);
+//
+// $conexion->guardarUsuario($DB,$usu);
+//
+// var_dump($usu);
 
  ?>
