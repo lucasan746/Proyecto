@@ -1125,7 +1125,7 @@ position: absolute;
 top:51.5%;
 left: 8%;
 font-family: 'Alegreya Sans', sans-serif;
-font-size: 0.8rem;
+font-size: 0.9rem;
 color:#6f6e6e;
 
 }
@@ -1141,7 +1141,7 @@ left: 21%;
 font-family: 'Alegreya Sans', sans-serif;
 color: #6f6e6e;
 margin-left: 1%;
-font-size: 0.8rem;
+font-size: 0.9rem;
 }
 .gen-m3{
   position: absolute;
@@ -1154,7 +1154,7 @@ font-size: 0.8rem;
   left: 36%;
   font-family: 'Alegreya Sans', sans-serif;
   color: #6f6e6e;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 
 }
 .pelaje{
@@ -1517,6 +1517,7 @@ top: 21px;
 }
 
 /* Media query */
+/* laptop */
 @media screen and (max-width:1300px) {
   /* registro persona */
   .sube{
@@ -1535,6 +1536,21 @@ top: 21px;
   }
   .regyear{
     width: 54px;
+  }
+  /* registro mascota */
+  .cumple-m{
+    right: 22%;
+  }
+  .regday-m{
+    width: 58px;
+margin-right: 6px;
+  }
+  .regmonth-m{
+    width: 58px;
+margin-right: 2px;
+  }
+  .regyear-m{
+    width: 58px;
   }
 }
 /* Tablet */
