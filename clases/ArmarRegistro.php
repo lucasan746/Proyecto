@@ -21,7 +21,11 @@ $usuario = new Usuario($datos["nombre"],$datos["apellido"],$datos["usuario"],$da
     return $nombreImg.".".$ext;
   }
 
-
+  public function armarFecha($datos)
+  {
+    $fecha=$datos["dia"]."-".$datos["mes"]."-".$datos["año"];
+    return $fecha;
+  }
 
 }
 

@@ -38,11 +38,10 @@ public function validar($datos,$imagen){
     }
   }
 
-
   return $errores;
 
-
 }
+
 public function validarLogin($datos, $usuario){
 
     if(password_verify($datos["contraseña"], $usuario["contraseña"]) == false){
@@ -51,6 +50,98 @@ public function validarLogin($datos, $usuario){
 
     return $errores;
   }
+
+  public function ValirdarEmail($usuario){
+    $usuarios=BaseDeDatos();
+    for ($i=0; $i < count($usuarios); $i++) {
+      $users[]=$usuarios[$i]["email"];
+    }
+  foreach ($users as $key) {
+   if ($key===$usuario) {
+     $ts=true;
+     break;
+   }
+   else {
+     $ts=false;
+   }
+  }
+  return $ts;
+    }
+
+public function ValirdarUser($usuario){
+      $usuarios=BaseDeDatos();
+      for ($i=0; $i < count($usuarios); $i++) {
+        $users[]=$usuarios[$i]["usuario"];
+      }
+   foreach ($users as $key) {
+     if ($key===$usuario) {
+       $ts=true;
+       break;
+     }
+     else {
+       $ts=false;
+     }
+   }
+   return $ts;
+      }
+
+public function contraseña($usuario){
+          $usuarios=BaseDeDatos();
+          for ($i=0; $i < count($usuarios); $i++) {
+            $users[]=$usuarios[$i]["contrasenia"];
+          }
+
+       foreach ($users as $key) {
+         if (password_verify($usuario, $key)) {
+           $ts=true;
+           break;
+         }
+         else {
+           $ts=false;
+         }
+       }
+       return $ts;
+          }
+
+
+  public function validarmascota($datos){
+      $errores = [];
+        if (strlen($datos["nombre"])==0) {
+                $errores["nombre"] = "El nombre no puede estar vacio";
+          }
+        if ($datos["mascotas"]==null) {
+            $errores["mascotas"]= "Selecciona un tipo de mascota";
+          }
+        if ($datos["dia"]==null||$datos["mes"]==null||$datos["año"]==null) {
+            $errores["fecha"]= "Debes seleccionar una fecha de nacimiento";
+          }
+        if ($datos["pelaje"]==null) {
+            $errores["pelaje"]= "Selecciona un color";
+          }
+
+      return $errores;
+          }
+
+
+  public function persistir($input){
+        if(isset($_POST[$input])){
+        return $_POST[$input];
+            }
+          }
+
+  public function recordarUsu($datos)  {
+      if (isset($datos["recordar"])) {
+              $usu=$datos["usuario"];
+              $contra=$datos["contraseña"];
+                setcookie("usuario",$usu);
+                setcookie("contraseña",$contra);
+          }
+
+          }
+
+  public function reg($datos){
+          setcookie("form",$datos);
+          }
 
  }
 
