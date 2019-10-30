@@ -58,7 +58,7 @@ CREATE TABLE `usuarios` (
   `sexo` tinytext NOT NULL,
   `pais` varchar(3) NOT NULL,
   `fotoperfil` varchar(100) NOT NULL,
-  `contraseña` text NOT NULL,
+  `contrasenia` text NOT NULL,
   `fecha` date NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
