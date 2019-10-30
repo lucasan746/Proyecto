@@ -118,12 +118,12 @@ class Usuario{
     }
     public function getFecha()
     {
-        return $this->user;
+        return $this->fecha;
     }
 
     public function setFecha($user)
     {
-        $this->user = $user;
+        $this->fecha = $fecha;
 
         return $this;
     }

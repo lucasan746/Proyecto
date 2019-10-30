@@ -9,13 +9,10 @@ foreach ($usuariosarray as $key => $us) {
     }
     else {
       $reg=new ArmarRegistro;
-      $imagen=$us["FotoDePerfil"];
-      $fecha=$us["Nacimiento"];
-      $usuario=$reg->armarUsuario($us,$imagen,$fecha);
+      $usuario=$reg->armarUsuario($us,$us["FotoDePerfil"],$us["Nacimiento"]);
       $conexion->guardarUsuario($DB,$usuario);
     }
   }
-
  ?>
  <!DOCTYPE html>
  <html lang="es" dir="ltr">
