@@ -19,7 +19,7 @@ class BaseDatos
   static public function buscarPorEmail($email,$pdo,$tabla){
 
         $sql = "select * from $tabla where email = :email";
-        
+
         $query = $pdo->prepare($sql);
         $query->bindValue(':email',$email);
         $query->execute();
@@ -27,7 +27,7 @@ class BaseDatos
         return $usuario;
     }
   static public function guardarUsuario($pdo, $usuario){
-      $sql = "INSERT INTO user VALUES(default, :nombre, :apellido, :email, :contrasena, :sexo, :pais, :avatar,:usuario)";
+      $sql = "INSERT INTO user VALUES(default, :usuario, :nombre, :apellido, :email, :sexo, :pais, :avatar,:contrasena,:fecha)";
 
       $guardarUsu = $pdo->prepare($sql);
       $guardarUsu->bindValue(':nombre', $usuario->getNombre());
@@ -38,6 +38,7 @@ class BaseDatos
       $guardarUsu->bindValue(':pais', $usuario->getPais());
       $guardarUsu->bindValue(':avatar', $usuario->getAvatar());
       $guardarUsu->bindValue(':usuario', $usuario->getUser());
+      $guardarUsu->bindValue(':fecha', $usuario->getFecha());
 
       $guardarUsu->execute();
   }
@@ -50,6 +51,17 @@ class BaseDatos
   }
 
 }
+static public function guardarMascota($pdo, $usuarioM){
+  $sql = "INSERT INTO user VALUES(default, :nombre, :mascota, :cumpleanos, :sexo, :color)";
 
+  $guardarUsuM = $pdo->prepare($sql);
+  $guardarUsuM->bindValue(':nombre', $usuarioM->getNombre());
+  $guardarUsuM->bindValue(':mascota', $usuarioM->getMascota());
+  $guardarUsuM->bindValue(':cumpleanos', $usuarioM->getCumpleanos());
+  $guardarUsuM->bindValue(':sexo', $usuarioM->getSexo());
+  $guardarUsuM->bindValue(':pelaje', $usuarioM->getPelaje());
+
+  $guardarUsuarioM->execute();
+}
 
  ?>

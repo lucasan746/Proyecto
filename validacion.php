@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 function validar($datos,$imagen){
       $errores=[];
       if (strlen($datos["nombre"])==0) {
@@ -52,7 +52,7 @@ function armarUsuario($datos,$imagen,$fecha)
     "pais"=>$datos["pais"],
     "sexo"=>$datos["sexo"],
     "Nacimiento"=>$fecha,
-    "FotoDePerfil"=>$imagen
+    "avatar"=>$imagen
   ];
   return $usuario;
 }

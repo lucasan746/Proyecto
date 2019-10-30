@@ -8,16 +8,18 @@ class Usuario{
     private $pais;
     private $avatar;
     private $user;
+    private $fecha;
 
-    public function __construct($usuario){
+    public function __construct($usuario,$contra,$fecha,$avatar){
         $this->nombre = $usuario["nombre"];
         $this->apellido = $usuario["apellido"];
         $this->email = $usuario["email"];
-        $this->password = $usuario["contraseña"];
+        $this->password = $contra;
         $this->sexo = $usuario["sexo"];
         $this->pais = $usuario["pais"];
-        $this->avatar = $usuario["avatar"];
-        $this->user=$usuario["user"];
+        $this->avatar = $avatar;
+        $this->user=$usuario["usuario"];
+        $this->fecha=$fecha;
     }
 
     public function getNombre()
@@ -109,6 +111,17 @@ class Usuario{
     }
 
     public function setUser($user)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+    public function getFecha()
+    {
+        return $this->user;
+    }
+
+    public function setFecha($user)
     {
         $this->user = $user;
 

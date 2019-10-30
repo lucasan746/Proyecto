@@ -1,34 +1,19 @@
 <?php
+include 'autoload.php';
 
-include_once 'validacion.php';
 if ($_POST) {
-  $errores=validar($_POST,$_FILES);
-  // if ($errores!=0) {
-  //   foreach ($errores as $key => $value) {
-  //     echo "<p class='error'>* $value";
-  //   }
-  // }
-  if ($errores==null) {
-    $imagendeperfil=fotoPerfil($_FILES);
-    $fecha=armarFecha($_POST);
-    $usuario=armarUsuario($_POST,$imagendeperfil,$fecha);
-    $mailreg=ValirdarEmail($usuario["email"]);
-    if ($mailreg==true) {
-      $errores["email2"]="El email ya está registrado";
-    }
-    else {
-      $user=ValirdarUser($usuario["usuario"]);
-      if ($user==true) {
-        $errores["usuario2"]= "El usuario está registrado";
-      }
-      else {
-        guardarUsuario($usuario);
-        reg($usuario["nombre"]);
-        header("location:registro-mascota.php");
-      }
-
-    }
+$val= new Validador;
+$errores=$val->validar($_POST,$_FILES);
+if ($errores==null) {
+  $us=$conexion->buscarPorEmail($_POST["email"],$DB,"user");
+  if ($us==false) {
+    $reg=new ArmarRegistro;
+    $imagen=$reg->fotoPerfil($_FILES);
+    $fecha=$reg->armarFecha($_POST);
+    $usuario=$reg->armarUsuario($_POST,$imagen,$fecha);
+    $conexion->guardarUsuario($DB,$usuario);
   }
+}
   }
   if (isset($_SESSION["usuario"])) {
     header("location:home.php");
@@ -73,7 +58,7 @@ if ($_POST) {
             echo $errores["nombre"];
           } else {
             echo "Nombre";
-          }?>" name="nombre" value="<?=persistir("nombre")?>">
+          }?>" name="nombre" value="<?=$val->persistir("nombre")?>">
           <br>
 
           <label for="apellido"></label>
@@ -81,14 +66,14 @@ if ($_POST) {
             echo $errores["apellido"];
           } else {
             echo "Apellido";
-          }?>" name="apellido"  value=<?=persistir("apellido")?>>
+          }?>" name="apellido"  value=<?=$val->persistir("apellido")?>>
           <br>
 
           <input  class="reg3" type="text" placeholder="<?php if (isset($errores["usuario"])) {
             echo $errores["usuario"];
           } else {
             echo "Nombre de usuario";
-          }?>" name="usuario"  value=<?=persistir("usuario")?>>
+          }?>" name="usuario"  value=<?=$val->persistir("usuario")?>>
           <label class="usregis" for="usuario"><?php if (isset($errores["usuario2"])) {
              echo $errores["usuario2"];
           } ?></label>
@@ -99,7 +84,7 @@ if ($_POST) {
             echo "Correo electronico";
           }?>" name="email"  value=<?php if(isset($errores["email"])) {}else {
 
-              $asd = persistir("email");
+              $asd =$val->persistir("email");
             echo $asd;
           } ?>>
           <label  class="mailregis"for="email"><?php if (isset($errores["email2"])) {
