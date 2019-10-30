@@ -15,4 +15,5 @@ $nombreDB="sloth_db";
 $puerto=3306;
 $conexion=new BaseDatos;
 $DB=$conexion->conectarDB($host,$nombreDB,$usuario,$contraseña,$puerto);
+$validar = new Validador;
  ?>

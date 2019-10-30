@@ -27,7 +27,7 @@ class BaseDatos
         return $usuario;
     }
   static public function guardarUsuario($pdo, $usuario){
-      $sql = "INSERT INTO user VALUES(default, :usuario, :nombre, :apellido, :email, :sexo, :pais, :avatar,:contrasena,:fecha)";
+      $sql = "INSERT INTO usuarios VALUES(default, :usuario, :nombre, :apellido, :email, :sexo, :pais, :avatar,:contrasena,:fecha)";
 
       $guardarUsu = $pdo->prepare($sql);
       $guardarUsu->bindValue(':nombre', $usuario->getNombre());
@@ -43,7 +43,7 @@ class BaseDatos
       $guardarUsu->execute();
   }
   public function leer($DB){
-    $query="SELECT * FROM user";
+    $query="SELECT * FROM usuarios";
     $insert=$DB->prepare($query);
     $insert->execute();
     $array=$insert->fetchALL(PDO::FETCH_ASSOC);

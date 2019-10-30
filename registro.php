@@ -1,9 +1,8 @@
 <?php
-include 'autoload.php';
+include_once 'autoload.php';
 
 if ($_POST) {
-$val= new Validador;
-$errores=$val->validar($_POST,$_FILES);
+$errores=$validar->validar($_POST,$_FILES);
 if ($errores==null) {
   $us=$conexion->buscarPorEmail($_POST["email"],$DB,"user");
   if ($us==false) {
@@ -12,6 +11,7 @@ if ($errores==null) {
     $fecha=$reg->armarFecha($_POST);
     $usuario=$reg->armarUsuario($_POST,$imagen,$fecha);
     $conexion->guardarUsuario($DB,$usuario);
+    header("location:registro-mascota.php");
   }
 }
   }
@@ -58,7 +58,7 @@ if ($errores==null) {
             echo $errores["nombre"];
           } else {
             echo "Nombre";
-          }?>" name="nombre" value="<?=$val->persistir("nombre")?>">
+          }?>" name="nombre" value="<?=$validar->persistir("nombre") ?>">
           <br>
 
           <label for="apellido"></label>
@@ -66,14 +66,14 @@ if ($errores==null) {
             echo $errores["apellido"];
           } else {
             echo "Apellido";
-          }?>" name="apellido"  value=<?=$val->persistir("apellido")?>>
+          }?>" name="apellido"  value=<?=$validar->persistir("apellido")?>>
           <br>
 
           <input  class="reg3" type="text" placeholder="<?php if (isset($errores["usuario"])) {
             echo $errores["usuario"];
           } else {
             echo "Nombre de usuario";
-          }?>" name="usuario"  value=<?=$val->persistir("usuario")?>>
+          }?>" name="usuario"  value=<?=$validar->persistir("usuario")?>>
           <label class="usregis" for="usuario"><?php if (isset($errores["usuario2"])) {
              echo $errores["usuario2"];
           } ?></label>
@@ -84,7 +84,7 @@ if ($errores==null) {
             echo "Correo electronico";
           }?>" name="email"  value=<?php if(isset($errores["email"])) {}else {
 
-              $asd =$val->persistir("email");
+              $asd =$validar->persistir("email");
             echo $asd;
           } ?>>
           <label  class="mailregis"for="email"><?php if (isset($errores["email2"])) {
@@ -109,9 +109,9 @@ if ($errores==null) {
           <br>
 
           <label for="sexo"></label>
-          <input class="gen1" type="radio" name="sexo" value="M" checked >
+          <input class="gen1" type="radio" name="sexo" value="H" checked >
            <span class="muj">Hombre</span>
-          <input class="gen2" type="radio" name="sexo"  value="H">
+          <input class="gen2" type="radio" name="sexo"  value="M">
           <span class="hom">Mujer</span>
           <input class="gen3" type="radio" name="sexo" value="O">
           <span class="otr">Otro</span>
