@@ -49,8 +49,6 @@ class BaseDatos
     $array=$insert->fetchALL(PDO::FETCH_ASSOC);
     return $array;
   }
-
-}
 static public function guardarMascota($pdo, $usuarioM){
   $sql = "INSERT INTO user VALUES(default, :nombre, :mascota, :cumpleanos, :sexo, :color)";
 
@@ -63,5 +61,5 @@ static public function guardarMascota($pdo, $usuarioM){
 
   $guardarUsuarioM->execute();
 }
-
+}
  ?>

@@ -27,11 +27,9 @@ $usuario = new Usuario($datos,$contraHash,$fecha,$imagen);
     return $fecha;
   }
 
-}
-
 static public function armarMascota($nomre, $mascota, $cumpleaños, $sexo, $color){
   $usuarioM = new
   Usuario($nombre["nombre"], $mascota["mascota"], $cumpleanos["cumpleanos"], $sexo["sexo"], $pelaje["pelaje"]);
   return $usuarioM;
-}
+}}
  ?>
