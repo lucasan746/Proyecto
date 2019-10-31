@@ -28,8 +28,7 @@ $usuario = new Usuario($datos,$contraHash,$fecha,$imagen);
   }
 
 static public function armarMascota($nomre, $mascota, $cumpleaños, $sexo, $color){
-  $usuarioM = new
-  Usuario($nombre["nombre"], $mascota["mascota"], $cumpleanos["cumpleanos"], $sexo["sexo"], $pelaje["pelaje"]);
+  $usuarioM = new Usuario($nombre["nombre"], $mascota["mascota"], $cumpleanos["cumpleanos"], $sexo["sexo"], $pelaje["pelaje"]);
   return $usuarioM;
 }}
  ?>

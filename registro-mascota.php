@@ -1,6 +1,27 @@
+<?php
+include_once 'autoload.php';
+
+if ($_POST) {
+$errores=$validarm->validarmascota($_POST);
+if ($errores==null) {{
+    $regm=new ArmarRegistro;
+    $fecha=$regm->armarFecha($_POST);
+    $mascota=$regm->armarMascota($_POST,$fecha);
+    $conexion->guardarMascota($DB,$mascota);
+    header("location:login.php");
+  }
+}
+  }
+  if (isset($_SESSION["usuario"])) {
+    header("location:home.php");
+  }
+
+?>
+
+
 <?php include 'images.php'; ?>
 <?php include "arrays.php"; ?>
-<?php include_once "validacion.php"; ?>
+<!-- <?php include_once "validacion.php"; ?>
 <?php  if ($_POST) {
   $errores=validarmascota($_POST);
   if ($errores==null) {
@@ -15,7 +36,7 @@
 if ($_COOKIE["form"]==null) {
   header("location:registro.php");
 }
-  ?>
+  ?> -->
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
