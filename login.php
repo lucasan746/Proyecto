@@ -1,26 +1,19 @@
 <?php include 'images.php';
-include 'validacion.php';
+include 'migracion.php';
+include 'autoload.php';
 if ($_POST) {
-  $us=validarLogin($_POST["usuario"]);
-  if ($us==true) {
-    $us=contraseña($_POST["contraseña"]);
-    if ($us==true) {
-      $us=compararDatos($_POST);
-      if ($us==true) {
-        buscarUsuario($_POST["usuario"]);
-        recordarUsu($_POST);
-        header("location:home.php");
-      }
-      else {
-        $erroreslogin["contraseña"]="La contraseña es incorrecta";
-      }
-    }
-    else {
-      $erroreslogin["contraseña"]= "La contraseña es incorrecta";
-    }
+  $usuario=BaseDatos::buscarPorUsuario($_POST["usuario"],$DB,"usuarios");
+  if ($usuario==null) {
+    $erroreslogin["usuario"]="el usuario no esta registrado";
   }
   else {
- $erroreslogin["usuario"]="el usuario es incorrecto";
+    if (password_verify($_POST["contraseña"],$usuario["contrasenia"])) {
+      Autenticador::inicioSesion($usuario);
+      header("location:home.php");
+    }
+    else {
+      $erroreslogin["contraseña"]="la contraseña no coincide";
+    }
   }
 }
 if (isset($_SESSION["usuario"])) {

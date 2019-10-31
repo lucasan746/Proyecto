@@ -26,6 +26,16 @@ class BaseDatos
         $usuario = $query->fetch(PDO::FETCH_ASSOC);
         return $usuario;
     }
+    static public function buscarPorUsuario($usuario,$pdo,$tabla){
+
+          $sql = "select * from $tabla where usuario = :usuario";
+
+          $query = $pdo->prepare($sql);
+          $query->bindValue(':usuario',$usuario);
+          $query->execute();
+          $usuario = $query->fetch(PDO::FETCH_ASSOC);
+          return $usuario;
+      }
   static public function guardarUsuario($pdo, $usuario){
       $sql = "INSERT INTO usuarios VALUES(default, :usuario, :nombre, :apellido, :email, :sexo, :pais, :avatar,:contrasena,:fecha)";
 

@@ -1,6 +1,7 @@
 <?php include 'images.php'; ?>
 <?php include "arrays.php"; ?>
-<?php include_once "validacion.php"; ?>
+<?php include_once "validacion.php";
+include 'migracion.php';?>
 <?php  if ($_POST) {
   $errores=validarmascota($_POST);
   if ($errores==null) {

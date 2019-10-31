@@ -1,5 +1,5 @@
 <?php include_once 'images.php';
-include 'validacion.php';
+include 'migracion.php';
 if (isset($_SESSION["usuario"])) {
   header("location:home.php");
 }

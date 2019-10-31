@@ -1,4 +1,6 @@
-<?php include 'validacion.php';
+<?php
+include 'clases/Autenticador.php';
+include 'migracion.php';
 if (isset($_SESSION["usuario"])==false) {
   header("location:login.php");
 }?>
