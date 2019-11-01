@@ -1,9 +1,12 @@
-<?php
-include_once 'autoload.php';
 
+<?php  include_once 'autoload.php';?>
+<?php include 'images.php'; ?>
+<?php include "arrays.php"; ?>
+<?php include_once "migracion.php";?>
+<?php
 if ($_POST) {
 $errores=$validar->validarmascota($_POST);
-if ($errores==null) {{
+if ($errores==null) {
 
     $fecha=ArmarRegistro::armarFecha($_POST);
     $mascota=ArmarRegistro::armarMascota($_POST,$fecha);
@@ -11,7 +14,7 @@ if ($errores==null) {{
     header("location:login.php");
   }
 }
-  }
+
   if (isset($_SESSION["usuario"])) {
     header("location:home.php");
   }
@@ -19,9 +22,6 @@ if ($errores==null) {{
 ?>
 
 
-<?php include 'images.php'; ?>
-<?php include "arrays.php"; ?>
-<?php include_once "migracion.php";?>
 
 
 <!DOCTYPE html>
@@ -101,11 +101,11 @@ if ($errores==null) {{
        echo $errores["fecha"];
      } ?> </label>
 
-     <input class="gen-m1" type="radio" name="sexo" checked value="macho">
+     <input class="gen-m1" type="radio" name="sexo" checked value="Macho">
      <span class="ma">Macho</span>
-     <input class="gen-m2" type="radio" name="sexo" value="hembra">
+     <input class="gen-m2" type="radio" name="sexo" value="Hembra">
      <span class="hem">Hembra</span>
-     <input class="gen-m3" type="radio" name="sexo" value="desconocido">
+     <input class="gen-m3" type="radio" name="sexo" value="No sé">
      <span class="nolo">No lo sé</span>
     <br>
 
