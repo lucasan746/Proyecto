@@ -27,7 +27,7 @@ CREATE TABLE `mascota` (
   `nombre` varchar(80) NOT NULL,
   `tipo` varchar(45) NOT NULL,
   `sexo` tinytext NOT NULL,
-  `fecha` varchat(45) NOT NULL,
+  `fecha` varchar(45) NOT NULL,
   `color` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
