@@ -77,7 +77,7 @@ class BaseDatos
     return $array;
   }
 static public function guardarMascota($pdo, $usuarioM){
-  $sql = "INSERT INTO mascota VALUES(default, :nombre, :tipo, :sexo, :fecha, :pelaje)";
+  $sql = "INSERT INTO mascotas VALUES(default, :nombre, :tipo, :sexo, :fecha, :pelaje)";
 
   $guardarUsuM = $pdo->prepare($sql);
   $guardarUsuM->bindValue(':nombre', $usuarioM->getNombre());
