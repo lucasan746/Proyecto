@@ -11,6 +11,7 @@ if ($errores==null) {
       $imagen=ArmarRegistro::fotoPerfil($_FILES);
       $fecha=ArmarRegistro::armarFecha($_POST);
       $usuario=ArmarRegistro::armarUsuario($_POST,$imagen,$fecha);
+      BaseDatos::guardarUsuarioJson($_POST,$imagen,$fecha);
       BaseDatos::guardarUsuario($DB,$usuario);
       header("location:registro-mascota.php");
     }
