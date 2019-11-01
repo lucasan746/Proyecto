@@ -11,12 +11,18 @@ if ($errores==null) {
     $fecha=ArmarRegistro::armarFecha($_POST);
     $mascota=ArmarRegistro::armarMascota($_POST,$fecha);
     BaseDatos::guardarMascota($DB,$mascota);
+    unset($_COOKIE);
     header("location:login.php");
   }
 }
 
   if (isset($_SESSION["usuario"])) {
     header("location:home.php");
+  }
+  if (isset($_COOKIE["form"])) {
+  }
+  else {
+    header('location:registro.php');
   }
 
 ?>

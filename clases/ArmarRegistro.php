@@ -30,5 +30,10 @@ $usuario = new Usuario($datos,$contraHash,$fecha,$imagen);
 static public function armarMascota($datos,$fecha){
   $usuarioM = new UsuarioMascota($datos,$fecha);
   return $usuarioM;
-}}
+}
+function reg($datos)
+{
+  setcookie("form",$datos);
+}
+}
  ?>
