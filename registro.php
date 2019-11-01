@@ -4,14 +4,22 @@ include 'migracion.php';
 if ($_POST) {
 $errores=$validar->validar($_POST,$_FILES);
 if ($errores==null) {
-  $us=$conexion->buscarPorEmail($_POST["email"],$DB,"usuarios");
+  $us=BaseDatos::buscarPorEmail($_POST["email"],$DB,"usuarios");
   if ($us==false) {
-    $reg=new ArmarRegistro;
-    $imagen=$reg->fotoPerfil($_FILES);
-    $fecha=$reg->armarFecha($_POST);
-    $usuario=$reg->armarUsuario($_POST,$imagen,$fecha);
-    $conexion->guardarUsuario($DB,$usuario);
-    header("location:registro-mascota.php");
+    $us=BaseDatos::buscarPorUsuario($_POST["usuario"],$DB,"usuarios");
+    if ($us==false) {
+      $imagen=ArmarRegistro::fotoPerfil($_FILES);
+      $fecha=ArmarRegistro::armarFecha($_POST);
+      $usuario=ArmarRegistro::armarUsuario($_POST,$imagen,$fecha);
+      BaseDatos::guardarUsuario($DB,$usuario);
+      header("location:registro-mascota.php");
+    }
+    else {
+      $errores["usuario2"]="el usuario ya esta en uso";
+    }
+  }
+  else {
+    $errores["email2"]="El mail ya esta en uso";
   }
 }
   }

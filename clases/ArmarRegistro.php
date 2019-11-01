@@ -14,7 +14,7 @@ $usuario = new Usuario($datos,$contraHash,$fecha,$imagen);
     $ext = pathinfo($nombre, PATHINFO_EXTENSION);
     $archivoOrigen = $_FILES["fotoperfil"]["tmp_name"];
     $rutaDestino = dirname(__FILE__);
-    $rutaDestino = "C:/xampp/htdocs/Proyecto/fotos/";
+    $rutaDestino = $rutaDestino."/../fotos/";
     $nombreImg = uniqid();
     $rutaDestino = $rutaDestino.$nombreImg.".".$ext;
     move_uploaded_file ($archivoOrigen, $rutaDestino);
