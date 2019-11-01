@@ -48,11 +48,7 @@ if ($errores==null) {
   <h1 class="titulog">Sloth</h1>
   <h3>Un espacio para tu mascota</h3>
   </div>
-  <!-- <?php if (isset($errores)): ?>
-    <?php foreach ($errores as $key => $error): ?>
-        <li class="alert"><?=$error?></li>
-    <?php endforeach; ?>
-  <?php endif; ?> -->
+
 <div class="formulario-mascota">
   <h4 class="datos">Datos de tu mascota</h4>
 
@@ -66,14 +62,14 @@ if ($errores==null) {
       <br>
       <label class="eligea" for="">Elige su tipo</label>
       <br>
-      <select  class="selecani" name="tipo" >sexo
+      <select  class="selecani" name="tipo" >
    <option selected value="">Tipos de mascota</option>
     <?php foreach ($mascotas as $key => $mascotas): ?>
     <option value= <?=$key?>><?=$mascotas?></option>
     <?php endforeach; ?>
  </select>
- <label class="errormascota" for=""><?php if(isset($errores["mascotas"])) {
-   echo $errores["mascotas"];
+ <label class="errormascota" for=""><?php if(isset($errores["tipo"])) {
+   echo $errores["tipo"];
  } ?> </label>
 
  <label class="cumple-m" for="">Su cumpleaños</label>
