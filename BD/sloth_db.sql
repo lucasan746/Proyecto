@@ -16,13 +16,17 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `mascota`
+-- Table structure for table `mascotas`
 --
 
-DROP TABLE IF EXISTS `mascota`;
+DROP DATABASE IF EXISTS sloth_db;
+CREATE DATABASE sloth_db;
+USE sloth_db;
+
+DROP TABLE IF EXISTS `mascotas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `mascota` (
+CREATE TABLE `mascotas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(80) NOT NULL,
   `tipo` varchar(45) NOT NULL,
