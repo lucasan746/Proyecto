@@ -48,7 +48,7 @@ function armarUsuario($datos,$imagen,$fecha)
     "apellido" => $datos["apellido"],
     "usuario"=>$datos["usuario"],
     "email" => $datos["email"],
-    "contrasenia"=>$contraHash,
+    "contraseña"=>$contraHash,
     "pais"=>$datos["pais"],
     "sexo"=>$datos["sexo"],
     "Nacimiento"=>$fecha,

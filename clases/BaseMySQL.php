@@ -52,6 +52,23 @@ class BaseDatos
 
       $guardarUsu->execute();
   }
+  static public function guardarUsuarioJson($usuario,$fecha,$imagen)
+  {
+    $contraHash = password_hash($usuario["contraseña"], PASSWORD_DEFAULT);
+    $datos=[
+      "nombre" => $usuario["nombre"],
+      "apellido" => $usuario["apellido"],
+      "usuario"=>$usuario["usuario"],
+      "email" => $usuario["email"],
+      "contraseña"=>$contraHash,
+      "pais"=>$usuario["pais"],
+      "sexo"=>$usuario["sexo"],
+      "Nacimiento"=>$imagen,
+      "FotoDePerfil"=>$fecha
+    ];
+    $json = json_encode($datos);
+    file_put_contents("usuarios.json",$json.PHP_EOL, FILE_APPEND);
+  }
   public function leer($DB){
     $query="SELECT * FROM usuarios";
     $insert=$DB->prepare($query);
