@@ -19,6 +19,10 @@
 -- Table structure for table `mascota`
 --
 
+DROP DATABASE IF EXISTS sloth_db;
+CREATE DATABASE sloth_db;
+USE sloth_db;
+
 DROP TABLE IF EXISTS `mascota`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
