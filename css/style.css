@@ -1022,7 +1022,7 @@ position: relative;
 height: 50vh;
 }
 .regmasc{
-  width: 62%;
+  width: 86%;
   height: 5vh;
   border-bottom: solid 2px #7d56f8;
   background-color: rgba(232, 236, 248, 0.29);
@@ -1541,6 +1541,12 @@ top: 21px;
     width: 54px;
   }
   /* registro mascota */
+  .registro-mascota{
+    width: 60%;
+  }
+  .regmasc{
+    width: 88%;
+  }
   .cumple-m{
     right: 22%;
   }
@@ -1555,13 +1561,23 @@ margin-right: 2px;
   .regyear-m{
     width: 58px;
   }
+  .pelaje{
+    right: 13%;
+  }
+  /* errores */
+  .errorpelaje{
+    right: 23%;
+  }
 }
 /* Tablet */
 
 @media screen and (max-width: 979px){
   /* Index */
   .botomitir{
-    width: fit-content;
+   padding: 4px;
+   bottom: -63px;
+   left: 112px;
+
   }
   .vid{
     width: 40vw;
@@ -1594,10 +1610,16 @@ margin-right: 2px;
 .busqueda{
   left: 20%;
 }
-  /* formulario 2 */
+  /* formulario  mascota */
+.formulario-mascota{
+  height: 68vh;
+}
 
 .registro-mascota{
   width: 90%;
+}
+.registro1{
+  height: 60vh;
 }
 /* Index */
 .imagenesres{
@@ -1650,6 +1672,7 @@ width: 20px;
 .cajalogin3{
   background: none;
   background-color: #cec6e9;
+  height: 115vh;
 }
 .cajareg{
   height: auto;
@@ -1691,6 +1714,10 @@ height: 75vh;
 .errorfecha{
   bottom: 35%;
 }
+/* errores de registro mascota */
+.errorpelaje{
+  right: 25%;
+}
 
 /* fin Tablet */
 .iconosbarra{
@@ -1706,14 +1733,102 @@ height: 75vh;
 /* Celular */
 
 @media screen and (max-width: 480px){
-  /* mascota */
-  .pelaje{
-    right: 2%;
-    top: 46%;
-  }
-  .formulario-mascota{
-    width: 100%;
-  }
+  /*registro mascota */
+.cajalogin3{
+    background-color: #fafbff;
+    height: 132vh;
+}
+.registro-mascota{
+  height: 100vh;
+  width: 100%;
+}
+.cajatitulo{
+color: #b2a2ed;
+}
+.formulario-mascota{
+  width: 90%;
+}
+.registro1{
+  height: 87vh;
+}
+.eligea{
+  top:18%;
+}
+.selecani{
+  top:26%;
+  width: 88%;
+}
+.cumple-m{
+  top:36%;
+  right: 65%;
+}
+.regday-m{
+  width: 70px;
+  top: 44%;
+  right: 76%;
+}
+.regmonth-m{
+  width: 70px;
+  top: 44%;
+right: 43%;
+}
+.regyear-m{
+  width: 70px;
+  top: 44%;
+right: 8%;
+}
+.gen-m1{
+  top: 55%;
+left: 5%;
+}
+.ma{
+  top: 54.5%;
+left: 9%;
+}
+.gen-m2{
+  top: 55%;
+left: 39%;
+}
+.hem{
+  top: 54.5%;
+left: 42%;
+}
+.gen-m3{
+  top: 55%;
+left: 73%;
+}
+.nolo{
+  top: 54.5%;
+left: 78%;
+}
+.pelaje{
+  top:62%;
+    right: 55%;
+}
+.colorpelaje{
+  top: 68%;
+right: 7%;
+width: 88%;
+}
+.botomitir{
+  bottom: -166px;
+left: 19px;
+width: 68px;
+
+}
+/* errores mascota */
+.errormascota{
+  top:32%;
+}
+.errorfecha-m{
+  top: 50%;
+    right: 31%;
+}
+.errorpelaje{
+  bottom: 24%;
+  right: 66%;
+}
+
   /* index */
 
   .vid{
@@ -1791,6 +1906,7 @@ height: 75vh;
 
 .formulario{
   height: 100vh;
+  width: 90%;
 }
 
 .cajatitulo{
