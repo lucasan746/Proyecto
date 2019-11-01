@@ -109,8 +109,8 @@ public function contraseña($usuario){
         if (strlen($datos["nombre"])==0) {
                 $errores["nombre"] = "El nombre no puede estar vacio";
           }
-        if ($datos["mascotas"]==null) {
-            $errores["mascotas"]= "Selecciona un tipo de mascota";
+        if ($datos["tipo"]==null) {
+            $errores["tipo"]= "Selecciona un tipo de mascota";
           }
         if ($datos["dia"]==null||$datos["mes"]==null||$datos["año"]==null) {
             $errores["fecha"]= "Debes seleccionar una fecha de nacimiento";

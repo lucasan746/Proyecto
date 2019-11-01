@@ -1,10 +1,10 @@
 <?php
 include_once 'autoload.php';
-
+include 'migracion.php';
 if ($_POST) {
 $errores=$validar->validar($_POST,$_FILES);
 if ($errores==null) {
-  $us=$conexion->buscarPorEmail($_POST["email"],$DB,"user");
+  $us=$conexion->buscarPorEmail($_POST["email"],$DB,"usuarios");
   if ($us==false) {
     $reg=new ArmarRegistro;
     $imagen=$reg->fotoPerfil($_FILES);

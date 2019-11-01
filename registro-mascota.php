@@ -2,12 +2,12 @@
 include_once 'autoload.php';
 
 if ($_POST) {
-$errores=$validarm->validarmascota($_POST);
+$errores=$validar->validarmascota($_POST);
 if ($errores==null) {{
-    $regm=new ArmarRegistro;
-    $fecha=$regm->armarFecha($_POST);
-    $mascota=$regm->armarMascota($_POST,$fecha);
-    $conexion->guardarMascota($DB,$mascota);
+
+    $fecha=ArmarRegistro::armarFecha($_POST);
+    $mascota=ArmarRegistro::armarMascota($_POST,$fecha);
+    BaseDatos::guardarMascota($DB,$mascota);
     header("location:login.php");
   }
 }
@@ -21,22 +21,9 @@ if ($errores==null) {{
 
 <?php include 'images.php'; ?>
 <?php include "arrays.php"; ?>
-<!-- <?php include_once "validacion.php"; ?>
-<?php  if ($_POST) {
-  $errores=validarmascota($_POST);
-  if ($errores==null) {
-    $fecha=armarFecha($_POST);
-    $mascota=armarMascota($_POST,$fecha);
-    guardarMascota($mascota);
-    setcookie("form",null);
-    header("location:login.php");
-    exit;
-  }
-}
-if ($_COOKIE["form"]==null) {
-  header("location:registro.php");
-}
-  ?> -->
+<?php include_once "migracion.php";?>
+
+
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -79,7 +66,7 @@ if ($_COOKIE["form"]==null) {
       <br>
       <label class="eligea" for="">Elige su tipo</label>
       <br>
-      <select  class="selecani" name="mascotas" >
+      <select  class="selecani" name="tipo" >sexo
    <option selected value="">Tipos de mascota</option>
     <?php foreach ($mascotas as $key => $mascotas): ?>
     <option value= <?=$key?>><?=$mascotas?></option>
@@ -114,11 +101,11 @@ if ($_COOKIE["form"]==null) {
        echo $errores["fecha"];
      } ?> </label>
 
-     <input class="gen-m1" type="radio" name="gender" checked value="macho">
+     <input class="gen-m1" type="radio" name="sexo" checked value="macho">
      <span class="ma">Macho</span>
-     <input class="gen-m2" type="radio" name="gender" value="hembra">
+     <input class="gen-m2" type="radio" name="sexo" value="hembra">
      <span class="hem">Hembra</span>
-     <input class="gen-m3" type="radio" name="gender" value="desconocido">
+     <input class="gen-m3" type="radio" name="sexo" value="desconocido">
      <span class="nolo">No lo sé</span>
     <br>
 

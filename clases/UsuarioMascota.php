@@ -1,18 +1,18 @@
 <?php
 
-class Usuario_mascota{
+class UsuarioMascota{
   private $nombre;
-  private $mascota;
-  private $cumpleanos;
+  private $tipo;
+  private $fecha;
   private $sexo;
-  private $color;
+  private $pelaje;
 
-  public function __construct($nombre, $mascota, $cumpleanos, $sexo, $color){
-    $this->nombre = $nombre;
-    $this->mascota = $mascota;
-    $this->cumpleanos = $cumpleanos;
-    $this->sexo = $sexo;
-    $this->color = $color;
+  public function __construct($mascota,$fecha){
+    $this->nombre=$mascota["nombre"];
+    $this->tipo=$mascota["tipo"];
+    $this->fecha=$fecha;
+    $this->sexo=$mascota["sexo"];
+    $this->pelaje=$mascota["pelaje"];
   }
   public function getNombre(){
     return $this->nombre;
@@ -21,18 +21,18 @@ class Usuario_mascota{
     $this->nombre = $nombre;
     return $this;
   }
-  public function getMascota(){
-    return $this->mascota;
+  public function getTipo(){
+    return $this->tipo;
   }
-  public function setMascota($mascota){
-    $this->mascota = $mascota;
+  public function setTipo($tipo){
+    $this->tipo = $tipo;
     return $this;
   }
-  public function getCumpleanos(){
-    return $this->cumpleanos;
+  public function getFecha(){
+    return $this->fecha;
   }
-  public function setCumpleanos($cumpleanos){
-    $this->cumpleanos = $cumpleanos;
+  public function setFecha($fecha){
+    $this->fecha = $fecha;
     return $this;
   }
   public function getSexo(){
@@ -42,11 +42,11 @@ class Usuario_mascota{
     $this->sexo = $sexo;
     return $this;
   }
-  public function getColor(){
-    return $this->color;
+  public function getPelaje(){
+    return $this->pelaje;
   }
-  public function setColor($color){
-    $this->color = $color;
+  public function setPelaje($pelaje){
+    $this->pelaje = $pelaje;
     return $this;
   }
 }
